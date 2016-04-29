@@ -1,0 +1,32 @@
+#+BLOG: perspicaz
+#+POSTID: 78
+#+TITLE: Ocultando processos dos usuários
+#+DATE: <2016-04-07 Thu 00:20>
+#+DESCRIPTION:
+#+PERMALINK: ocultando_processos_usuarios
+#+PARENT:
+#+TAGS: Linux,SysAdmin
+
+Uns 10 anos atrás quando trabalhava com administração de usuários, a única forma que conhecia para ocultar os processos dos outros usuários era através da aplicação de um /patch/ no /kernel/. Sem dúvidas que isto não era algo trivial.
+#+HTML: <!--more Continue lendo...-->
+Recentemente, num fórum de discussão, alguém perguntou como esconder os processos para que um usuário não veja que programas o outro está executando. Foi isto a única razão para eu ter ido buscar na /web/ se existia uma forma mais simples de lhe dar com o problema. Felizmente, hoje o procedimento já é bem simples. Para um retorno imediato, pode-se executar o comando:
+
+#+BEGIN_SRC sh
+  mount -o remount,rw,hidepid=2 /proc
+#+END_SRC
+
+E testar abrindo algum gerenciador de processos. Eu uso ~top~, ~htop~ e às vezes o ~glances~.
+
+Você verá que apenas o dono vê os seus processos e não mais todos como é o padrão. A propósito, não há alteração para o /root/.
+
+A mágica é feita pelo ~hidepid~, uma opção adicionada ao /kernel/ pelo próprio Linus Torvalds em 2011.
+
+Para tornar o procedimento definitivo, precisa modificar o ~/etc/fstab~ e inserir o ~hidepid~ lá, exemplo:
+
+#+BEGIN_EXAMPLE
+  proc    /proc    proc    defaults,hidepid=2    0 0
+#+END_EXAMPLE
+
+Mantenham-se atualizados :D .
+
+#  LocalWords:  PERMALINK usuarios SysAdmin htop hidepid

@@ -1,0 +1,35 @@
+#+BLOG: perspicaz
+#+POSTID: 34
+#+TITLE: Inteligência Empresarial em Pequenos Negócios
+#+DATE: <2016-04-05 Tue>
+#+DESCRIPTION:
+#+PERMALINK: bi_pequenos_negocios
+#+PARENT:
+#+TAGS: Business Intelligence
+
+Neste /post/, discuto um pouco sobre a experiência adquirida no último projeto que participei numa empresa chamada /Tux4You/. Uma empresa do ramo de EAD (Ensino a Distância) que, como a maioria dos negócios no Brasil, tomava suas decisões baseadas apenas em experiência prática, sem analisar informações. O principal ponto negativo desta abordagem é que todos as decisões parecem ser "um tiro no escuro", pois apenas situações já bem conhecidas e testadas na prática tinham reais chances de dar certo.
+#+BEGIN_HTML
+<!--more Continue lendo!-->
+#+END_HTML
+
+Mas antes, o que vem a ser essa tal de Inteligência Empresarial? Segunda a nossa querida [[https://pt.wikipedia.org/wiki/Intelig%C3%AAncia_empresarial][Wikipédia]]:
+
+#+BEGIN_QUOTE
+...refere-se ao processo de coleta, organização, análise, compartilhamento e monitoramento de informações que oferecem suporte a gestão de negócios. É um conjunto de técnicas e ferramentas para auxiliar na transformação de dados brutos em informações significativas e uteis a fim de analisar o negócio. As tecnologias BI são capazes de suportar uma grande quantidade de dados desestruturados para ajudar a identificar, desenvolver e até mesmo criar uma nova oportunidade de estratégia de negócios. O objetivo do BI é permitir uma fácil interpretação do grande volume de dados. Identificando novas oportunidades e implementando uma estratégia efetiva baseada nos dados, também pode promover negócios com vantagem competitiva no mercado e estabilidade a longo prazo.
+#+END_QUOTE
+
+Vamos ao questionamento principal: Como incorporar *BI* (do inglês /Business Inteligence/ e traduzido no Brasil para Inteligência Empresarial) ao negócio e obter ganhos?
+
+Parando para pensar, se apenas implementarmos programas de computador relacionados a *BI* ou ainda se apenas tentarmos aplicar a literatura existente na área de *BI* na empresa em questão, com certeza teremos apenas gastos e o mais difícil seria como mensurar o tempo e os lucros obtidos com o processo. Outro aspecto negativo: jogaríamos fora a experiência do empresário/empreendedor em detrimento destas práticas caras e padronizadas (conhecimento é ouro, nunca jogue isto fora!)... E agora, como resolver este impasse?
+
+Entra agora o trabalho do analista.
+
+A primeira coisa a fazer é entender a natureza do problema. Porque as decisões não são baseadas em análise de dados? No Brasil é simples explicar este fenômeno pois informação é algo caro e de difícil acesso, logo, não existe cultura para análise e todos os programas de computador, práticas, documentação etc são feitos com lugares como os Estados Unidos que vivem uma realidade inversa a vivida no Brasil no quesito acesso a dados.
+
+Ótimo, já entendemos a natureza do problema. Precisamos agora traçar um plano de trabalho para resolver (ou ao menos amenizar o problema), levando em conta o custo, prazo e retorno?
+
+Algo do qual não se pode escapar: precisa-se de equipe de *TI* e de infraestrutura para montar e manter bancos de dados dentro da empresa. Informações de clientes efetivos e de possíveis clientes são coisas valiosíssimas e só são processáveis/analisáveis dentro de um ambiente informatizado. Este aspecto é trabalhoso e custoso e precisa de muita dedicação para executá-lo de forma a se tornar uma ferramenta útil na tomada de decisões. Como exemplo, do último projeto, eu passei uns 6 meses praticamente apenas montando este tipo de infraestrutura. Com orçamento limitado, as implementações eram planejadas para pequenos /sprints/ (corridas) para dar resultado rápido e já viabilizar os próximos passos.
+
+Citando um caso prático. Sendo uma empresa de /EAD/ com cursos voltados para a área de Tecnologia, porque não realizar campanhas e /e-mail marketing/ para os alunos que acabaram de ingressar nas faculdades relacionadas? Hã!? Isto é possível!? Sim é, o investimento não é alto mas precisa-se ser capaz de analisar e cruzar alguns milhões de informações de pelo menos 4 fontes distintas e isto é uma tarefa bastante complexa. Complexa o suficiente para deixar os detalhes para futuros /posts/. Até a próxima!
+
+#  LocalWords:  PERMALINK negocios inteligence

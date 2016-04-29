@@ -1,0 +1,12 @@
+#+BLOG: perspicaz
+#+POSTID: 47
+#+TITLE: [Leitura] O caso das ferramentas proprietárias de Machine Learning e Data Mining
+#+DATE: <2016-04-06 Wed>
+#+DESCRIPTION:
+#+PERMALINK: o_caso_das_ferramentas_proprietarias_de_machine_learning_e_data_mining
+#+PARENT:
+#+TAGS: Data Mining, Machine Learning
+
+Recomendo a leitura deste [[https://mineracaodedados.wordpress.com/2016/04/04/o-ocaso-das-ferramentas-proprietarias-de-machine-learning-e-data-mining/][artigo]] pois trata da situação das ferramentas proprietárias frente às soluções /Open Source/ / /Free Software/ atuais. Existem outro mercados onde algo parecido também já ocorre. O futuro será /Open Source/ / /Free Software/? Ou será que haverá uma tecnologia que torne toda essa discussão obsoleta?
+
+#  LocalWords:  PERMALINK proprietarias

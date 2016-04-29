@@ -1,0 +1,31 @@
+#+BLOG: perspicaz
+#+POSTID: 123
+#+DATE: <2016-04-19 Tue 01:17>
+#+TITLE: [Tec] Automatizando a Correção Gramatical
+#+DESCRIPTION:
+#+PERMALINK: automatizando_a_correcao_gramatical
+#+PARENT:
+#+TAGS:
+
+Tudo começou dez anos atrás. Era uma noite açoitada pela fúria insaciável duma saraivada que castigava a terra como o ódio do carrasco sobre pecadores eternos...
+#+BEGIN_HTML
+<!--more Continue lendo...-->
+#+END_HTML
+
+Até parece que eu consigo lembrar das coisas nesse nível de detalhe...
+
+Seguinte, uns 10 anos atrás comecei a procurar ferramentas automatizadas para correção da Língua Portuguesa pois, esta estorinha de ficar relendo o próprio texto não funciona, são poucos os erros que se consegue capturar e os olhos rapidamente perdem a capacidade de enxergá-los.
+
+Seguindo com a busca, foi relativamente fácil encontrar uma solução decente para correção ortográfica, sendo a primeira delas uma ferramenta chamada *Ispell*. Serviu-me bem até que conheci o *[[http://aspell.net/][GNU Aspell]]*, muito mais recursos e suporte a codificação /UTF-8/ (uau!), resolvi ficar com ela e aperfeiçoá-la às minhas necessidades. A situação atual é que possuo  uma versão  do *Aspell* compilada "em casa" e o dicionário é um mesclado entre uma versão do dicionário *[[https://pt-br.libreoffice.org/projetos/vero/][VERO]]* com outras listas personalizadas que fui criando ao longo do anos. É justamente esse dicionário a razão dos poucos erros "orográficos" aqui no /blog/. (É claro que meus amigos me ajudam também! E muito!).
+
+Com a correção ortográfica em dia, faltava apenas a correção gramatical, correto? Correto. Mas onde encontrar?
+
+Cheguei a pensar em criar meu próprio /parser/ de Língua Portuguesa! Seria algo que serviria-me, inclusive, noutros projetos mais complexos (projetos "penosos" e que, apesar de serem para empresas, não trouxeram nenhum ganho financeiro relevante...). Criar o /parser/ seria apenas uma questão catalogar todas(!) as palavras da nossa língua (análise morfológica) e classificar toda a sintaxe válida (análise sintática) para só então começar a trabalhar... Nem preciso dizer que seria um trabalho hercúleo, preciso?
+
+Felizmente (ou não), pelos idos de 2011 apareceu um tal de *[[http://cogroo.org/][CogrOO]]*. Era o primeiro corretor gramatical que eu vira até então para Língua Portuguesa. Um super projeto com vários especialistas envolvidos, suporte da comunidade etc e tal! Tinha tudo para ser "O" projeto que eu buscava. Mas tinha que ter defeitos... e muitos... Foi desenvolvido para funcionar no /OpenOffice/ (atualmente também no /LibreOffice/) e é escrito em *Java(!)* assim como as suítes /office/ já citadas. Não, vocês não leram errado, eu escrevi *Java* mesmo! Com tantas boas opções para codificar aplicações /desktop/ porque "deabos" alguém escolheria *Java*!? Pois é, para mim restou apenas amargar...
+
+Recentemente, voltei a pesquisar sobre o assunto e, para minha surpresa, encontrei um [[http://comunidade.cogroo.org/grammar][formulário web]] que faz uso do *CogrOO*. Não sei dizer se este formulário sempre esteve lá mas a verdade é que resolvi escrever um /bot/ para fazer uso deste formulário e ajudar-me a revisar meus textos. A solução é uma gambiarra além do mais, não é agradável depender da /web/ para estas tarefas, pois, afinal de contas, estamos no Brasil e aqui internete cara e falha (quando disponível...).
+
+O /bot/ que escrevi está disponível em https://github.com/jimmytty/scripts/raw/master/perl/cogroo_web.pl e é uma versão ainda experimental, mas se alguém tiver interesse em usar, sinta-se a vontade para compartilhar comigo a experiência. Neste texto, por exemplo, o /CogrOO/ não encontrou erros.
+
+#  LocalWords:  Tec PERMALINK correcao CogrOO LibreOffice deabos

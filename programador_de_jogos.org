@@ -1,0 +1,35 @@
+#+BLOG: perspicaz
+#+POSTID: 86
+#+TITLE: Programador de Jogos
+#+DATE: <2016-04-08 Fri 10:44>
+#+DESCRIPTION:
+#+PERMALINK: programador_de_jogos
+#+PARENT:
+#+TAGS: Games,RPGBoss,JavaScript
+
+Mais uma experiência ganha no último projeto. Participei do desenvolvimento do  *Tux4You Genesis*, cuja proposta é ensinar o sistema operacional [[https://pt.wikipedia.org/wiki/Linux][Linux]] por meio de um jogo de /RPG/ que ensina história e comandos. O jogo conquistou seu espaço na mídia e possui razoável material disponível na /web/.
+#+HTML: <!--more Continue lendo...-->
+
+#+CAPTION: Menu inicial
+#+NAME: menu_inicial
+[[./programador_de_jogos/menu_inicial.jpg]]
+
+A principal reclamação é de que o jogo é muito curto, são necessários, mais ou menos, umas 3 horas para concluí-lo. De fato, no mundo do /RPG/, são vários os jogos que necessitam várias horas para serem concluídos. Não lembro de cor qual foi o mais longo que já joguei mas foi normal passar mais de um mês, jogando poucas horas por dia.
+
+#+CAPTION: Tela de apresentação / Boas vindas
+#+NAME: apresentacao
+[[./programador_de_jogos/apresentacao.jpg]]
+
+No projeto do jogo, meu trabalho foi exclusivamente criação de menus e diálogos personalizados. Haviam propostas para incluir vários outros utilitários mas esbarrei nas limitações do [[http://rpgboss.com/][RPGBoss Engine]], que usa as linguagens de programação [[https://pt.wikipedia.org/wiki/Java_(linguagem_de_programa%C3%A7%C3%A3o)][Java]] e [[https://pt.wikipedia.org/wiki/Scala_(linguagem_de_programa%C3%A7%C3%A3o)][Scala]] como base. Modificações no programa original não são triviais então decidimos manter apenas os aspectos mais simples e prontos para não atrasar o lançamento do jogo. Dentro do /RPGBoss/, os jogos são desenvolvidos com a linguagem [[https://pt.wikipedia.org/wiki/JavaScript][JavaScript]], foi esta linguagem que usei para trabalhar.
+
+#+CAPTION: Prompt de comando
+#+NAME: prompt
+[[./programador_de_jogos/prompt.jpg]]
+
+Eu guardei no /GitHub/ um arquivo parcial com boa parte das funções que criei e este arquivo está disponível em https://github.com/jimmytty/scripts/blob/master/rpgboss/tux4.js. Caso queira utilizá-lo em seus projetos, gostaria de ser avisado (apenas por satisfação pessoal :D).
+
+#  LocalWords:  PERMALINK RPGBoss JavaScript cór Scala GitHub apresentacao
+
+# ./programador_de_jogos/menu_inicial.jpg http://perspicazsite.files.wordpress.com/2016/04/menu_inicial2.jpg
+# ./programador_de_jogos/apresentacao.jpg http://perspicazsite.files.wordpress.com/2016/04/apresentacao2.jpg
+# ./programador_de_jogos/prompt.jpg http://perspicazsite.files.wordpress.com/2016/04/prompt2.jpg

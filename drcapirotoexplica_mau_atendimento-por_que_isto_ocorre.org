@@ -1,0 +1,48 @@
+#+BLOG: perspicaz
+#+POSTID: 108
+#+TITLE: [DrCapirotoExplica] Mau atendimento - Por que isto ocorre?
+#+DATE: <2016-04-14 Thu 01:29>
+#+DESCRIPTION:
+#+PERMALINK: drcapirotoexplica_mau_atendimento-por_que_isto_ocorre
+#+PARENT:
+#+TAGS: DrCapiroto,Cotidiano,Comportamento,Administração de Empresas
+
+Olá leitor(a)! Eu trago para conhecimento de todos uma criatura humana(?) muito singular: DrCapiroto. Eu conheci esse cara uns dezoito anos atrás numa época em que eu vivia igual a um cão vira-latas doente e sem dono. DrCapiroto era o cara mais amargo e ácido que já tinha visto na vida. Lembrei-me dele hoje e aproveitei para fazer uma entrevista...
+#+BEGIN_HTML
+<!--more Continue lendo...-->
+#+END_HTML
+
+A ideia da entrevista veio depois de um mau atendimento sofrido por mim na padaria próximo de casa e daí eu pensei: "Poxa, quantas vezes somos mau atendidos no comércio, nos órgãos públicos etc.".
+
+Mas e você leitor(a)? Já parou para pensar porque o fenômeno do "mau atendimento" ocorre? Bem, a maioria diria: 'É porque os "peões" são nó-cego!', bem, o DrCapiroto pensa bem diferente disto. O resultado da entrevista eu transcrevo a seguir:
+
+#+BEGIN_HTML
+  <hr>
+#+END_HTML
+*_Ronaldo_: Saudações DrCapiroto!*
+*@@html:<font color = "red">@@DrCapiroto@@html:</font>@@*: O que você quer? Seria acerto de contas ou algo do tipo?
+*_Ronaldo_: Não, não! Sou o Ronaldo, lembra-se? Quero apenas fazer algumas perguntinhas.*
+*@@html:<font color = "red">@@DrCapiroto@@html:</font>@@*: Ah, tá. Tranquilo então. Diga.
+*_Ronaldo_: Hoje eu passei por uma situação cotidiana muito comum: fui mau atendido numa padaria que fica perto de onde moro e lembrei que ao longo da vida é muito comum sermos mau atendidos, você concorda?*
+*@@html:<font color = "red">@@DrCapiroto@@html:</font>@@*: Claro. Isto é muito comum de fato.
+*_Ronaldo_: Então, eu gostaria de lhe perguntar o motivo. Por que o fenômeno do mau atendimento ocorre?*
+*@@html:<font color = "red">@@DrCapiroto@@html:</font>@@*: A causa é bastante complexa, Ronaldo, mas tentarei resumir. O fenômeno do mau atendimento ocorre apenas sob dois aspectos que hora podem trabalhar juntos hora separados: incompetência administrativa e corrupção. Ambos são capazes de criar uma amarração física-psíquica-social no ambiente com poder suficiente para  expulsar qualquer atitude positiva, em outras palavras, os funcionários precisam de um imenso desejo de trabalhar e de fazer seus trabalhos corretamente para que um bom atendimento ocorra nesses ambientes. Como resultado, mesmo os mais esforçados acabam tomando atitudes negativas nos momentos de cansaço e/ou irritação. Mas de qualquer forma, o bom funcionário será demitido (não raro é perseguido) desses lugares porque suas atitudes positivas jamais estão condizentes com a cultura da empresa/instituição, sobrando apenas os funcionários não tão comprometidos com o trabalho, enfim produzindo o fenômeno supracitado e, se já não havia, favorecendo a corrupção. Existem casos onde a situação é provocada conscientemente para favorecer a corrupção.
+*_Ronaldo_: Eu entendi seu ponto de vista DrCapiroto. Então o fenômeno "mau atendimento" é um problema puramente administrativo?*
+*@@html:<font color = "red">@@DrCapiroto@@html:</font>@@*: Exato, Ronaldo. O fenômeno em discussão é um dos vários sintomas de uma má administração.
+*_Ronaldo_: Ok. Mas você não foi protecionista demais com os funcionários? Não existe a possibilidade de ocorrer casos de mau atendimento sem que empresa/instituição  seja a causadora?*
+*@@html:<font color = "red">@@DrCapiroto@@html:</font>@@*: Sim, existem esses casos também. Mas a sua pergunta deixa outra já embutida: "Como faço para identificar quando é cada caso?", estou certo?
+*_Ronaldo_: Exato! Afiado como sempre Dr.*
+*@@html:<font color = "red">@@DrCapiroto@@html:</font>@@*: Bem, qual é a obrigação da empresa quanto a maus funcionários? Existem alguns mecanismos de repreensão e o último recurso seria a demissão. Correto? Quando temos casos isolados de mau atendimento, apenas um único funcionário ou mesmo raras ocorrências, poderíamos até assumir que não é a política do lugar. Se a empresa é omissa quanto aos problemas e as situações simplesmente "pipocam" aqui e ali, também temos um caso de má administração. Mas há exceções nessas regras também. Nos casos onde é política do lugar, é uma absoluta perda de tempo tentar reclamar com o gerente. Consciente ou não da sua má gestão, ele é culpado e causador daquilo, não sendo possível resolver o problema porque se é parte dele. Então, com politicagem, o gerente irá apenas simular uma reação, que pode até ser agressiva contra o funcionário e o resultado é que sempre a culpa é totalmente do funcionário e este ato apenas deixa claro o comportamento negligente e irresponsável da administração que invariavelmente é responsável pelo que ocorre na empresa/instituição. É fácil cometer esses abusos porque a administração explora a pouca percepção do funcionário quanto a politicagem bem como sua fragilidade no contexto, afinal a preocupação do funcionário é entregar um bom trabalho e manter seu emprego.
+*_Ronaldo_: Então, observar o ambiente no dia-a-dia é suficiente para identificar quando e como é cada caso. Seria isto?*
+*@@html:<font color = "red">@@DrCapiroto@@html:</font>@@*: Sim. A observação é suficiente. Mas, infelizmente, saber observar é para poucos, a maioria das pessoas precisaria treinar essa habilidade.
+*_Ronaldo_: Tudo bem DrCapiroto, podemos deixar as técnicas para aprender a observar corretamente para uma outra oportunidade. Muito grato pela sua atenção.*
+*@@html:<font color = "red">@@DrCapiroto@@html:</font>@@*: O prazer foi meu, Ronaldo.
+*_Ronaldo_: Obrigado e até a próxima!*
+#+BEGIN_HTML
+  <hr>
+#+END_HTML
+
+Pois é, estranhei a brandura dele, será efeito da idade? Mas sem dúvida irei trazê-lo de volta ao meu /blog/! Até a próxima leitor(a)!
+
+#  LocalWords:  DrCapirotoExplica PERMALINK DrCapiroto física-psíquica-social
+#  LocalWords:  Ok drcapirotoexplica atendimento-por

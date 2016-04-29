@@ -1,0 +1,13 @@
+#+BLOG: perspicaz
+#+POSTID: 49
+#+TITLE: [Leitura] "Computação e tecnologia são para mulheres?"
+#+DATE: <2016-04-06 Wed>
+#+DESCRIPTION:
+#+PERMALINK: computacao-e-tecnologia-sao-para-mulheres
+#+PARENT:
+#+TAGS:
+
+O artigo [[http://imasters.com.br/desenvolvimento/computacao-e-tecnologia-sao-para-mulheres/][Computação e tecnologia são para mulheres?]] de Lidiane Monteiro é o texto/pesquisa mais sensato que já li sobre o assunto até aqui. Recomendo a leitura.
+
+#  LocalWords:  PERMALINK proprietarias
+#  LocalWords:  computacao-e-tecnologia-sao-para-mulheres

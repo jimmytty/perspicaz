@@ -1,0 +1,163 @@
+#+POSTID:    20
+#+TITLE:     Currículo
+#+AUTHOR:    Ronaldo Ferreira de Lima
+#+EMAIL:     jimmy.tty@gmail.com
+#+DATE:      <2004-01-01>
+#+DESCRIPTION:
+#+KEYWORDS:  currículo,curriculum
+#+LANGUAGE:  pt-BR
+#+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:dvipng skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+OPTIONS:   author:nil email:nil creator:nil timestamp:nil
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:
+#+LINK_HOME:
+#+XSLT:
+#+LATEX_CLASS: mycurriculum
+#+LATEX_HEADER: \renewcommand{\maketitle}{}
+
+* Ronaldo Ferreira de Lima
+
+Consultor e Analista Desenvolvedor Perl
+
+Superior Completo em Análise e Desenvolvimento de Sistemas
+
+Website: https://perspicazsite.wordpress.com/
+
+GitHub: https://github.com/jimmytty
+
+CPAN: http://search.cpan.org/~jimmy/
+
+* Experiência Profissional
+
++ Tux4You:
+  + Cargo: Consultor e Professor EAD.
+  + Período: 02/2015 - 04-2016.
+  + Descrição de Funções:
+    - Inteligência de Negócios (BI).
+    - Apoio e desenvolvimento de cursos EAD.
+    - Participação no desenvolvimento do jogo Tux4You Genesis.
+
++ CLADE:
+  + Cargo: Analista Desenvolvedor Perl.
+  + Período: 03/2011 - 03/2014.
+  + Descrição de Funções:
+    - Responsável pela infraestrutura de TI.
+    - Responsável pelos Bancos de Dados (SQL e NoSQL).
+    - Análise e automação de requisitos de negócio.
+    - Análise e identificação de fontes de dados.
+    - Análise desenvolvimento, manutenção e monitoramento de webspiders.
+    - Suporte ao desenvolvimento e a manutenção.
+    - Geração de relatórios (SQL).
+    - Gerenciamento da fila de tarefas do desenvolvimento e da manutenção.
+    - Georreferenciamento de endereços.
+
++ Valenti Computing Networks:
+  + Cargo: Analista de Suporte Unix.
+  + Período: 07/2010 - 06/2011.
+  + Descrição de Funções:
+    - Monitoramento de Equipamentos de Rede.
+    - Desenvolvimento de scripts para automação de tarefas.
+
++ MapaBrasil Desenvolvimento e Intermediação Comercial:
+  + Cargo: Programador Júnior.
+  + Período: 02/2009 - 04/2010.
+  + Descrição de Funções:
+    - Análise, captura e armazenamento de informações de sites públicos.
+    - Análise e desenvolvimento de web spiders e web crawlers.
+    - Manipulação de bases de dados em arquivos texto e em SGBDs.
+
++ Cooperativa de TI*:
+  + Cargo: Analista de Suporte Linux.
+  + Período: 03/2007 - 04/2008.
+  + Descrição de Funções:
+    - Instalação e Manutenção de Sistemas anti-spam, e-mail, proxy e firewall.
+    - Programação de extensões para o sistema principal.
+    - Suporte a administradores de rede.
+
++ Santa Marina Saúde:
+  + Cargo: Técnico de TI.
+  + Período: 11/2004 - 03/2007.
+  + Descrição de Funções:
+    - Administrador de redes, servidores e serviços.
+    - Analista de Infraestrutura.
+    - Help Desk.
+
+* Experiência Técnica
+
++ BI (1 year).
++ Data Munging / Data Wrangling (5 years).
++ Data Scraping / Web Scraping / Web Spider (5 years).
++ Data Mining (5 years).
++ Data Cleaning (3 years).
++ ETL (5 years).
+
++ Operating Systems:
+  + Linux: Slackware, Debian*.
+  + Solaris.
+  + FreeBSD.
+
++ Frameworks:
+  - Catalyst (Perl MVC web application framework).
+
++ Programming Languages:
+  + General-Purpose Languages:
+    - Perl (Multi-Paradigm, Cross-Platform, Dynamic).
+  + Domain-Specific Languages:
+    - Regular Expressions (Pattern Matching).
+    - ECMAScript   (Javascript).
+    - Shell Script (bash, ksh, tcsh, zsh).
+    - Bc and Dc    (Arbitrary Precision Calculator Language).
+    - Expect       (TCL-based Scripting Interactive Programs).
+    - AWK  (Pattern Scanning and Processing).
+    - Sed  (Stream Editor for Filtering and Transforming Text).
+    - XSH  (Parse, Transform and Query XML/HTML).
+    - R    (Language for Statistical Data Analysis).
+
++ Query Languages:
+  - SQL      (Structured Query Language).
+  - PL/pgSQL (Procedural Language/PostgreSQL).
+  - PL/Perl  (Procedural Language/Perl).
+  - XPath    (XML Addressing Language).
+
++ Markup Languages:
+  - HTML  (Hypertext Markup Language).
+  - XHTML (eXtensible Hypertext Markup Language).
+  - LaTeX (Document Markup/Preparation System).
+  - POD   (Plain Old Documentation).
+  - ORG   (Org-Mode Markup Language).
+
++ Data Serialization/Interchange Formats:
+  - DSV  (Delimiter-Separated Values) (CSV, TSV, ...).
+  - JSON (JavaScript Object Notation).
+  - XML  (eXtensible Markup Language).
+  - YAML (YAML Ain't Markup Language).
+
++ Data Bases:
+  - PostgreSQL (Object-Relational Database Management System).
+  - MongoDB    (Document-Oriented Storage; NoSQL).
+  - MySQL      (Relational Database Management System).
+
++ Version Control Systems:
+  - Git (Distributed Source Management System).
+  - GitHub.
+  - SVN (Subversion - Software Versioning and Revision Control System).
+
++ Proxies/Firewalls:
+  - Squid    (Proxy Caching Server).
+  - Tor      (The Onion Router).
+  - Iptables (Linux default firewall).
+
++ Project/Time Management:
+  - Org-Mode (Project Planning, Notes Keeper, TODO Maintener).
+  - Remind   (Sophisticated Reminder Service).
+
+Last Revision: {{{modification-time(%Y-%m-%d %H:%M:%S %:z)}}}
+
+#  LocalWords:  pt-BR toc LaTeX dvipng pri not-in-toc INFOJS ltoc noexport XSH
+#  LocalWords:  XSLT General-Purpose Domain-Specific Solaris ECMAScript RegExp
+#  LocalWords:  modification-time GitHub mycurriculum eXtensible JavaScript
+#  LocalWords:  NoSQL renewcommand maketitle webspiders MapaBrasil SGBDs EAD
+#  LocalWords:  Delimiter-Separated Versioning POSTID MVC

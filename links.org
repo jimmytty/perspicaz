@@ -1,0 +1,18 @@
+#+POSTID: 25
+#+TITLE:     Links
+#+DATE:      2014-06-03 Tue
+#+DESCRIPTION:
+#+PERMALINK: links
+#+PARENT:
+
++ /Home Page/ de uma mocinha multiespecial:
+
+  [[http://aiyumi.warpstar.net/pt][http://aiyumi.warpstar.net/pt]]
+
+  Ela toca piano, toca violino, joga videogame, programa computadores, é deficiente visual e você? Qual a sua desculpa?
+
+  Breve descrição:
+
+  "Acessibilidade, áudio, jogos, Linux e outras coisas, do ponto de vista de uma deficiente visual."
+
+#  LocalWords:  PERMALINK multiespecial

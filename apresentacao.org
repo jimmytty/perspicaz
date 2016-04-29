@@ -1,0 +1,26 @@
+#+BLOG: perspicaz
+#+POSTID: 11
+#+TITLE: Apresentação
+#+DATE: <2016-04-04 Mon>
+#+DESCRIPTION:
+#+PERMALINK: apresentacao
+#+PARENT: nil
+#+TAGS:
+
+Saudações leitores!
+
+Meu nome é Ronaldo, na /web/ sou conhecido como jimmy e na casa da minha mãe, bem... o que acham de esquecermos essa estória de apelidos?
+#+BEGIN_HTML
+<!--more-->
+#+END_HTML
+Acabei chegando aqui no [[http://wordpress.com][WordPress]] depois de desistir completamente do [[http://blogger.com][/Blogger/]], eu já estava muito infeliz com ele porque não atendia minhas necessidades, aproveito o gancho para falar sobre parte da minha profissão: sou analista (não apenas) de sistemas, o que implica dizer que sigo o raciocínio investigativo para resolver problemas (bem, é certo dizer que uso psicologia também ao lidar com humanos). Pois bem, voltando ao /Blogger/, este muito mudou ao longo dos anos e cada mudança, uma nova adaptação minha... acabei desistindo dele, vejam só vocês, ele quer me impor a forma de trabalhar! Aqui no /WordPress/ as coisas parecem mais maleáveis e até consigo trabalhar confortavelmente com minhas ferramentas padrão, logo, por hora pretendo amarrar meu jegue por aqui.
+
+Sem esquecer, o meu antigo /blog/ é o [[http://tecnoveneno.blogspot.com]] e possui uma abordagem bem técnica.
+
+Bom, antes que a dúvida surja: sim, eu farei /posts/ bem técnicos aqui também pois sou "casca grossa" na minha área de atuação. Entretanto, também farei postagens abordando temas como engenharia social, problemas cotidianos, comportamento, experiências, /games/ (sim eu jogo algumas coisas mas nada "da moda"), simbologia, entre outras coisas.
+
+Estou criando este /blog/ para ser livre, inclusive de propagandas. Propagandas são coisas que irritam-me e sempre as evito quando possível. Não excluo totalmente a possibilidade de criar /blogs/ comerciais abarrotados de propaganda mas já deixaria isto claro no início para não criar falsas espectativas nos leitores. Mas infelizmente nem tudo são flores e eventualmente o próprio /WordPress/ insira aqui algumas propagandas sem prévio aviso pois estou usando a versão gratuita deles.
+
+Bem, com esta realmente singela apresentação, inicio este /blog/ agradecendo a sua visita e pedindo para participar comigo sempre que possível. Boa leitura!
+
+#  LocalWords:  PERMALINK wordpress WordPress Blogger

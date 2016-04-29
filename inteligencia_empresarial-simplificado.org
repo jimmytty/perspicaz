@@ -1,0 +1,31 @@
+#+BLOG: perspicaz
+#+POSTID: 97
+#+TITLE: Inteligência Empresarial - Simplificado
+#+DATE: <2016-04-10 Sun 13:57>
+#+DESCRIPTION:
+#+PERMALINK: inteligencia_empresarial-simplificado
+#+PARENT:
+#+TAGS: Business Intelligence
+
+Recebi reclamações de amigos sobre a complexidade do meu outro /post/ sobre [[./bi_pequenos_negocios/][Inteligência Empresarial]]. Então eu resolvi fazer uma simplificação e o mais simples que pude chegar transcrevo a seguir:
+#+BEGIN_HTML
+<!--more Continue lendo...-->
+#+END_HTML
+
+#+BEGIN_QUOTE
+  1. Dani e Lidinha tem uma loja virtual.
+
+  2. Dani e Lidinha estão tristes porque suas vendas estão baixas e elas não sabem o que fazer para melhorá-las.
+
+  3. Dani e Lidinha ficam preocupadas porque, apesar da experiência no mercado, nenhum plano anterior está surtindo efeito desta vez.
+
+  4. Dani e Lidinha resolvem contratar o especialista em Inteligência Empresarial Ronaldo para alavancar as vendas.
+
+  5. Ronaldo explica que ter conhecimento sobre os clientes da loja e sobre os possíveis clientes é muito importante para direcionar as campanhas de marketing e mostrar novos horizontes.
+
+  6. Ronaldo aplica BI na empresa. Dani e Lidinha voltam a ganhar dinheiro e todos ficam felizes!
+#+END_QUOTE
+
+O uso título "especialista" foi apenas para embelezar o texto. Não sou especialista no assunto, apenas peguei a literatura existente e procurei a forma mais sensata de emprega-lá numa determinada situação de uma determinada empresa.
+
+#  LocalWords:  PERMALINK negocios

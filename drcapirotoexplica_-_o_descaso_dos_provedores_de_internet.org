@@ -1,0 +1,56 @@
+#+BLOG: perspicaz
+#+POSTID: 127
+#+DATE: [2016-04-20 Wed 19:26]
+#+TITLE: [DrCapirotoExplica] O descaso dos provedores de internet
+#+DESCRIPTION:
+#+PERMALINK: drcapirotoexplica_-_o_descaso_dos_provedores_de_internet
+#+PARENT:
+#+TAGS: DrCapiroto
+
+Saudações leitores(as)!
+
+Resolvi entrevistar o DrCapiroto desta vez para falar sobre um assunto bastante recorrente e também muito desagradável, falo sobre a nossa situação de conexão à rede mundial de computadores, ou apenas "/net/" ou "rede" para os "íntimos".
+
+Nem preciso perguntar quantos de vocês já tiveram problemas tanto para conseguir acesso quanto ao aspecto de lentidão, sem falar no preço cobrado, na dificuldade em se conseguir suporte e o odioso processo para se livrar de um contrato! Temos uma total falta de comprometimento das empresas provedoras para com os clientes e para com as leis. Mas qual seria a causa disto? Alguns jogam a culpa na incompetência das autoridades, outros dizem que a /ANATEL/ trabalha para os provedores, existem até os que afirmam que a situação é obra de Satanás... Ôpa, melhor chamar quem entende do assunto para esclarecer essa situação. A transcrição seguinte é o resultado da minha conversa (quase) cordial com o DrCapiroto.
+#+BEGIN_HTML
+<!--more Continue lendo...-->
+#+END_HTML
+
+#+BEGIN_HTML
+  <hr>
+#+END_HTML
+*_Ronaldo_: Saudações DrCapiroto! Como vão as coisas?*
+*@@html:<font color = "red">@@DrCapiroto@@html:</font>@@*: Estavam bem até agora. Qual é a razão desta invocação?
+*_Ronaldo_: Desta vez, trago o senhor aqui para conversarmos sobre o descaso dos provedores de /internet/, e a primeira pergunta que gostaria de fazer é sobre o que o senhor acha da nossa situação de /internet/?*
+*@@html:<font color = "red">@@DrCapiroto@@html:</font>@@*: Amaldiçoada. Também não há solução a curto e médio prazos. Com pouquíssimas chances de resolução a longo prazo, até porque, a precária infraestrutura da rede entrará em colapso.
+*_Ronaldo_: Esta resposta parece bastante com o senhor, ácida e sem esperanças.*
+*@@html:<font color = "red">@@DrCapiroto@@html:</font>@@*: Enxergar esperança onde ela não existe é trabalho para os fracos e desiludidos.
+*_Ronaldo_: Caramba! Desta vez o senhor está mais ácido do que da outra vez, aconteceu alguma coisa DrCapiroto?*
+*@@html:<font color = "red">@@DrCapiroto@@html:</font>@@*: Primeiro, se tivesse ocorrido algo que fosse da sua competência, eu já o teria informado. Segundo, limite-se à realidade de que eu não tenho obrigação de agir conforme suas expectativas.
+*_Ronaldo_: É... bem... Então, voltando ao nosso assunto central, o senhor acha que permaneceremos reféns dos provedores?*
+*@@html:<font color = "red">@@DrCapiroto@@html:</font>@@*: Sem dúvidas. Todos irão amargar esta realidade indefinidamente.
+*_Ronaldo_: Mas enfim, como foi que chegamos a esta situação?*
+*@@html:<font color = "red">@@DrCapiroto@@html:</font>@@*: O problema é complexo e envolve pelo menos três partes: empresas, autoridades, fregueses...
+*_Ronaldo_: Um minuto por favor, DrCapiroto. O senhor não quis dizer clientes ao invés de fregueses?
+*@@html:<font color = "red">@@DrCapiroto@@html:</font>@@*: Não, eu não quis. O termo cliente está desgraçadamente incorreto no contexto. O modelo de cliente existe quando uma empresa vende um produto ou serviço e presta suporte e isto nada tem haver com o funesto suporte oferecido pelos provedores, sem falar que este suporte é terceirizado, isto denota que a empresa que vendeu o produto/serviço não se importa o suficiente com os clientes. Essa terceirização é uma jogada imoral para impedir que os usuários descontentes consigam livrar-se dos contratos, não existe nada por acaso no processo, é safadeza pura e cristalina mesmo. Ou seja, depois que uma pessoa adquire o produto/serviço, a empresa delega indiscriminadamente todos os outros processos a terceiros, sendo assim, não existe a figura do cliente, apenas existe a figura do freguês, a criatura lesada nos processos. As pessoas visualizam-se como cliente porque acreditam que as empresas ou as autoridades estão preocupadas com isto, criaturas humanas comuns precisam de algo em que acreditar e o resultado é o papel eterno de vítima, o qual é confortável para a maioria.
+*_Ronaldo_: Ok. Entendo seu ponto de vista DrCapiroto. Poderia continuar do ponto onde eu o interrompi?*
+*@@html:<font color = "red">@@DrCapiroto@@html:</font>@@*: Claro. Continuando. A parte problemática chamada empresa é responsável pelo atendimento da demanda, mais precisamente, ela também cria e manipula demandas. Uma empresa em essência, é uma criatura capitalista, desprovida de moral ou ética, sua exclusiva preocupação é com relação ao dinheiro pois é dele que este tipo de criatura se alimenta, afinal, foi criada com esta única finalidade. Já a função dos gestores é analisar o mercado para saber se as atitudes tomadas estão gerando ou não lucros e por quanto tempo esses lucros serão gerados. Em outras palavras, não respeita-se lei alguma se esta não provocar impedimentos de funcionamento e/ou reduzir as receitas, apenas ignora-se a legislação e coloca-se advogados para os trâmites legais, enquanto isto, se as ações tomadas também não reduzem as vendas é total idiotice interrompê-las simplesmente para agradar a um ou outro. É justamente o que ocorre hoje, nenhum dos descasos dessas empresas fez reduzir as vendas, pelo contrário, o mercado está em plena expansão e transformar cliente em freguês foi uma jogada de mestre, bem como a formação de cartéis e a exploração da precária infraestrutura da rede. No momento que as empresas do setor viram o alinhamento entre a situação precária da infraestrutura da rede, clientes que não parariam de usar os produtos serviços independente dos descasos cometidos e autoridades omissas e pouco competentes, bastava apenas colocar o plano para funcionar. O resultado todos nós podemos ver, independente das idiotices veiculadas na mídia. A presença do dinheiro acaba justificando todas as ações, frente à justiça, frente às autoridades e frente aos fregueses.
+*_Ronaldo_: Acho que entendi DrCapiroto. A situação atual é consequência de uma massiva exploração de uma conjuntura. Correto?*
+*@@html:<font color = "red">@@DrCapiroto@@html:</font>@@*: Sim. É exatamente isto.
+*_Ronaldo_: O senhor já demonstrou não ter esperança quanto a uma solução. Mas existiria uma forma ainda que absurda de resolver ou ao menos amenizar esta situação?*
+*@@html:<font color = "red">@@DrCapiroto@@html:</font>@@*: Eu já havia deixado isto implícito mas, esta situação será interrompida se e somente se os lucros caírem vertiginosamente. Se isto viesse do lado da freguesia seria a demonstração que o mercado está insatisfeito com as empresas e elas tomariam atitudes. Mas isto não acontecerá porque as criaturas humanas, independente de raça, cor, religião, classe social etc, estão ocupadas demais acreditando em tudo o que os três poderes dizem ao mesmo tempo que buscam argumentos para justificar a própria arrogância, pensamentos e comportamentos; desta forma, não sobra tempo para engajarem-se noutras questões.
+*_Ronaldo_: Ops, um momento, o senhor fala de revolução, manifestações ou algo do tipo?*
+*@@html:<font color = "red">@@DrCapiroto@@html:</font>@@*: Não. Estas coisas são apenas mais do mesmo. Apenas reações, muitas vezes do lado animal do ser e facilmente manipuláveis. Eu falo de _expansão da consciência_.
+*_Ronaldo_: Parece interessante, DrCapiroto. Mas deixaremos este assunto de "expansão da consciência" para uma outra entrevista. Gostaria de agradecê-lo pela sua atenção.*
+*@@html:<font color = "red">@@DrCapiroto@@html:</font>@@*: Uma vez que fui invocado por você para isto, não sobram-me muitas opções a não ser responder suas perguntas, ou sobram? Ainda tenho que lidar com sua censura, uma vez que antes das perguntas você solicita que eu seja brando pois seus leitores são pessoas comuns e portanto, frágeis. Certas verdades não são para todos, mas eu tenho uma postura diferente da sua quanto a isto.
+*_Ronaldo_: Putz! Não precisava me dedurar! De qualquer forma, estou grato pela sua ajuda em esclarecer um assunto tão complexo.*
+*@@html:<font color = "red">@@DrCapiroto@@html:</font>@@*: Então, até a próxima invocação. Por hora é adeus.
+
+#+BEGIN_HTML
+  <hr>
+#+END_HTML
+
+Desta vez o DrCapiroto estava mais ácido, mas felizmente longe do que ele costumava ser, acho que ele evoluiu e já não precisa mais daquela carapaça toda, mas eu não vou falar isto a ele :P. Acabou me dedurando, mas acho que isto é perdoável, uma vez que suas opiniões são únicas! Até o próximo *[DrCapirotoExplica]*!
+
+#  LocalWords:  DrCapirotoExplica PERMALINK DrCapiroto Ôpa Ok POSTID
+#  LocalWords:  drcapirotoexplica
