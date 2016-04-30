@@ -1,0 +1,41 @@
+#+BLOG: perspicaz
+#+POSTID: 143
+#+DATE: <2016-04-29 Fri 21:00>
+#+TITLE: PerspicazSite agora no GitHub
+#+DESCRIPTION:
+#+PERMALINK: perspicazsite_agora_no_github
+#+PARENT:
+#+TAGS: Técnico
+
+Finalmente criei um repositório para acomodar o código fonte dos /posts/ deste /blog/ no [[https://github.com/][/GitHub/]].
+#+HTML: <!--more Continue lendo...-->
+O repositório pode ser acessado em https://github.com/jimmytty/perspicaz e, como mencionei no *README*, alguns /posts/ estão faltando porque usei o editor do /WordPress/ para coisas bem simples e sem necessidade de manutenção, mas... fui pensar em quando eu precisar recategorizar os /posts/ e... Putz! Péssima ideia! A interface /web/ do /WordPress/ é pouco maleável e eu sei que vou passar raiva se tentar ficar usando aquilo para operações em *~batch~*!
+
+Como já mencionei noutros /posts/, uso o [[https://github.com/punchagan/org2blog][/Org2Blog/]] para realizar os /posts/, uma vez que uso o [[http://orgmode.org/][/Org Mode/]] para escrever meus documentos, desde currículos até manuais longos. Nada mais prático que já postar direto do [[http://www.gnu.org/software/emacs][/Emacs/]] e basta uma configuração mínima para isto:
+
+#+BEGIN_SRC elisp
+  (setq org2blog/wp-blog-alist
+        '(
+          ("perspicaz"
+           :url "https://perspicazsite.wordpress.com/xmlrpc.php"
+           :username "perspicazsite"
+           :default-title nil
+           :default-categories nil
+           :tags-as-categories t)))
+  (setq org2blog/wp-buffer-template
+  "#+DATE: %s
+  ,#+TITLE: %s
+  ,#+DESCRIPTION:
+  ,#+PERMALINK:
+  ,#+PARENT:
+  ,#+TAGS:\n")
+  (setq org2blog/wp-show-post-in-browser nil)
+#+END_SRC
+
+Esta configuração também está presente no *README* do repositório.
+
+No momento, estou pensando em criar *~hooks~* para que no *~commit~* com [[https://magit.vc/][/Magit/]] o /post/ já seja efetuado no /WordPress/, ou se faço o fluxo inverso. Vai depender de outras automações ainda em planejamento e do que espero para o futuro deste /blog/.
+
+
+#  LocalWords:  PerspicazSite GitHub PERMALINK perspicazsite github README
+#  LocalWords:  WordPress Magit
