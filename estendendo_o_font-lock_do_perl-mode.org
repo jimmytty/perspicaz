@@ -1,0 +1,92 @@
+#+BLOG: perspicaz
+#+POSTID: 145
+#+DATE: [2016-04-30 Sat 18:50]
+#+TITLE: Estendendo o font-lock do perl-mode
+#+DESCRIPTION:
+#+PERMALINK:
+#+PARENT: estendendo_o_font-lock_do_perl-mode
+#+TAGS:
+
+Já faz uns anos que eu vinha descontente com o /syntax highlighting/ padrão do /perl-mode/, sobretudo, porque ele não destaca os /builtins/ do /Perl/. Pesquisei na /web/ por métodos prontos para resolver o problema uma vez que combinar cores não é minha área. Infelizmente, minhas buscas sempre deram em nada.
+#+HTML: <!--more Continue lendo...-->
+Cheguei a testar o *~cperl-mode~* e o achei horrível, tão horrível quanto o /syntax highlighting/ padrão do /Vim/ para a linguagem /Perl/. O /Vim/ é ferramenta indispensável na minha "/ToolBox/" mas deixo para o /Emacs/ o trabalho pesado.
+
+Hoje, encontrei nos meus /feeds/ um artigo fornecendo dicas sobre como criar um /major mode/ (a propósito *~perl-mode~* e *~cperl-mode~*  são /major modes/, mas podem ser tratados como /modules/ dependendo do contexto) e cheguei a pensar em criar um novo /major mode/ baseado no *~perl-mode~*, mas só o faria se me convencesse que valeria a pena o esforço.
+
+Resolvi pegar o manual para procurar os tópicos relacionados e eis que minha dúvida de anos estava lá respondida e pronta! O trecho relevante no manual ensinando a estender o /font-lock/ pode ser acessador de dentro do /Emacs/ com:
+
+: ,----
+: | M-x info RET
+: | g RET
+: | (emacs)Font Lock
+: `----
+
+e pela linha de comando com:
+
+#+BEGIN_SRC sh
+  info emacs 'Font Lock'
+#+END_SRC
+
+A partir do exemplo disponibilizado pelo manual:
+
+#+BEGIN_SRC elisp
+  (add-hook 'c-mode-hook
+            (lambda ()
+             (font-lock-add-keywords nil
+              '(("\\<\\(FIXME\\):" 1
+                 font-lock-warning-face t)))))
+#+END_SRC
+
+ficou fácil criar uma extensão personalizada para o *~perl-mode~*, eu só precisava  gerar uma lista com os /builtins/ do /Perl/. Algo trivial quando se tem /CPAN/! Veja:
+
+#+BEGIN_SRC perl
+  use B::Keywords qw[@Functions];
+  say join ' ', map { 0 == index( $_, '-' ) ? () : qq("$_") } @Functions;
+#+END_SRC
+
+Este _não-manutenível_ pedaço de código imprime as palavras-chave já no formato que pretendo usar, uma vez que, diferente do exemplo que usa /regexp/ escritas manualmente, eu vou utilizar o comando *~regexp-opt~*, eis a minha solução:
+
+#+BEGIN_SRC elisp
+  (add-hook
+   'perl-mode-hook
+   (lambda ()
+     (font-lock-add-keywords nil
+    `((,(regexp-opt
+         '("__SUB__" "AUTOLOAD" "BEGIN" "DESTROY" "END" "INIT" "CHECK" "UNITCHECK" "abs" "accept" "alarm" "atan2" "bind" "binmode" "bless" "break" "caller" "chdir" "chmod" "chomp" "chop" "chown" "chr" "chroot" "close" "closedir" "connect" "cos" "crypt" "dbmclose" "dbmopen" "defined" "delete" "die" "dump" "each" "endgrent" "endhostent" "endnetent" "endprotoent" "endpwent" "endservent" "eof" "eval" "evalbytes" "exec" "exists" "exit" "exp" "fc" "fcntl" "fileno" "flock" "fork" "format" "formline" "getc" "getgrent" "getgrgid" "getgrnam" "gethostbyaddr" "gethostbyname" "gethostent" "getlogin" "getnetbyaddr" "getnetbyname" "getnetent" "getpeername" "getpgrp" "getppid" "getpriority" "getprotobyname" "getprotobynumber" "getprotoent" "getpwent" "getpwnam" "getpwuid" "getservbyname" "getservbyport" "getservent" "getsockname" "getsockopt" "glob" "gmtime" "goto" "grep" "hex" "index" "int" "import" "ioctl" "join" "keys" "kill" "last" "lc" "lcfirst" "length" "link" "listen" "localtime" "log" "lstat" "map" "mkdir" "msgctl" "msgget" "msgrcv" "msgsnd" "next" "not" "oct" "open" "opendir" "ord" "our" "pack" "pipe" "pop" "pos" "print" "printf" "prototype" "push" "quotemeta" "rand" "read" "readdir" "readline" "readlink" "readpipe" "recv" "redo" "ref" "rename" "require" "reset" "return" "reverse" "rewinddir" "rindex" "rmdir" "say" "scalar" "seek" "seekdir" "select" "semctl" "semget" "semop" "send" "setgrent" "sethostent" "setnetent" "setpgrp" "setpriority" "setprotoent" "setpwent" "setservent" "setsockopt" "shift" "shmctl" "shmget" "shmread" "shmwrite" "shutdown" "sin" "sleep" "socket" "socketpair" "sort" "splice" "split" "sprintf" "sqrt" "srand" "stat" "state" "study" "substr" "symlink" "syscall" "sysopen" "sysread" "sysseek" "system" "syswrite" "tell" "telldir" "tie" "tied" "time" "times" "truncate" "uc" "ucfirst" "umask" "undef" "unlink" "unimport" "unpack" "unshift" "untie" "use" "utime" "values" "vec" "wait" "waitpid" "wantarray" "warn" "write")
+         'symbols)
+       . font-lock-keyword-face)
+      ))))
+#+END_SRC
+
+Você até pode colocar a minha solução diretamente no seu ~\tilde{}/.emacs~, mas eu sugiro testar antes para ter certeza que irá funcionar adequadamente no seu caso. Para tanto, não há necessidade de fechar a sua instância atual do /Emacs/, copie minha solução num arquivo a parte e execute o /Emacs/ com a opção ~-Q~ para que ele não carregue nenhum arquivo de configuração. Exemplo:
+
+#+BEGIN_SRC sh
+  emacs -Q perl.pl elisp.el
+#+END_SRC
+
+No caso, "~perl.pl~" é um arquivo exemplo com código /Perl/ e "~elisp.el~" é onde eu copiei o código para modificar o /font-lock/.
+
+No /buffer/ "~elisp.el~", faça:
+
+: ,----
+: | M-x eval-buffer
+: `----
+
+E no /buffer/ "~perl.pl~":
+
+: ,----
+: | M-x perl-mode
+: `----
+
+para recarregar o /major mode/.
+
+Funcionando corretamente, edite o seu ~\tilde{}/.emacs~ inserindo o conteúdo do arquivo "~elisp.el~". Para tentar manter a organização, eu costumo preceder a configuração com o /header/ do arquivo "~.el~" do /major mode/ em questão, que neste caso é:
+
+#+BEGIN_SRC elisp
+  ;;; perl-mode.el --- Perl code editing commands for GNU Emacs
+#+END_SRC
+
+Facilita tanto para agrupar as customizações quanto na depuração de erros. Todavia, eu só não uso o *~customize~* quando a configuração não é possível através dele ou quando estou testando um módulo e, caso decida livrar-me dele, mando embora todas as customizações sem poluir o ~\tilde{}/emacs~.
+
+#  LocalWords:  font-lock perl-mode PERMALINK cperl-mode ToolBox M-x RET elisp
+#  LocalWords:  não-manutenível regexp-opt eval-buffer
