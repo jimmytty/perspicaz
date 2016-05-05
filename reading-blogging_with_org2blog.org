@@ -1,0 +1,16 @@
+#+BLOG: perspicaz
+#+POSTID: 147
+#+DATE: [2016-05-03 Tue 19:00]
+#+TITLE: [Reading] "Blogging with org2blog"
+#+DESCRIPTION:
+#+PERMALINK: reading-blogging_with_org2blog
+#+PARENT:
+#+TAGS:
+
+This recently article is about another perl-guy (yes, not me!) using /Org2Blog/ to blog /WordPress/.
+
+#+BEGIN_HTML
+  <a target="_blank"
+     href="https://perlancar.wordpress.com/2016/05/03/blogging-with-org2blog/"
+  >https://perlancar.wordpress.com/2016/05/03/blogging-with-org2blog/</a>
+#+END_HTML
