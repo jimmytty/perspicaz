@@ -1,0 +1,11 @@
+#+POSTID: 1
+#+DATE: <2016-05-04 Wed 18:51>
+#+TITLE: Sobre
+#+DESCRIPTION:
+#+PERMALINK: about
+#+PARENT:
+#+TAGS:
+
+Espaço reservado para compartilhar experiências e opiniões de um veterano profissional /Free Software/ / /Open Source/.
+
+
