@@ -1,0 +1,46 @@
+#+BLOG: perspicaz
+#+POSTID: 166
+#+DATE: [2016-05-13 Fri 14:34]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:t
+#+PARENT:
+#+CATEGORY: Games
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Ainda jogo Samurai Shodown 2...
+#+PERMALINK: ainda_jogo_samurai_shodown_2...
+
+#+LANGUAGE: pt_BR
+
+Pois é, já faz uns 20 anos desde que comecei a jogar /Samurai Shodown 2^{[[http://www.neogeofun.com/samsho2-2][1]]}^{[[https://en.wikipedia.org/wiki/Samurai_Shodown_II][2]]}/. Creio que já tenha esquecido da maior parte dos aspectos desta história, mas vou relatar os que consigo me lembrar.
+#+HTML: <!--more Continue lendo...-->
+
+#+CAPTION: Máquina Arcade rodando Samurai Shodown 2
+#+NAME: arcade_-_samsho2
+[[./ainda_jogo_samurai_shodown_2.../arcade_-_samsho2.jpg]]
+
+Quando conheci o /Samurai Shodown 2/ por volta de 1995, videogame era uma das únicas opções de entretenimento disponível, a preços populares, aos "filhos" da periferia, no caso, de São Bernardo do Campo, onde cresci. Um detalhe interessante é que os "videogames" disponíveis, os /Arcades/, eram chamados de "fliperama" e ficavam nos bares. A provável razão para serem chamados de "fliperama" era que os reais fliperamas também ficavam em bares (mas não nos da periferia). Mas porque num bar? Bem, eu só consigo pensar em uma opção: o bar é dos lugares mais movimentados nas periferias, por vezes é o único local onde se encontra algum entretenimento (por pior que seja), e "videogames" eram diversão tanto para crianças quanto para adolescentes e jovens adultos, logo, fidelizava-se a cliente desde bem cedo, ou seja, do jogo para a bebida num mesmo lugar. O ambiente era "pesado" e não raro, crianças e/ou adolescentes (é bom falar em terceira pessoa aqui, não acham?) eram agredidos por razões diversas relacionadas aos jogos... O atual e famigerado /bullying/ era nada além de um fato corriqueira-cotidiano e sequer merecia um nome específico. A ficha era barata, mas dinheiro era algo ao qual não tinha acesso naquela época e ficava mais olhando do que de fato jogando...
+
+Jogar em /Arcades/ dependia da compra de fichas específicas para permitir partidas que eram ou por número de "vidas" ou por tempo. Ouvia-se na época a expressão "bater um ficha no flipe", uma alusão direta ao jogo no /Arcades/. Um bom jogador demorava em torno de uma hora para concluir uma partida até o final do /game/ e isto era chamado de "salvar a ficha" ou apenas "salvar". A adrenalina era forte nesta época simplesmente por causa do medo de perder uma ficha numa máquina não muito amistosa, com jogadores não muito amistosos, algo bem distinto do que depois vieram a se tornar as locadoras de videocassete e o aluguel de consoles de videogame.
+
+Muito embora eu tenha testado vários outros jogos de luta como as demais versões da série /Samurai Shodown/ e os que faziam sucesso na época, como /The King of Fighters/, /Street Fighter/, /Mortal Kombat/ etc, o jogo /Samurai Shodown 2/ foi o único jogo de luta que gostei (por curiosidade, meus jogos favoritos são os de [[https://pt.wikipedia.org/wiki/Role-playing_game][/RPG/]]). Uma das razões para ter gostado apenas deste jogo foi porque encontrei nele o mais equilibrado sistema de ataque/defesa, ou seja, reflexo não é suficiente para ganhar, é preciso muita estratégia, e isto é ótimo porque meus reflexos não são tão bons assim. O personagem que escolhi foi o _Genjuro Kibagami_, um [[https://pt.wikipedia.org/wiki/Ronin][ronin]] mercenário, orgulhoso e arrogante, com os melhores "/criticals/" do jogo que, em  outras palavras significa que poucas pancadas matam um inimigo. _Genjuro Kibagami_ é o arqui-inimigo do _Haohmaru_, foram treinados pelo mesmo mestre e a principal diferença entre eles é a técnica mais refinada de _Haohmaru_ contra a força bruta de _Genjuro_. Detalhe interessante é que não sei jogar com nenhum outro lutador do jogo além do _Genjuro_.
+
+#+CAPTION: Genjuro Kibagami - Samurai Shodown 2
+#+NAME: genjuro
+[[./ainda_jogo_samurai_shodown_2.../genjuro.jpg]]
+
+Anos se passaram, fiquei longe do "fliperama" e poucos anos depois de conhecer meu primeiro computador (mais ou menos em 2003), já estava emulando jogos de /Arcade/ no /PC/! Não consigo mais lembrar o que usava na época mas acabei parando de testar coisas ao conhecer o [[http://mamedev.org/][MAME]], cuja emulação era muito boa e permitia gravar as sessões jogadas.
+
+A uns dois anos mais ou menos, acabei gravando um "/longplay/" com o *Genjuro*, no nível 8 (o padrão é 4) e fiz final com ele. A Gravação foi difícil porque consome muitos recursos do computador e ocorrem muitos [[https://pt.wikipedia.org/wiki/Lag][/lags/]] e prejudicam a minha performance, eu já tinha até repertório de golpes e técnicas para tentar fazer mas não deu... e muitas vezes durante a luta precisa testar se os controles ainda funcionavam... O arquivo final ficou incrivelmente grande, 27 minutos de jogo, em formato =AVI= ocuparam 20GB! Converti com o ~ffmpeg~ para =MP4= antes de tentar fazer /upload/ para o /YouTube/ e o arquivo ficou com 219M. Infelizmente, o vídeo não ficou com boa qualidade independente de =AVI= ou =MP4=.
+
+A propósito, este é o meu /longplay/ no /YouTube/:
+
+https://www.youtube.com/watch?v=A3d4CbDEHHo
+
+Pretendo fazer novas gravações mas primeiro preciso descobrir melhores meios para isto respeitando as restrições orçamentárias do momento...
+
+#  LocalWords:  toc pri Shodown PERMALINK shodown samsho corriqueira-cotidiano
+#  LocalWords:  Kombat Genjuro Kibagami ronin criticals Haohmaru genjuro AVI
+#  LocalWords:  Longplay ffmpeg YouTube longplay
+
+# ./ainda_jogo_samurai_shodown_2.../arcade_-_samsho2.jpg http://perspicazsite.files.wordpress.com/2016/05/arcade_-_samsho2.jpg
+# ./ainda_jogo_samurai_shodown_2.../genjuro.jpg http://perspicazsite.files.wordpress.com/2016/05/genjuro.jpg
