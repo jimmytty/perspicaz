@@ -1,0 +1,46 @@
+#+BLOG: perspicaz
+#+POSTID: 156
+#+DATE: [2016-05-10 Tue 12:12]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY:
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Evitando redigitação de senha colocando o comando su em background
+#+PERMALINK: evitando_redigitacao_de_senha_colocando_o_comando_su_em_background
+
+Já acessou um servidor ~ssh~ com número limitado de /logins/ e ficou o dia inteiro fazendo /login/ e /logout/ de contas como a do =root= por exemplo porque precisava retornar ao usuário comum para outros procedimentos? Pois seus problemas acabaram...
+#+HTML: <!--more Continue lendo...-->
+
+Basta colocar o ~su~ em /background/ com o comando:
+
+#+BEGIN_SRC sh
+  pkill -STOP -u $USER -t $(tty|sed 's|^/dev/||') -f -- -su
+#+END_SRC
+
+O comando ~pkill~ enviará um sinal =STOP= ao comando ~-su~ mas apenas do usuário corrente (~-u $USER~) e terminal corrente (~-t $(tty|sed 's|^/dev/||')~). Sem limitar o terminal corrente, o ~pkill~ suspenderá todos as sessões, isto quer dizer que se mais alguém estiver trabalhando com aquele usuário, naquele momento, terá sua sessão suspendida também...
+
+Quando necessitar retornar à sessão, apenas faça:
+
+#+BEGIN_SRC sh
+  bg
+#+END_SRC
+
+É a solução que uso a anos inclusive com múltiplos usuários. A única diferença é que, com múltiplos usuários, preciso consultar a tabelas de /jobs/ do /shell/ para saber qual número da sessão que devo passar como argumento para o comando ~bg~, exemplo:
+
+#+BEGIN_SRC sh
+  jobs
+#+END_SRC
+: [1]  - suspended (signal)  su -
+: [2]  + suspended (signal)  su - tester
+
+Neste exemplo tenho dois usuário, o =root= no /job/ 1 e o =tester= no /job/ 2, caso queira voltar a sessão do =tester=, devo fazer:
+
+#+BEGIN_SRC sh
+  bg 2
+#+END_SRC
+
+E para suspendê-lo novamente, é suficiente reexecutar o ~pkill~ que estará no histórico de comandos pronto para reuso.
+
+#  LocalWords:  toc pri Uncategorized su PERMALINK redigitacao pkill bg tty
+#  LocalWords:  dev
