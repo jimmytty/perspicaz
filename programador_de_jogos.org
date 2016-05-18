@@ -5,7 +5,8 @@
 #+DESCRIPTION:
 #+PERMALINK: programador_de_jogos
 #+PARENT:
-#+TAGS: Games,RPGBoss,JavaScript
+#+TAGS:
+#+CATEGORY: Games
 
 Mais uma experiência ganha no último projeto. Participei do desenvolvimento do  *Tux4You Genesis*, cuja proposta é ensinar o sistema operacional [[https://pt.wikipedia.org/wiki/Linux][Linux]] por meio de um jogo de /RPG/ que ensina história e comandos. O jogo conquistou seu espaço na mídia e possui razoável material disponível na /web/.
 #+HTML: <!--more Continue lendo...-->

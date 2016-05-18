@@ -5,7 +5,8 @@
 #+DESCRIPTION:
 #+PERMALINK: reading-blogging_with_org2blog
 #+PARENT:
-#+TAGS:
+#+TAGS: Technical
+#+CATEGORY: Technical
 
 This recently article is about another perl-guy (yes, not me!) using /Org2Blog/ to blog /WordPress/.
 

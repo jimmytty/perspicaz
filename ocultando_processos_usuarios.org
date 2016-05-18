@@ -5,7 +5,8 @@
 #+DESCRIPTION:
 #+PERMALINK: ocultando_processos_usuarios
 #+PARENT:
-#+TAGS: Linux,SysAdmin
+#+TAGS: Technical
+#+CATEGORY: Technical
 
 Uns 10 anos atrás quando trabalhava com administração de usuários, a única forma que conhecia para ocultar os processos dos outros usuários era através da aplicação de um /patch/ no /kernel/. Sem dúvidas que isto não era algo trivial.
 #+HTML: <!--more Continue lendo...-->

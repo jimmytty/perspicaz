@@ -5,7 +5,8 @@
 #+DESCRIPTION:
 #+PERMALINK: perspicazsite_agora_no_github
 #+PARENT:
-#+TAGS: Técnico
+#+TAGS: Technical
+#+CATEGORY: Technical
 
 Finalmente criei um repositório para acomodar o código fonte dos /posts/ deste /blog/ no [[https://github.com/][/GitHub/]].
 #+HTML: <!--more Continue lendo...-->

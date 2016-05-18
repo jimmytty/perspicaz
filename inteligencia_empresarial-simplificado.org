@@ -5,7 +5,8 @@
 #+DESCRIPTION:
 #+PERMALINK: inteligencia_empresarial-simplificado
 #+PARENT:
-#+TAGS: Business Intelligence
+#+TAGS: Uncategorized
+#+CATEGORY: Uncategorized
 
 Recebi reclamações de amigos sobre a complexidade do meu outro /post/ sobre [[./bi_pequenos_negocios/][Inteligência Empresarial]]. Então eu resolvi fazer uma simplificação e o mais simples que pude chegar transcrevo a seguir:
 #+BEGIN_HTML

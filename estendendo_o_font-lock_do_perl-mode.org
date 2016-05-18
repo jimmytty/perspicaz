@@ -4,8 +4,9 @@
 #+TITLE: Estendendo o font-lock do perl-mode
 #+DESCRIPTION:
 #+PERMALINK:
-#+PARENT: estendendo_o_font-lock_do_perl-mode
-#+TAGS:
+#+PARENT:
+#+TAGS: Technical
+#+CATEGORY: Technical
 
 Já faz uns anos que eu vinha descontente com o /syntax highlighting/ padrão do /perl-mode/, sobretudo, porque ele não destaca os /builtins/ do /Perl/. Pesquisei na /web/ por métodos prontos para resolver o problema uma vez que combinar cores não é minha área. Infelizmente, minhas buscas sempre deram em nada.
 #+HTML: <!--more Continue lendo...-->

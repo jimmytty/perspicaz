@@ -5,7 +5,8 @@
 #+DESCRIPTION:
 #+PERMALINK: drcapirotoexplica_mau_atendimento-por_que_isto_ocorre
 #+PARENT:
-#+TAGS: DrCapiroto,Cotidiano,Comportamento,Administração de Empresas
+#+TAGS: DrCapiroto
+#+CATEGORY: DrCapiroto
 
 Olá leitor(a)! Eu trago para conhecimento de todos uma criatura humana(?) muito singular: DrCapiroto. Eu conheci esse cara uns dezoito anos atrás numa época em que eu vivia igual a um cão vira-latas doente e sem dono. DrCapiroto era o cara mais amargo e ácido que já tinha visto na vida. Lembrei-me dele hoje e aproveitei para fazer uma entrevista...
 #+BEGIN_HTML

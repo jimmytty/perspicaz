@@ -5,7 +5,8 @@
 #+DESCRIPTION:
 #+PERMALINK: a_tag_more_wordpress_e_o_org2blog.org
 #+PARENT:
-#+TAGS: WordPress,Emacs,Org2Blog,Org Mode
+#+TAGS: Technical
+#+CATEGORY: Technical
 
 Dica rápida!
 

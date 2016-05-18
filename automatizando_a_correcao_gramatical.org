@@ -1,11 +1,12 @@
 #+BLOG: perspicaz
 #+POSTID: 123
 #+DATE: <2016-04-19 Tue 01:17>
-#+TITLE: [Tec] Automatizando a Correção Gramatical
+#+TITLE: Automatizando a Correção Gramatical
 #+DESCRIPTION:
 #+PERMALINK: automatizando_a_correcao_gramatical
 #+PARENT:
-#+TAGS:
+#+TAGS: Technical
+#+CATEGORY: Technical
 
 Tudo começou dez anos atrás. Era uma noite açoitada pela fúria insaciável duma saraivada que castigava a terra como o ódio do carrasco sobre pecadores eternos...
 #+BEGIN_HTML
@@ -16,7 +17,7 @@ Até parece que eu consigo lembrar das coisas nesse nível de detalhe...
 
 Seguinte, uns 10 anos atrás comecei a procurar ferramentas automatizadas para correção da Língua Portuguesa pois, esta estorinha de ficar relendo o próprio texto não funciona, são poucos os erros que se consegue capturar e os olhos rapidamente perdem a capacidade de enxergá-los.
 
-Seguindo com a busca, foi relativamente fácil encontrar uma solução decente para correção ortográfica, sendo a primeira delas uma ferramenta chamada *Ispell*. Serviu-me bem até que conheci o *[[http://aspell.net/][GNU Aspell]]*, muito mais recursos e suporte a codificação /UTF-8/ (uau!), resolvi ficar com ela e aperfeiçoá-la às minhas necessidades. A situação atual é que possuo  uma versão  do *Aspell* compilada "em casa" e o dicionário é um mesclado entre uma versão do dicionário *[[https://pt-br.libreoffice.org/projetos/vero/][VERO]]* com outras listas personalizadas que fui criando ao longo do anos. É justamente esse dicionário a razão dos poucos erros "orográficos" aqui no /blog/. (É claro que meus amigos me ajudam também! E muito!).
+Seguindo com a busca, foi relativamente fácil encontrar uma solução decente para correção ortográfica, sendo a primeira delas uma ferramenta chamada *Ispell*. Serviu-me bem até que conheci o *[[http://aspell.net/][GNU Aspell]]*, muito mais recursos e suporte a codificação /UTF-8/ (uau!), resolvi ficar com ela e aperfeiçoá-la às minhas necessidades. A situação atual é que possuo  uma versão  do *Aspell* compilada "em casa" e o dicionário é um mesclado entre uma versão do dicionário *[[https://pt-br.libreoffice.org/projetos/vero/][VERO]]* com outras listas personalizadas que fui criando ao longo dos anos. É justamente esse dicionário a razão dos poucos erros "orográficos" aqui no /blog/. (É claro que meus amigos me ajudam também! E muito!).
 
 Com a correção ortográfica em dia, faltava apenas a correção gramatical, correto? Correto. Mas onde encontrar?
 

@@ -5,7 +5,7 @@
 #+DESCRIPTION:
 #+PERMALINK: bi_pequenos_negocios
 #+PARENT:
-#+TAGS:
+#+TAGS: Uncategorized
 #+CATEGORY: Uncategorized
 
 Neste /post/, discuto um pouco sobre a experiência adquirida no último projeto que participei numa empresa chamada /Tux4You/. Uma empresa do ramo de EAD (Ensino a Distância) que, como a maioria dos negócios no Brasil, tomava suas decisões baseadas apenas em experiência prática, sem analisar informações. O principal ponto negativo desta abordagem é que todos as decisões parecem ser "um tiro no escuro", pois apenas situações já bem conhecidas e testadas na prática tinham reais chances de dar certo.

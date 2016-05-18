@@ -4,7 +4,7 @@
 #+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
 #+PARENT:
 #+CATEGORY: DrCapiroto
-#+TAGS:
+#+TAGS: DrCapiroto
 #+DESCRIPTION:
 #+TITLE: [DrCapirotoExplica] São as estatísticas confiáveis?
 #+PERMALINK: drcapirotoexplica_-_sao_as_estatisticas_confiaveis

@@ -6,6 +6,7 @@
 #+PERMALINK: drcapirotoexplica_-_o_descaso_dos_provedores_de_internet
 #+PARENT:
 #+TAGS: DrCapiroto
+#+CATEGORY: DrCapiroto
 
 Saudações leitores(as)!
 

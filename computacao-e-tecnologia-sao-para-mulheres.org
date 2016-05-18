@@ -5,7 +5,8 @@
 #+DESCRIPTION:
 #+PERMALINK: computacao-e-tecnologia-sao-para-mulheres
 #+PARENT:
-#+TAGS:
+#+TAGS: Uncategorized
+#+CATEGORY: Uncategorized
 
 O artigo [[http://imasters.com.br/desenvolvimento/computacao-e-tecnologia-sao-para-mulheres/][Computação e tecnologia são para mulheres?]] de Lidiane Monteiro é o texto/pesquisa mais sensato que já li sobre o assunto até aqui. Recomendo a leitura.
 

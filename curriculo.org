@@ -88,11 +88,11 @@ CPAN: http://search.cpan.org/~jimmy/
 * Experiência Técnica
 
 + BI (1 year).
-+ Data Munging / Data Wrangling (5 years).
-+ Data Scraping / Web Scraping / Web Spider (5 years).
-+ Data Mining (5 years).
-+ Data Cleaning (3 years).
-+ ETL (5 years).
++ Data Munging / Data Wrangling (+5 years).
++ Data Scraping / Web Scraping / Web Spider (+5 years).
++ Data Mining (+5 years).
++ Data Cleaning (+3 years).
++ ETL (+5 years).
 
 + Operating Systems:
   + Linux: Slackware, Debian*.
