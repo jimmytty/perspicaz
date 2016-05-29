@@ -1,0 +1,12 @@
+#+BLOG: perspicaz
+#+POSTID: 177
+#+DATE: [2016-05-20 Fri 11:11]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Technical
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: [Untested] Script::Toolbox
+#+PERMALINK: script_toolbox
+
+[[http://search.cpan.org/perldoc?Script::Toolbox][*~Script::Toolbox~*]] é um módulo disponível no [[http://www.cpan.org/][CPAN]] que tem como objetivo ser um canivete suíço na confecção de /scripts/, como o próprio projeto define. Tomei conhecimento dele hoje e vou deixá-lo na fila de "coisas para testar".
