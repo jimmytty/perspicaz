@@ -8,6 +8,18 @@
 
 Críticas? Dúvidas? Reclamações? Recomendações? Sugestões? Consultoria? Apenas iniciar um papo?
 
-Envie um /e-mail/ para *jimmy* arroba *gmail* ponto *com*.
+*** Canais disponíveis:
+
+Envie um /e-mail/ para [[mailto:jimmy.tty@gmail.com][jimmy.tty@gmail.com]].
+
+Ou utilize o seguinte formulário:
+
+#+BEGIN_HTML
+[contact-form]
+[contact-field label="Nome" type="name" required="0" /]
+[contact-field label="Email" type="email" required="1" /]
+[contact-field label="Assunto" type="textarea" required="1" /]
+[/contact-form]
+#+END_HTML
 
 #  LocalWords:  PERMALINK gmail
