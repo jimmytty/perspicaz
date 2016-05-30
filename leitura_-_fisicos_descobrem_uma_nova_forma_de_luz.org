@@ -1,0 +1,19 @@
+#+BLOG: perspicaz
+#+POSTID: 183
+#+DATE: [2016-05-30 Mon 12:29]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Uncategorized
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: [Leitura] "Físicos descobrem uma nova forma de luz"
+#+PERMALINK: leitura_-_fisicos_descobrem_uma_nova_forma_de_luz
+
+#+ATTR_HTML: :align left
+[[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=fisicos-descobrem-nova-forma-luz&id=010165160530][http://www.inovacaotecnologica.com.br/noticias/imagens/010165160530-roda-fotonica.jpg]]
+
+#+BEGIN_QUOTE
+  A descoberta tem impacto não apenas sobre nossa compreensão fundamental da luz, mas também em áreas como informações quânticas e raios tratores.
+#+END_QUOTE
+
+# ./leitura_-_fisicos_descobrem_uma_nova_forma_de_luz/roda_fotonica.jpg http://perspicazsite.files.wordpress.com/2016/05/roda_fotonica2.jpg

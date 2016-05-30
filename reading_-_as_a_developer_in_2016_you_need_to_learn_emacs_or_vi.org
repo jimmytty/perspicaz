@@ -1,0 +1,20 @@
+#+BLOG: perspicaz
+#+POSTID: 180
+#+DATE: [2016-05-30 Mon 11:56]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Technical
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: [Reading] "As a developer in 2016, you need to learn Emacs (or Vi)"
+#+PERMALINK: reading_-_as_a_developer_in_2016_you_need_to_learn_emacs_or_vi
+
+This article is an opinion about "Why learn good tools". Enjoy.
+
+#+BEGIN_HTML
+  <a target="_blank"
+     href="http://le-gall.bzh/developer-tips/2016/05/21/you-need-to-learn-emacs/"
+  >http://le-gall.bzh/developer-tips/2016/05/21/you-need-to-learn-emacs/</a>
+#+END_HTML
+
+#  LocalWords:  toc pri Uncategorized PERMALINK href
