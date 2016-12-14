@@ -1,0 +1,19 @@
+#+BLOG: perspicaz
+#+POSTID: 237
+#+DATE: [2016-06-20 Mon 22:25]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Uncategorized
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: [Leitura] "KiloCore: Processador com 1.000 núcleos vira realidade"
+#+PERMALINK: leitura_-_kilocore_processador_com_1.000_nucleos_vira_realidade
+
+#+ATTR_HTML: align left
+[[http://www.inovacaotecnologica.com.br/noticias/imagens/010150160620-processador-mil-nucleos.jpg]]
+
+#+BEGIN_QUOTE
+  É o processador multinúcleos energeticamente mais eficiente já demonstrado.
+#+END_QUOTE
+
+Leia o artigo inteiro em [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=kilocore-processador-1-000-nucleos&id=010150160620]].

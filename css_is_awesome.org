@@ -1,0 +1,16 @@
+#+BLOG: perspicaz
+#+POSTID: 226
+#+DATE: [2016-06-18 Sat 14:47]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Uncategorized
+#+TAGS: Funny, Technical
+#+DESCRIPTION:
+#+TITLE: CSS is awesome
+#+PERMALINK: css_is_awesome
+
+An old joke, but still good.
+
+#+ATTR_HTML: :align center
+[[http://img-9gag-fun.9cache.com/photo/aopzW6X_700b.jpg][http://img-9gag-fun.9cache.com/photo/aopzW6X_700b.jpg]]
+

@@ -22,8 +22,3 @@ I use [Org2Blog](https://github.com/punchagan/org2blog) to make posts on WordPre
 #+TAGS:\n")
 (setq org2blog/wp-show-post-in-browser nil)
 ```
-
-
-
-
-

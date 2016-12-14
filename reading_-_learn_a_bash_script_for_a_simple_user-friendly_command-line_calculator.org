@@ -1,0 +1,14 @@
+#+BLOG: perspicaz
+#+POSTID: 292
+#+DATE: [2016-12-08 Thu 10:37]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Technical
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: [Reading] "Learn a Bash script for a simple, user-friendly command-line calculator"
+#+PERMALINK: reading_-_learn_a_bash_script_for_a_simple_user-friendly_command-line_calculator
+
+[[https://opensource.com/article/16/12/calcshell-interactive-linux-command-line-calculator]]
+
+A good article about ~shell~ and ~bc~. I really like both, but, /Emacs Calculator/ (~M-x calc~) is better, /GUI/ or /CLI/.

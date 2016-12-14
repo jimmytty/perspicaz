@@ -1,0 +1,19 @@
+#+BLOG: perspicaz
+#+POSTID: 257
+#+DATE: [2016-07-02 Sat 22:06]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Technical
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: [Leitura] "Criado um compilador para computadores analógicos"
+#+PERMALINK: leitura_-_criado_um_compilador_para_computadores_analogicos
+
+#+ATTR_HTML: :align left :width 180
+[[http://www.inovacaotecnologica.com.br/noticias/imagens/010150160628-celula-transistor.jpg]]
+
+#+BEGIN_QUOTE
+  O compilador para processadores analógicos abre o caminho para simulação órgãos biológicos inteiros - eventualmente até mesmo de organismos inteiros.
+#+END_QUOTE
+
+[[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=compilador-computadores-analogicos&id=010150160628]]

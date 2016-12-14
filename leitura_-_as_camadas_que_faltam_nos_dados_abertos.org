@@ -1,0 +1,21 @@
+#+BLOG: perspicaz
+#+POSTID: 271
+#+DATE: [2016-07-08 Fri 23:48]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Uncategorized
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: [Leitura] "As camadas que faltam nos Dados Abertos"
+#+PERMALINK: leitura_-_as_camadas_que_faltam_nos_dados_abertos
+
+Artigo interessante.
+"Chega" a citar a [[https://en.wikipedia.org/wiki/SPARQL][/SPARQL/]] sendo que eu
+"cheguei" a iniciar os estudos nele anos atrás, mas não
+"cheguei" a levar os estudos adiante...
+
+[[http://br.okfn.org/2016/03/29/as-camadas-que-faltam-nos-dados-abertos/]]
+#+BEGIN_QUOTE
+  O movimento de Dados Abertos está crescendo, há mais e mais portais, mais e mais editores e mais e mais pessoas usando os dados. Com o movimento crescendo, tanto as pessoas que publicam quanto as que usam os dados evoluem. E embora pareça que a pilha de Dados Abertos está evoluindo também, ainda existem algumas camadas faltando, algumas ferramentas em falta e, como um ecossistema, devemos nos preocupar mais com elas!
+  [...]
+#+END_QUOTE

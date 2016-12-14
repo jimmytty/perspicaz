@@ -6,6 +6,11 @@
 #+PARENT:
 #+TAGS:
 
-Espaço reservado para compartilhar experiências e opiniões de um veterano profissional /Free Software/ / /Open Source/.
+Espaço reservado para compartilhar experiências e opiniões de um veterano profissional /Free Software/ / /Open Source/ e garimpeiro de dados.
 
+Páginas externas com mais informações:
+
++ Linkedin: https://www.linkedin.com/in/ronaldo-ferreira-de-lima-9013901b
++ GitHub: https://github.com/jimmytty
++ CPAN: http://search.cpan.org/~jimmy/
 

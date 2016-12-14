@@ -1,0 +1,19 @@
+#+BLOG: perspicaz
+#+POSTID: 218
+#+DATE: [2016-06-08 Wed 19:38]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Uncategorized
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: [Leitura] "Nanossatélite testa tecnologia para internet quântica"
+#+PERMALINK: leitura_-_nanossatelite_testa_tecnologia_para_internet_quantica
+
+#+ATTR_HTML: :align left :width 200
+[[http://www.inovacaotecnologica.com.br/noticias/imagens/010150160608-satelite-comunicacoes-quanticas.jpg][http://www.inovacaotecnologica.com.br/noticias/imagens/010150160608-satelite-comunicacoes-quanticas.jpg]]
+
+#+BEGIN_QUOTE
+São os primeiros dados de um satélite que está testando a tecnologia para uma rede quântica global.
+#+END_QUOTE
+
+Leia o artigo inteiro em [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=nanossatelite-testa-tecnologia-internet-quantica&id=010150160608]].

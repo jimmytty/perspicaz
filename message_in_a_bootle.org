@@ -1,0 +1,17 @@
+#+BLOG: perspicaz
+#+POSTID: 288
+#+DATE: [2016-11-25 Fri 13:34]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Funny
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Message In a Bootle
+#+PERMALINK: message_in_a_bootle
+
+Velhos tempos das listas de discussão!
+
+http://xkcd.com/1675/
+
+#+ATTR_HTML: :align center
+[[http://imgs.xkcd.com/comics/message_in_a_bottle.png][http://imgs.xkcd.com/comics/message_in_a_bottle.png]]

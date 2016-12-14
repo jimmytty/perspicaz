@@ -1,0 +1,19 @@
+#+BLOG: perspicaz
+#+POSTID: 202
+#+DATE: [2016-06-04 Sat 23:26]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Technical
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: [Reading] "Creating and Running Unit Tests Directly in Source Files with Org-mode"
+#+PERMALINK: reading_-_creating_and_running_unit_tests_directly_in_source_files_with_org-mode
+
+A interesting article about how to use [[http://orgmode.org/][Org Mode]] to merge [[https://en.wikipedia.org/wiki/Literate_programming][literate programming]] with (the art of) coding. Please, enjoy.
+
+#+ATTR_HTML: :align left
+[[./logos/org-mode-unicorn-logo.png]]
+
+[[http://fgiasson.com/blog/index.php/2016/05/30/creating-and-running-unit-tests-directly-in-source-files-with-org-mode/]]
+
+# ./logos/org-mode-unicorn-logo.png http://perspicazsite.files.wordpress.com/2016/06/org-mode-unicorn-logo.png

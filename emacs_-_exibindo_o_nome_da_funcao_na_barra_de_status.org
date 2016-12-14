@@ -1,0 +1,43 @@
+#+BLOG: perspicaz
+#+POSTID: 242
+#+DATE: [2016-06-21 Tue 10:38]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Technical
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Emacs - Exibindo o nome da função na barra de status
+#+PERMALINK: emacs_-_exibindo_o_nome_da_funcao_na_barra_de_status
+
+Apesar de já usar o [[https://pt.wikipedia.org/wiki/Emacs][/Emacs/]] a uns 10 anos, só aprendi a exibir o nome da função/método corrente na /status-line/ durante a codificação hoje... Tá certo que até o momento não havia incomodando-me o suficiente para pesquisar a respeito.
+#+HTML: <!--more Continue lendo...-->
+
+Indo direto ao ponto:
+
+: ,----
+: | M-x which-func-mode
+: `----
+
+Esta função "habita" o pacote =which-func.el= presente na distribuição padrão do /Emacs/, abaixo dos "/progmodes/". Em outras palavras, não é necessário instalar nada pois trata-se de um /builtin/.
+
+Para evitar ter que redigitar o comando todas as vezes que abrir o /Emacs/, pode-se colocar a seguinte linha no =~/.emacs=:
+
+#+BEGIN_SRC elisp
+  (which-func-mode 1)
+#+END_SRC
+
+Ou (minha recomendação) utilizar o /Customize/ e aproveitar para verificar que outras opções estão disponíveis:
+
+: ,----
+: | M-x customize-group which-func-mode
+: `----
+
+Para ativar o ~which-func~ na inicialização, "clique" em "/Toggle/" da opção "/Which Function Mode/", que, de /off/ passará a /on/. Em seguida, "clique" em "/[ State ]/" e escolha a opção "/1 = Save for Future Sessions/".
+
+Este precedimento pode ser usado para modificar permanentemente os outros itens.
+
+E, falando-se em modificar, talvez seja uma boa ideia modificar as cores, que neste caso, o /Emacs/ chama de /faces/ e a opção chama-se "/Which Func face/", há grande variedade de combinações possíveis aqui. Uma outra opção que talvez seja interessante modificar é a "/Which Func Modes/" porque o padrão do ~which-func~ é ser ativado para quase "tudo" no /Emacs/ (todos os /major modes/ são afetados) e modificando esta opção para "/Repeat/", pode-se escolher quais /major modes/ deseja-se utilizar, no meu caso, inseri apenas /perl/ para começar a usar e vou inserindo conforme a necessidade.
+
+#  LocalWords:  toc pri Uncategorized PERMALINK emacs funcao status-line M-x
+#  LocalWords:  which-func-mode which-func progmodes builtin customize-group
+#  LocalWords:  Func

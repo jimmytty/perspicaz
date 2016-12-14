@@ -1,0 +1,18 @@
+#+BLOG: perspicaz
+#+POSTID: 197
+#+DATE: [2016-05-30 Mon 13:24]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Uncategorized
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: [Leitura] "Por que Estatística é tão importante?"
+#+PERMALINK: leitura_-_por_que_estatistica_e_tao_importante
+
+Artigo bem didático sobre estatística com exemplos cotidianos. Eu só não gostei do "Um exemplo prático" porque só é realidade da classe média para cima, em outra palavras, não faz sentido para a maioria das pessoas (eu inclusive :P).
+
+#+BEGIN_HTML
+  <a target="_blank"
+     href="http://oestatistico.com.br/2016/05/23/por-que-estatistica-e-tao-importante/"
+  >http://oestatistico.com.br/2016/05/23/por-que-estatistica-e-tao-importante/ </a>
+#+END_HTML

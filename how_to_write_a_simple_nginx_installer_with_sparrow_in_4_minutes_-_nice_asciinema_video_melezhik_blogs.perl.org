@@ -1,0 +1,16 @@
+#+BLOG: perspicaz
+#+POSTID: 216
+#+DATE: [2016-06-08 Wed 19:18]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Technical
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: How to write a simple nginx installer with sparrow in 4 minutes - nice asciinema video! | melezhik [blogs.perl.org]
+#+PERMALINK: how_to_write_a_simple_nginx_installer_with_sparrow_in_4_minutes_-_nice_asciinema_video_melezhik_blogs.perl.org
+
+Interessante uso do [[https://asciinema.org][asciinema.org]] para demonstrar o [[https://sparrowhub.org/][/Sparrow/]] em ação:
+
+[[http://blogs.perl.org/users/melezhik/2016/06/how-to-write-a-simple-nginx-installer-with-sparrow-in-4-minutes---nice-asciinema-video.html]]
+
+Não venho acompanhando o projeto mas parece promissor.

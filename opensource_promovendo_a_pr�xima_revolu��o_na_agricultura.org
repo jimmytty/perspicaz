@@ -1,0 +1,21 @@
+#+BLOG: perspicaz
+#+POSTID: 234
+#+DATE: [2016-06-18 Sat 19:24]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY:
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: OpenSource promovendo a próxima revolução na agricultura
+#+PERMALINK: opensource_promovendo_a_próxima_revolução_na_agricultura
+
+#+ATTR_HTML: :align left
+[[./logos/openagriculture.png]]
+
+Um interessante artigo intitulado "/Open Source Agriculture/", que você pode conferir no /link/ [[http://fossforce.com/2016/06/open-source-agriculture/]], comenta um novo e incrível projeto desenvolvido pelo [[https://pt.wikipedia.org/wiki/Instituto_de_Tecnologia_de_Massachusetts][/MIT/]], o [[http://openag.media.mit.edu/][OpenAg - MIT Open Agriculture Initiative]]. O resumo "da coisa" é o título deste artigo em si.
+
+Não esqueça de assistir ao vídeo.
+
+#+HTML: [youtube https://www.youtube.com/watch?v=BVmbWjs7yBw]
+
+# ./logos/openagriculture.png http://perspicazsite.files.wordpress.com/2016/06/openagriculture.png

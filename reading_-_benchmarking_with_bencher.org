@@ -1,0 +1,13 @@
+#+BLOG: perspicaz
+#+POSTID: 294
+#+DATE: [2016-12-08 Thu 11:06]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Technical
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: [Reading] "Benchmarking with Bencher"
+#+PERMALINK: reading_-_benchmarking_with_bencher
+
+[[http://perladvent.org/2016/2016-12-03.html]]
+

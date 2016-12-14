@@ -1,0 +1,21 @@
+#+BLOG: perspicaz
+#+POSTID: 206
+#+DATE: [2016-06-05 Sun 21:51]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Technical
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: [Reading] "Perl v5.22 adds fancy Unicode word boundaries"
+#+PERMALINK: reading_-_perl_v5.22_adds_fancy_unicode_word_boundaries
+
+A helpful way to improve my natural language's parsers! But, for Portuguese language, extra hacks still needed.
+
+#+ATTR_HTML: :align left
+[[./logos/perl_camel.png]]
+
+[[http://www.effectiveperlprogramming.com/2016/06/perl-v5-22-adds-fancy-unicode-word-boundaries/]]
+
+#  LocalWords:  toc pri PERMALINK unicode ATTR
+
+# ./logos/perl_camel.png http://perspicazsite.files.wordpress.com/2016/06/perl_camel.png

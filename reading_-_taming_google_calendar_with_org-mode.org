@@ -1,0 +1,23 @@
+#+BLOG: perspicaz
+#+POSTID: 247
+#+DATE: [2016-06-23 Thu 00:04]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Technical
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: [Reading] "Taming Google Calendar With Org-Mode"
+#+PERMALINK: reading_-_taming_google_calendar_with_org-mode
+
+O artigo "[[http://jameswilliams.be/blog/2016/01/11/Taming-Your-GCal.html][/Taming Google Calendar With Org-Mode/]]" veio bem a calhar pois comecei, recentemente, a modificar meu /workflow/ para incluir o [[http://orgmode.org/manual/Capture.html][~org-capture~]] (tomador de notas) e aproveitei para dar uma olhada nas opções para calendário. Acabei encontrado o [[https://github.com/myuhe/org-gcal.el][~org-gcal~]] que é bastante prático. De fato não acho que o /Google Calendar/ seja páreo para o [[http://www.roaringpenguin.com][~remind~]], mas facilita o compartilhamento de compromissos. Por hora mantenho os /hacks/, apenas estendo a opção de sincronização com o /Google/ para simplificar o processo de compartilhar os compromissos.
+
+A propósito, eu "trombei" um erro desagradável quando testava o envio de eventos para o /Google Calendar/, o erro era mais ou menos o seguinte:
+
+: Search failed: "<[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]"
+
+Fui buscar na "/net/" e há um /issue/ aberto para este erro em [[https://github.com/myuhe/org-gcal.el/issues/29]]. A solução é até simples, basta atribuir horário ao evento.
+
+Com o ~org-gcal~ o processo de inserir compromissos ficou simples como o processo de tomar notas.
+
+#  LocalWords:  toc pri Google Org-Mode PERMALINK google org-mode workflow
+#  LocalWords:  org-capture org-gcal

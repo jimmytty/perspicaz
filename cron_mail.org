@@ -1,0 +1,14 @@
+#+BLOG: perspicaz
+#+POSTID: 280
+#+DATE: [2016-10-18 Tue 13:54]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Funny
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Cron Mail
+#+PERMALINK: cron_mail
+
+#+HTML: [embed]http://imgs.xkcd.com/comics/cron_mail.png[/embed]
+
+Daqui: [[http://xkcd.com/1728/]]

@@ -1,0 +1,15 @@
+#+BLOG: perspicaz
+#+POSTID: 286
+#+DATE: [2016-11-25 Fri 11:54]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Uncategorized
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: [Leitura] "Algoritmos ou inteligência artificial podem impactar nossas crenças nas eleições?"
+#+PERMALINK: leitura_-_algoritmos_ou_inteligencia_artificial_podem_impactar_nossas_crencas_nas_eleicoes
+
+http://br.okfn.org/2016/11/22/algoritmos-ou-inteligencia-artificial-podem-impactar-nossas-crencas-nas-eleicoes/
+
+Bom artigo escrito por Thiago Rondon. Embora eu não acredite na solução proposta, de qualquer forma, fé não é comigo. Introduzir "novas coisas" não implica na modificação das "pré-existentes".
+

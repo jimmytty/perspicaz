@@ -34,7 +34,7 @@ A uns dois anos mais ou menos, acabei gravando um "/longplay/" com o *Genjuro*, 
 
 A propósito, este é o meu /longplay/ no /YouTube/:
 
-https://www.youtube.com/watch?v=A3d4CbDEHHo
+#+HTML: [youtube https://www.youtube.com/watch?v=A3d4CbDEHHo]
 
 Pretendo fazer novas gravações mas primeiro preciso descobrir melhores meios para isto respeitando as restrições orçamentárias do momento...
 

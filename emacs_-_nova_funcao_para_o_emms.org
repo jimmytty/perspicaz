@@ -1,0 +1,48 @@
+#+BLOG: perspicaz
+#+POSTID: 290
+#+DATE: [2016-12-07 Wed 19:53]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Technical
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: [Emacs] Nova Função para o EMMS
+#+PERMALINK: emacs_-_nova_funcao_para_o_emms
+
+Eu estava de saco cheio de repetir os mesmo comandos para ouvir /playlists/ pelo [[/http://www.gnu.org/software/emms/][emms (Emacs Multimedia System)]] e resolvi criar uma função personalizada para automatizar o processo.
+#+HTML: <!--more Continue lendo...-->
+
+O processo de criação das minhas /playlists/ é bem simples pois mantenho apenas dois diretórios distintos, ~metal~ e ~pop~, aos quais disparo o segundo comando dependendo do meu "estado de espírito":
+
+: find ~/music/pop/ -type f | shuf > playlist.txt
+
+comando este salvo no histórico do /eshell/. Porquê só tem /metal/ e /pop/? Bem, não manjo de música e não avalio música por artista (lamento, não tem muito valor para mim), avalio apenas o trabalho, individualmente. Em /pop/ fica tudo que considero "popular", tem /MPB/, /Rock/, /Heavy Metal/, temas de animes etc. Já em /metal/, deixo apenas "metal pesado" de verdade, não citarei nomes de músicas/bandas aqui por serem, de fato, extremamente agressivos.
+
+Com o arquivo gerado, eu "rolava" executava os comandos no /Emacs/:
+
+1. ~M-x emms-play-playlist~
+   para informar o arquivo a ser executado, no caso, o ~playlist.txt~.
+
+2. ~M-x emms-playlist-mode-go~
+   para exibir o /buffer/ coma lista em execução.
+
+3. ~M-x rename-buffer~
+   para renomear o buffer para, por exemplo, "emms" e torná-lo facilmente acessível; do contrário precisarei reexecutar o comando anterior todas as vezes que quisesse acessá-lo... argh!
+
+Hoje, cansei desta rotina e juntei tudo na seguinte função:
+
+#+BEGIN_SRC elisp
+  (defun emms-go ()
+    (interactive)
+    (emms-play-playlist (read-file-name "Playlist file: "))
+    (emms-playlist-mode-go)
+    (rename-buffer "emms"))
+#+END_SRC
+
+Em outras palavras, criei uma função interativa (grosso modo, implica em dizer que posso acessá-la pelo ~M-x~) de nome ~emms-go~ para simplificar minha vida. Sei que ainda codifico mal em /elisp/ e, para piorar, nem tenho a desculpa de ser iniciante...
+
+Talvez você se pergunte, "mas porque diabos você não usa ~emms-save~ para guardar a posição das /playlists/ e evitar ter que reexecutar os comandos a cada vez que executa o /emacs/?" Bem, eu já testei o ~emms-save~, contudo, ou por inaptidão minha ou por "interações medicamentosas" com outras configurações, não funcionou. No futuro, com mais paciência, voltarei a "caçar" a razão das falhas com o ~emms-save~... Por hora fico usando a "nova solução" :D.
+
+#  LocalWords:  toc pri EMMS PERMALINK emacs funcao emms playlists shuf eshell
+#  LocalWords:  playlist MPB M-x emms-play-playlist emms-playlist-mode-go argh
+#  LocalWords:  rename-buffer emms-go elisp emms-save

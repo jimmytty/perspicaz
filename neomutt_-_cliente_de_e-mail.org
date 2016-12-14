@@ -1,0 +1,17 @@
+#+BLOG: perspicaz
+#+POSTID: 199
+#+DATE: [2016-06-03 Fri 17:55]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Technical
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: NeoMutt - Cliente de E-Mail
+#+PERMALINK: neomutt_-_cliente_de_e-mail
+
+#+ATTR_HTML: :align left
+http://www.neomutt.org/images/mutt-48x48.png
+
+[[http://www.neomutt.org/][/NeoMutt/]] é um recente projeto que agrega múltiplos /patches/ úteis não aceitos no projeto original do [[http://www.mutt.org/][/Mutt/]]. A última /release/ do projeto ocorreu no dia =2016-05-30= e eu só tomei conhecimento deste projeto hoje.
+
+Vou testá-lo o mais rápido possível para saber se já posso migrar do /mutt-ng/, cuja situação de abandono causa arrepios. Todavia, acho que já é hora também de avaliar se já não migro de vez para o [[http://www.gnus.org/][/Gnus/]], [[http://www.djcbsoftware.nl/code/mu/mu4e/index.html][/Mu4e/]] etc...

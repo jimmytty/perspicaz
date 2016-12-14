@@ -1,0 +1,17 @@
+#+BLOG: perspicaz
+#+POSTID: 251
+#+DATE: [2016-06-23 Thu 23:22]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Funny
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: [Reading] "7 open source terminal-based games for Linux | Opensource.com"
+#+PERMALINK: reading_-_7_open_source_terminal-based_games_for_linux_opensource.com
+
+O artigo "[[https://opensource.com/life/16/6/terminal-based-games-linux][/7 open source terminal-based games for Linux/]]" do /Opensource.com/ comenta alguns jogos disponíveis para o terminal. O aspecto interessante é que no artigo, além da descrição, há uma animação para cada jogo/pacote.
+
+Fico devendo o meu artigo sobre jogos para terminal. Acho que vou conseguir lembrar ao menos 15 dos que já joguei por mais tempo que uma simples experimentação.
+
+#  LocalWords:  toc pri Uncategorized terminal-based Opensource PERMALINK
+#  LocalWords:  linux opensource

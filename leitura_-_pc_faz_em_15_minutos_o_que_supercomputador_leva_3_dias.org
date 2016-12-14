@@ -1,0 +1,21 @@
+#+BLOG: perspicaz
+#+POSTID: 273
+#+DATE: [2016-07-09 Sat 00:00]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Tecnhinical
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: [Leitura] "PC faz em 15 minutos o que supercomputador leva 3 dias"
+#+PERMALINK: leitura_-_pc_faz_em_15_minutos_o_que_supercomputador_leva_3_dias
+
+#+ATTR_HTML: :align left :width 200
+[[http://www.inovacaotecnologica.com.br/noticias/imagens/010150160707-primeiro-simulador-quantico.jpg]]
+
+#+BEGIN_QUOTE
+  Físicos russos fizeram uma revolução na computação que irá beneficiar inúmeros campos da ciência.
+  [...]
+#+END_QUOTE
+
+Leia o artigo inteiro em [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=pc-faz-15-minutos-supercomputador-leva-3-dias&id=010150160707]].
+

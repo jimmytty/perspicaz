@@ -1,0 +1,14 @@
+#+BLOG: perspicaz
+#+POSTID: 209
+#+DATE: [2016-06-07 Tue 14:38]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Funny
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: How a While Loop Works - 9GAG
+#+PERMALINK: how_a_while_loop_works_-_9gag
+
+#+HTML: [embed]http://img-9gag-fun.9cache.com/photo/aZMA8p3_460svwm.webm[/embed]
+
+From here [[http://9gag.com/gag/aZMA8p3]].
