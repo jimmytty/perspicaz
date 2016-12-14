@@ -1,0 +1,14 @@
+#+BLOG: perspicaz
+#+POSTID: 301
+#+DATE: [2016-12-14 Wed 14:41]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Technical
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: [Reading] "Dramatically Reducing Software Vulnerabilities"
+#+PERMALINK: reading_-_dramatically_reducing_software_vulnerabilities
+
+#+HTML: [embed]http://nvlpubs.nist.gov/nistpubs/ir/2016/NIST.IR.8151.pdf[/embed]
+
+Looks like a good reading.
