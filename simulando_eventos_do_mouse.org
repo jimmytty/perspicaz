@@ -1,0 +1,41 @@
+#+BLOG: perspicaz
+#+POSTID: 303
+#+DATE: [2016-12-14 Wed 15:25]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Technical
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Simulando Eventos do Mouse
+#+PERMALINK: simulando_eventos_do_mouse
+
+Dica rápida. Conheço duas formas bem simples para simular os eventos do /mouse/: [[http://www.semicomplete.com/projects/xdotool][xdotool]] e o [[https://metacpan.org/pod/X11::GUITest][X11::GUITest]].
+
+Conheço o =xdotool= a alguns anos e já o utilizei para criar pelo menos dois /bots/ para jogos de emulador de /PlayStation 1/. Já o =X11::GUITest= é novo para mim, entretanto, sua documentação menciona 2003!
+
+Citando exemplos, vamos simular o botão direito do /mouse/:
+
+1. =xdotool=.
+   #+BEGIN_SRC sh
+     xdotool click 3
+   #+END_SRC
+
+2. =X11::GUITest=
+   #+BEGIN_SRC perl
+     use X11::GUITest qw[ClickMouseButton :CONST];
+
+     ClickMouseButton M_RIGHT;
+   #+END_SRC
+
+   que também pode ser usado como [[https://en.wikipedia.org/wiki/One-liner_program][/1liner/]]:
+   #+BEGIN_SRC sh
+     perl -MX11::GUITest=ClickMouseButton,:CONST -wE'ClickMouseButton M_RIGHT'
+   #+END_SRC
+
+Em alguns gerenciadores de janelas (talvez até todos) possível atribuir esses comandos a teclas de atalho, a exemplo do [[http://www.fluxbox.org][/Fluxbox/]], que uso.
+
+Mas porque diabos só exemplos com o botão direito?
+
+Bem... Recentemente o botão direito do /touchpad/ do meu /laptop/ parou de funcionar e não estou afim nem de comprar /mouse USB/ nem de comprar /laptop/ novo tão cedo então... entre em contato caso tenha dúvidas sobre os exemplos :D.
+
+#  LocalWords:  toc pri PERMALINK xdotool Fluxbox touchpad
