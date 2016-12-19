@@ -1,0 +1,16 @@
+#+BLOG: perspicaz
+#+POSTID: 307
+#+DATE: [2016-12-15 Thu 15:05]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Technical
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: [Reading] "Use magit-ediff to resolve merge conflicts"
+#+PERMALINK: reading_-_use_magit-ediff_to_resolve_merge_conflicts
+
+[[https://coderwall.com/p/mcrwag/use-magit-ediff-to-resolve-merge-conflicts]]
+
+
+
+
