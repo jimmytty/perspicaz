@@ -1,0 +1,12 @@
+#+BLOG: perspicaz
+#+POSTID: 309
+#+DATE: [2016-12-19 Mon 10:09]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Technical
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: [Reformat] "Dramatically Reducing Software Vulnerabilities"
+#+PERMALINK: reformat_-_dramatically_reducing_software_vulnerabilities
+
+Para facilitar a leitura, reformatei o documento para [[https://raw.githubusercontent.com/jimmytty/docs/master/dramatically_reducing_software_vulnerabilities/NIST.IR.8151.org][/Org/]] e exportei para [[https://github.com/jimmytty/docs/blob/master/dramatically_reducing_software_vulnerabilities/NIST.IR.8151.md][/Markdown/]] e [[https://github.com/jimmytty/docs/blob/master/dramatically_reducing_software_vulnerabilities/NIST.IR.8151.html][/HTML/]]. A versão em /Markdown/ é mais adequada para leitura direta do repositório.
