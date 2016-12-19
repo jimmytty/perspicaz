@@ -32,7 +32,7 @@ Citando exemplos, vamos simular o botão direito do /mouse/:
      perl -MX11::GUITest=ClickMouseButton,:CONST -wE'ClickMouseButton M_RIGHT'
    #+END_SRC
 
-Em alguns gerenciadores de janelas (talvez até todos) possível atribuir esses comandos a teclas de atalho, a exemplo do [[http://www.fluxbox.org][/Fluxbox/]], que uso.
+Em alguns gerenciadores de janelas (talvez até todos) é possível atribuir esses comandos a teclas de atalho, a exemplo do [[http://www.fluxbox.org][/Fluxbox/]], que uso.
 
 Mas porque diabos só exemplos com o botão direito?
 
