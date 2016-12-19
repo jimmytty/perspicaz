@@ -1,0 +1,62 @@
+#+BLOG: perspicaz
+#+POSTID: 305
+#+DATE: [2016-12-15 Thu 11:12]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Technical
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Aprimorando a concentração na leitura
+#+PERMALINK: aprimorando_a_concentracao_na_leitura
+
+Ou: Como manter a concentração em ambientes ruidosos e/ou com outras pessoas desenvolvendo adversas atividades?
+#+HTML: <!--more Continue lendo...-->
+
+O isolamento pode ser um meio para obter-se paz e assim atingir o estado de concentração necessário para uma boa leitura, entretanto, nem sempre esta opção está disponível. Fica então a dúvida: O que fazer?
+
+Anos atrás, quando comecei a buscar soluções para o problema, acabei percebendo que minha capacidade de concentração e de compreensão aumentavam quando eu podia ler e ouvir, por meio de fones de ouvido, o texto ao mesmo tempo, ou seja, manter o foco da visão e da audição simultaneamente eram a "chave para o sucesso"!.
+
+Faltava agora criar um _fluxo de trabalho_ que incluísse esse procedimento e a solução encontrada por mim foi "casar" o [[http://espeak.sourceforge.net/][=espeak=]] (que já usava para ler várias coisas no terminal) com o [[http://directory.fsf.org/wiki/Emacs][=Emacs=]] uma vez que nunca foi meu objetivo tornar a minha máquina numa /workstation/ totalmente "falante", como é o caso da especialista no assunto [[http://aiyumi.warpstar.net/pt/blog/installing-orca-on-slackware-14-0/][Aiyumi aka Purin_Chan]].
+
+Pois bem, ao renderizar uma página no /Emacs/, seleciona-se a porção do texto e invoca-se o /espeak/ para lê-lo. Como uso duas línguas básicas, o Inglês e o Português (por enquanto Japonês eu ainda não consigo... :P), criei duas funções (uns 4 anos atrás), a "=espeak-en=" e a "=espeak-pt=":
+
+#+BEGIN_SRC elisp
+  (defun espeak-en()
+    (interactive)
+    (shell-command-on-region
+     (mark)
+     (point)
+     "/usr/bin/espeak --stdin -s 160 -ven+f2 &>/dev/null"))
+
+  (defun espeak-pt()
+    (interactive)
+    (shell-command-on-region
+     (mark)
+     (point)
+     "/usr/bin/espeak --stdin -s 160 -vpt+f2 &>/dev/null"))
+#+END_SRC
+
+Até poderia ter criado apenas uma função que receberia a língua como parâmetro, mas a leitura em Português é rara de qualquer forma.
+
+No jargão do /Emacs/, a leitura é feita da seguinte forma:
+
+: ,----
+: | M-h
+: | M-x espeak-en
+: `----
+
+Ou seja, seleciono o texto, no caso um parágrafo e executo o /espeak/. A seleção do texto pode ser feita com o /mouse/ se estiver usando ambiente gráfico.
+
+Esta simplista solução possui algumas limitações, como por exemplo:
+
+1. Interrupção/Reexecução. Não é possível interromper a execução do /espeak/ a qualquer hora, é necessário esperar até o processo acabar ou interromper o processo com um ~pkill espeak~ "da vida".
+2. Arquivos /PDF/. Preciso convertê-los para texto primeiro para usar esta solução, mas nem todos são conversíveis.
+
+Manter a leitura dos documentos no /Emacs/ me dão alguns benefícios como poder usar  /bookmarks/ e /org-capture/.
+
+O primeiro problema pode ser solucionado aprimorando a função (algo que pretendo fazer em breve). Já o segundo é insolúvel dentro deste /workflow/.
+
+Antes que pergunte. Sim, eu conheço o [[https://www.emacswiki.org/emacs/EmacSpeak ][/Emacspeak (Emacs speech interface)/]], mas nunca senti real vontade de encarar a empreitada. Talvez no futuro.
+
+#  LocalWords:  toc pri PERMALINK concentracao espeak Aiyumi Purin espeak-en
+#  LocalWords:  espeak-pt M-h M-x pkill workflow org-capture Emacspeak
