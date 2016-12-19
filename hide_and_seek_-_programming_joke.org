@@ -1,0 +1,15 @@
+#+BLOG: perspicaz
+#+POSTID: 311
+#+DATE: [2016-12-19 Mon 14:35]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Funny
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Hide and Seek - Programming Joke
+#+PERMALINK: hide_and_seek_-_programming_joke
+
+#+ATTR_HTML: :align left :width 200
+[[http://img-9gag-fun.9cache.com/photo/aNdR4e6_700b.jpg]]
+
+From here [[http://9gag.com/gag/aNdR4e6]].
