@@ -1,0 +1,40 @@
+#+BLOG: perspicaz
+#+POSTID: 314
+#+DATE: [2016-12-22 Thu 15:13]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Uncategorized
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Favoritos #001
+#+PERMALINK: favoritos_001
+
+* Favoritos #001
+
++ *Ci\ecirc{}ncias*:
+  + [[http://imasters.com.br/desenvolvimento/off-topic-aprendendo-estatistica/][Aprendendo estat\iacute{}stica]] (obs.: o aspecto pessoal do artigo \eacute ruim);
+  + [[http://pt.slideshare.net/tdc-globalcode/tdc2016sp-colocando-modelos-de-machine-learning-em-produo][TDC2016SP - Colocando modelos de Machine Learning em produ\ccedil{}\atilde{}o]];
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=inteligencia-artificial-spintronica&id=010150161222][Primeira demonstra\ccedil{}\atilde{}o de intelig\ecirc{}ncia artificial com spintr\ocirc{}nica]].
++ *Produtividade*:
+  + [[http://karl-voit.at/2016/12/18/org-depend/][Advanced Usage of Dependencies Between Tasks Using Org-mode]];
+  + [[http://orgmode.org/worg/org-contrib/org-protocol.html][org-protocol.el - Intercept calls from emacsclient to trigger custom actions]];
+  + [[https://www.youtube.com/watch?v=Mxpp91jo27A][Emacs: Bookmarks - YouTube]].
++ *Programa\ccedil{}\atilde{}o*:
+  + [[http://perladvent.org/2016/2016-12-15.html][Perl Advent Calendar 2016 - Making Perl Functional]];
+  + [[http://perladvent.org/2016/2016-12-14.html][Perl Advent Calendar 2016 - Using PPI for static analyzis]];
+  + [[http://perladvent.org/2016/2016-12-17.html][Perl Advent Calendar 2016 - Writing command line tools made easy]];
+  + [[http://www.w3schools.com/cssref/css_selectors.asp][CSS Selectors Reference]];
+  + [[http://nullprogram.com/blog/2016/12/22/][Some Performance Advantages of Lexical Scope << null program]].
++ *Entretenimento*:
+  + [[http://www.fightcade.com/][FightCade: online retro arcade gaming platform for netplay]];
+  + [[http://www.agaleradosanimes.org/2014/03/noragami-episodios-online.html][Noragami]] (anime);
+  + [[https://en.wikipedia.org/wiki/Tales_of_the_World:_Radiant_Mythology][Tales Of The World - Radiant Mitology]] (PSP);
+  + [[http://xkcd.com/1638/][xkcd: Backslashes]];
+  + [[http://xkcd.com/1695/][xkcd: Code Quality 2]];
+  + [[http://xkcd.com/1605/][xkcd: DNA]];
+  + [[http://xkcd.com/1597/][xkcd: Git]];
+  + [[http://xkcd.com/1685/][xkcd: Patch]];
+  + [[http://xkcd.com/1629/][xkcd: Tools]];
+  + [[http://xkcd.com/1654/][xkcd: Universal Install Script]].
++ *Diversos*:
+  + [[https://www.youtube.com/watch?v=ihsMJ-7bGKQ&list=PLYSIwJFNeZpLrpmlep2Ix4pK9EJWccOvZ][Vamos Aprender Japon\ecirc{}s - YouTube]] (playlist).
