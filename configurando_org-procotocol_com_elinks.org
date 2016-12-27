@@ -1,0 +1,36 @@
+#+BLOG: perspicaz
+#+POSTID: 324
+#+DATE: [2016-12-26 Mon 21:44]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Technical
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Configurando Org-Procotocol com ELinks
+#+PERMALINK: configurando_org-procotocol_com_elinks
+
+O =org-protocol= \eacute{} um m\oacute{}dulo para o /Emacs/ desenvolvido para interceptar chamadas ao ~emacsclient~ e disparar a\ccedil{}\otilde{}es pr\eacute{}-definidas. \Eacute{} muito usado em conjunto ao =org-capture= para obter /bookmarks/ e/ou notas personalizados de /web\nbsp{}browsers/, como o /Firefox/ por exemplo, e assim permitir que outras ferramentas sejam suavemente integr\aacute{}veis ao /workflow/ do /Emacs/.
+#+HTML: <!--more Continue lendo...-->
+Sobre a configura\ccedil{}\amacr{}o de /web\nbsp{}browsers/, h\aacute{} um documento relativamente bem completo em http://orgmode.org/worg/org-contrib/org-protocol.html. Infelizmente, uso na linha de comando e integra\ccedil{}\amacr{}o com /ELinks/ n\amacr{}o s\amacr{}o mencionados. Todavia, existe uma boa descri\ccedil{}\amacr{}o sobre o uso do =org-protocol= na documenta\ccedil{}\amacr{}o do pr\oacute{}prio c\oacute{}digo fonte (~org-protocol.el~), segundo a qual define que um /URL/ deve ser criado com os par\acirc{}metros:
+
+: org-protocol://capture?url=val1&title=val2&body=val3
+
+(j\aacute{} adaptado para o nosso uso).
+
+\Eacute{} poss\iacute{}vel omitir os nomes dos par\acirc{}metros passando os valores como componentes de diret\oacute{}rio, caso este em que a interpreta\ccedil{}\amacr{}o ser\aacute{} feita utilizando-se a posi\ccedil{}\amacr{}o como refer\ecirc{}ncia, exemplo:
+
+: org-protocol://capture/val1/val2/val3
+
+\Eacute{} importante n\amacr{}o esquecer (eu esqueci v\aacute{}rias vezes...) de que cada "val" deve ter caracteres especiais, no contexto de /URLs/, escapados. Para fazer funcionar no /ELinks/, usaremos o =document.uri_passing=, como no exemplo:
+
+#+BEGIN_SRC conf
+  set document.uri_passing.org-capture = "emacsclient -n org-protocol://capture\\?url=`perl -MURI::Escape -wE\"print uri_escape shift\" %c`"
+#+END_SRC
+
+Para invocar o comando, utiliza-se o ~tab-external-command~, que pode ser facilmente atribu\iacute{}do \agrave{} teclas de atalho (aqui \eacute{} ~Alt-o~). Atrav\eacute{}s do =document.uri_passing=, o /ELinks/ fornece apenas o /URL/ (%c).
+
+Desconhe\ccedil{}o uma maneira de obter outros valores atrav\eacute{}s deste m\eacute{}todo, entretanto, no meu /setup/, estou usando o t\iacute{}tulo da p\aacute{}gina /web/ e tamb\eacute{}m a descri\ccedil{}\amacr{}o contida em /tags/ =meta= no /header/ do documento. Entretanto, isto s\oacute{} \eacute{} poss\iacute{}vel com alguns /hacks/: uso os /hooks/ para armazenar a p\aacute{}gina em disco, que \eacute{} recuperada por um /script/ desenvolvido para intermediar o /ELinks/ com outras ferramentas. O /script/ extrai informa\ccedil{}\otilde{}es do arquivo /HTML/, monta o /URL/ e executa o ~emacsclient~. Como desenvolvi tudo apenas para sanar minhas necessidades, os arquivos de configura\ccedil{}\amacr{}o e /scripts/ n\amacr{}o est\amacr{}o bem polidos. De qualquer forma, pretendo disponibiliz\aacute{}-los no /GitHub/ em breve.
+
+#  LocalWords:  toc pri Org-Procotocol ELinks PERMALINK org-procotocol elinks
+#  LocalWords:  org-protocol emacsclient org-capture Firefox workflow Alt-o
+#  LocalWords:  tab-external-command GitHub
