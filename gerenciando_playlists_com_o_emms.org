@@ -1,5 +1,5 @@
 #+BLOG: perspicaz
-#+POSTID: 330
+#+POSTID: 332
 #+DATE: [2016-12-29 Thu 10:05]
 #+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
 #+PARENT:
@@ -9,13 +9,13 @@
 #+TITLE: Gerenciando playlists com o EMMS
 #+PERMALINK: gerenciando_playlists_com_o_emms
 
-Faz tempo que estava infeliz com a forma de gerenciar minhas /playlists/ e finalmente encontrei uma solu\ccedil{}\amacr{}o satisfat\oacute{}ria.
+Faz tempo que estava infeliz com a forma de gerenciar minhas /playlists/ e finalmente encontrei uma solu\ccedil{}\atilde{}o satisfat\oacute{}ria.
 #+HTML: <!--more Continue lendo...-->
-Possuo poucas e distintas /playlists/. Duas /playlists/ de \aacute{}udio derivam do meu (mal)gosto musical (citado em "[[https://perspicazsite.wordpress.com/2016/12/07/emacs_-_nova_funcao_para_o_emms/][{Emacs}\nbsp{}Nova\nbsp{}Fun\ccedil{}\amacr{}o\nbsp{}para\nbsp{}o\nbsp{}EMMS]]" ) e algumas de v\iacute{}deo que dependem dos animes, cursos etc que esteja acompanhando, sempre baixo e armazeno em diret\oacute{}rios espec\iacute{}ficos por quest\otilde{}es pr\aacute{}ticas (tenho pouca toler\acirc{}ncia a propaganda e n\amacr{}o tenho internet 24/7).
+Possuo poucas e distintas /playlists/. Duas /playlists/ de \aacute{}udio derivam do meu (mal)gosto musical (citado em "[[https://perspicazsite.wordpress.com/2016/12/07/emacs_-_nova_funcao_para_o_emms/][{Emacs}\nbsp{}Nova\nbsp{}Fun\ccedil{}\atilde{}o\nbsp{}para\nbsp{}o\nbsp{}EMMS]]" ) e algumas de v\iacute{}deo que dependem dos animes, cursos etc que esteja acompanhando, sempre baixo e armazeno em diret\oacute{}rios espec\iacute{}ficos por quest\otilde{}es pr\aacute{}ticas (tenho pouca toler\acirc{}ncia a propaganda e n\atilde{}o tenho internet 24/7).
 
-At\eacute{} agora, tanto as /playlists/ de audio quanto as de v\iacute{}deo eram geradas por comandos /shell/. O pior caso ficava por conta da gest\amacr{}o das /playlists/ de animes, onde eu tinha que lembrar qual foi o \uacute{}ltimo epis\oacute{}dio assistido e, como n\amacr{}o tenho boa mem\oacute{}ria, se o pr\oacute{}prio hist\oacute{}rico do /shell/ n\amacr{}o "arrotasse" a posi\ccedil{}\amacr{}o, eu acabava por reassistir epis\oacute{}dio por epis\oacute{}dio para lembrar onde parei. Em s\eacute{}ries/animes pequenos n\amacr{}o errava muito, mas houve um anime (j\aacute{} n\amacr{}o lembro mais qual foi) que possu\iacute{}a mais de 60 epis\oacute{}dios e eu reassisti v\aacute{}rios inteiros achando que havia encontrado o ponto de parada para s\oacute{} depois lembrar de ter parado uns 10 epis\oacute{}dios adiante... Sem d\uacute{}vidas, precisava de uma forma para armazenar o \uacute{}ltimo v\iacute{}deo assistido sem que isto interferisse com as outras /playlists/.
+At\eacute{} agora, tanto as /playlists/ de audio quanto as de v\iacute{}deo eram geradas por comandos /shell/. O pior caso ficava por conta da gest\atilde{}o das /playlists/ de animes, onde eu tinha que lembrar qual foi o \uacute{}ltimo epis\oacute{}dio assistido e, como n\atilde{}o tenho boa mem\oacute{}ria, se o pr\oacute{}prio hist\oacute{}rico do /shell/ n\atilde{}o "arrotasse" a posi\ccedil{}\atilde{}o, eu acabava por reassistir epis\oacute{}dio por epis\oacute{}dio para lembrar onde parei. Em s\eacute{}ries/animes pequenos n\atilde{}o errava muito, mas houve um anime (j\aacute{} n\atilde{}o lembro mais qual foi) que possu\iacute{}a mais de 60 epis\oacute{}dios e eu reassisti v\aacute{}rios inteiros achando que havia encontrado o ponto de parada para s\oacute{} depois lembrar de ter parado uns 10 epis\oacute{}dios adiante... Sem d\uacute{}vidas, precisava de uma forma para armazenar o \uacute{}ltimo v\iacute{}deo assistido sem que isto interferisse com as outras /playlists/.
 
-Foi ent\amacr{}o que, ap\oacute{}s reler o manual do *emms* em busca de solu\ccedil{}\otilde{}es para o problema da persist\ecirc{}ncia das /playlists/ de audio, esbarrei na solu\ccedil{}\amacr{}o: criar m\uacute{}ltiplas /playlists/ e salv\aacute{}-las automaticamente \eacute{} uma caracter\iacute{}stica do *emms* muito f\aacute{}cil de implementar. Quando se usa os commandos normais de cria\ccedil{}\amacr{}o de /playlists/ do *emms*, sobrescreve-se a /playlists/ em execu\ccedil{}\amacr{}o (se houver) pela mais recente e, para modificar este comportamento, basta dizer ao *emms* que crie uma /playlist/ nova e em branco para s\oacute{} ent\amacr{}o determinar seu conte\uacute{}do, \eacute{} importante tamb\eacute{}m renomear o /buffer/ para um nome mais adequada e assim impedir que seja sobrescrito pela nova /playlist/ por acidente. Ap\oacute{}s a configura\ccedil{}\amacr{}o do hist\oacute{}rico, tanto o armazenamento quando a recupera\ccedil{}\amacr{}o das /playlists/ entre as se\ccedil{}\otilde{}es do *Emacs* ficam "autom\aacute{}gicas".
+Foi ent\atilde{}o que, ap\oacute{}s reler o manual do *emms* em busca de solu\ccedil{}\otilde{}es para o problema da persist\ecirc{}ncia das /playlists/ de audio, esbarrei na solu\ccedil{}\atilde{}o: criar m\uacute{}ltiplas /playlists/ e salv\aacute{}-las automaticamente \eacute{} uma caracter\iacute{}stica do *emms* muito f\aacute{}cil de implementar. Quando se usa os commandos normais de cria\ccedil{}\atilde{}o de /playlists/ do *emms*, sobrescreve-se a /playlists/ em execu\ccedil{}\atilde{}o (se houver) pela mais recente e, para modificar este comportamento, basta dizer ao *emms* que crie uma /playlist/ nova e em branco para s\oacute{} ent\atilde{}o determinar seu conte\uacute{}do, \eacute{} importante tamb\eacute{}m renomear o /buffer/ para um nome mais adequada e assim impedir que seja sobrescrito pela nova /playlist/ por acidente. Ap\oacute{}s a configura\ccedil{}\atilde{}o do hist\oacute{}rico, tanto o armazenamento quando a recupera\ccedil{}\atilde{}o das /playlists/ entre as se\ccedil{}\otilde{}es do *Emacs* ficam "autom\aacute{}gicas".
 
 Traduzindo para comandos...
 
@@ -25,7 +25,7 @@ Traduzindo para comandos...
     | emms-playlist-new
     `----
    #+END_EXAMPLE
-2. Popular a /playlist/ com algum dos comandos de cria\ccedil{}\amacr{}o, exemplos:
+2. Popular a /playlist/ com algum dos comandos de cria\ccedil{}\atilde{}o, exemplos:
    a) ~emms-play-file~
    b) ~emms-play-directory-tree~
 3. Renomear o /buffer/ para algo mais descritivo, exemplo:
@@ -34,7 +34,7 @@ Traduzindo para comandos...
     | M-x rename buffer RET *EMMS Anime* RET
     `----
    #+END_EXAMPLE
-4. N\amacr{}o esquecer de configurar o hist\oacute{}rico no ~\tilde{}/.emacs~:
+4. N\atilde{}o esquecer de configurar o hist\oacute{}rico no ~\tilde{}/.emacs~:
     #+BEGIN_SRC elisp
       ;;; emms-history.el -- save all playlists when exiting emacs
       (require 'emms-history)
@@ -42,7 +42,7 @@ Traduzindo para comandos...
       (setq emms-history-start-playing nil)
     #+END_SRC
 
-Isto \eacute{} suficiente para que as /playlists/ bem como a posi\ccedil{}\amacr{}o em cada sejam armazenados e recuperados entre as se\ccedil{}\otilde{}es do *Emacs*.
+Isto \eacute{} suficiente para que as /playlists/ bem como a posi\ccedil{}\atilde{}o em cada sejam armazenados e recuperados entre as se\ccedil{}\otilde{}es do *Emacs*.
 
 #  LocalWords:  toc pri Uncategorized playlists EMMS PERMALINK emms emacs
 #  LocalWords:  funcao playlist automágicas emms-play-file
