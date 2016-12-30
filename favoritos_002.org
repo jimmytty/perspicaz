@@ -1,0 +1,39 @@
+#+BLOG: perspicaz
+#+POSTID: 337
+#+DATE: [2016-12-30 Fri 15:00]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Uncategorized
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Favoritos #002
+#+PERMALINK: favoritos_002
+
++ *Ci\ecirc{}ncias*:
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=teoria-gravidade-rival-einstein-mata-materia-escura&id=020130161223][Teoria da Gravidade rival de Einstein mata mat\eacute{}ria escura]]
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=construcao-computador-quantico-radicalmente-simplificada&id=010150161226][Constru\ccedil{}\atilde{}o de computador qu\acirc{}ntico \eacute{} radicalmente simplificada]]
+  + [[http://fossforce.com/2016/12/science-needs-upgrade-open/][Science Needs an Upgrade to 'Open' | FOSS Force]]
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=pecas-de-seda-funcoes-pre-programadas&id=010170161227][Pe\ccedil{}as de seda incorporam fun\ccedil{}\otilde{}es pr\eacute{}-programadas]]
+  + [[https://www.youtube.com/watch?v=SOrgUMJxm6I][Two Black Holes Merge into One - YouTube]].
+  + [[https://www.youtube.com/watch?v=7T1LO6nOUdw][Planets' and stars' size comparison - YouTube]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=telescopio-espacial-nao-encontra-materia-escura&id=010130161230][Telesc\oacute{}pio espacial n\atilde{}o encontra mat\eacute{}ria escura]].
++ *Produtividade*:
+  + [[http://repo.or.cz/elinks.git/bundles][Downloadable Git bundle information for project elinks]]
+  + [[http://www.theproductiveprogrammer.blog/do_today.el.php][A Quick Guide to Org-Mode TODO's | The Productive Programmer]]
++ *Programa\ccedil{}\atilde{}o*:
+  + [[http://imasters.com.br/desenvolvimento/visualize-conjuntos-de-dados-na-web-com-o-framework-deck-gl-do-uber/][Visualize conjuntos de dados na web com o framework deck.gl do Uber -]]
+  + [[https://www.effectiveperlprogramming.com/2016/12/strip-leading-spaces-from-here-docs-with-v5-26/][Strip leading spaces from here-docs with v5.26 | The Effective Perler]]
+  + [[http://nullprogram.com/blog/2016/12/27/][Domain-Specific Language Compilation in Elfeed << null program]].
+  + [[https://www.youtube.com/watch?v=5crHv3iYoP8][Bradley Andersen ( elohmrow ) -  Java vs Perl Deathmatch  (20 min, English) - YouTube]].
+  + [[https://opensource.com/article/16/12/cidr-network-notation-configuration-linux][A guide to CIDR notation and configuration for Linux networking | Opensource.com]].
++ *Entretenimento*:
+  + [[http://www.agaleradosanimes.org/2014/06/sword-art-online-episodios-online.html][Sword Art Online - Epis\oacute{}dios - Assistir Online Legendado]]
+  + [[http://www.agaleradosanimes.org/2014/07/sword-art-online-ii-episodios-online.html][Sword Art Online II - Epis\oacute{}dios - Assistir Anime Completo]]
+  + [[http://aiyumi.warpstar.net/pt/blog/bg-ave-maria-violin-1/][Bach/Gounod Ave Maria no Violino (F\aacute{} Maior) \raquo{} Aiyumi.Warpstar.Net]]
+  + Overlord (anime)
+  + [[http://te4.org/][Tales of Maj'Eyal and T-Engine4 | Topdown tactical RPG roguelike game and game engine]]
+  + [[http://9gag.com/gag/aVDd2Q8][The best firewall in the world - 9GAG]]
+  + [[https://opensource.com/article/16/12/yearbook-top-linux-games-2016][What were the most popular Linux games on Steam in 2016? | Opensource.com]]
++ *Diversos*:
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=itaipu-rompe-barreira-inedita-100-milhoes-mwh&id=010175161222][Itaipu rompe barreira in\eacute{}dita dos 100 milh\otilde{}es de MWh]]
+  + [[http://imasters.com.br/desenvolvimento/computacao-cognitiva-nossa-autoevolucao-programada/][Computa\ccedil{}\atilde{}o Cognitiva: nossa autoevolu\ccedil{}\atilde{}o programada?]] (*artigo futurista).
