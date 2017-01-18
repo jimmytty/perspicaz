@@ -1,0 +1,58 @@
+#+BLOG: perspicaz
+#+POSTID: 339
+#+DATE: [2017-01-18 Wed 09:05]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Uncategorized
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Favoritos #003
+#+PERMALINK: favoritos_003
+
+# http://emacs.stackexchange.com/questions/7792/can-i-make-links-in-org-mode-that-contain-brackets-or/7793#7793
+# Square Bracket Open [
+#+MACRO: BO @@latex:\char91@@ @@html:&#91;@@
+# Square Bracket Close ]
+#+MACRO: BC @@latex:\char93@@ @@html:&#93;@@
+
+* Favoritos
++ *Ci\ecirc{}ncias*:
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=segredo-universo-estar-outro-universo&id=010130170106][Segredo do Universo pode estar em outro Universo]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=os-perigos-inteligencia-artificial-trara-humanidade&id=020150170109][Os perigos que a Intelig\ecirc{}ncia Artificial trar\aacute{} \agrave{} humanidade]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=depois-inteligencia-artificial-vem-ai-inteligencia-paralela&id=010150170109][Depois da Intelig\ecirc{}ncia Artificial, vem a\iacute{} a Intelig\ecirc{}ncia Paralela]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=imems-robos-moles-implantaveis&id=010180170112][iMEMS: V\ecirc{}m a\iacute{} os rob\ocirc{}s moles implant\aacute{}veis]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=memoria-ram-magnetoeletrica-antiferromagnetica&id=010110170117][Mem\oacute{}ria RAM magnetoel\eacute{}trica antiferromagn\eacute{}tica]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=no-mais-apertado-mundo-lanca-tecelagem-molecular&id=010165170117][N\oacute{} mais apertado do mundo lan\ccedil{}a tecelagem molecular]].
++ *Produtividade*:
+  + [[http://cupermind.com/post/Emacs-as-DevOps-editor/][Emacs as DevOps editor]].
+  + [[https://aqeelakber.com/2016/12/21/emacs-org-mode-journal-and-log/][Going paperless, replacing my notebooks and journals with 1's and 0's]].
+  + [[https://www.languagetool.org/][LanguageTool Style and Grammar Check]].
+  + [[https://github.com/mhayashi1120/Emacs-langtool][GitHub - mhayashi1120/Emacs-langtool: LanguageTool for Emacs]].
+  + [[http://irreal.org/blog/?p=5835][Terminal vs. GUI Emacs | Irreal]].
+  + [[http://jr0cket.co.uk/2017/01/spacemacs-creating-animated-gifs-videos.html][camcorder.el - Creating Animated Gifs & Videos for Spacemacs | jr0cket]].
+  + [[http://techfree.com.br/2017/01/precisamos-falar-sobre-teste-automatizado-de-infraestrutura/][Precisamos falar sobre teste automatizado de infraestrutura | Tecnologia Livre]].
+  + [[http://kitchingroup.cheme.cmu.edu/blog/2017/01/03/Find-stuff-in-org-mode-anywhere/][Find stuff in org-mode anywhere]].
+  + [[http://www.dicas-l.com.br/arquivo/cleo_execucao_de_comandos_shell_para_demonstracoes_ao_vivo.php][{{{BO}}}Dicas-L{{{BC}}} cleo - execucao de comandos shell para demonstracoes ao vivo]].
+  + [[http://www.dicas-l.com.br/arquivo/safecopy_recuperacao_de_dados_de_fontes_danificadas.php][{{{BO}}}Dicas-L{{{BC}}} safecopy - recuperacao de dados de fontes danificadas]].
+  + [[http://karl-voit.at/2017/01/15/org-clone-subtree-with-time-shift/][Recurring Events with Org-mode]].
+  + [[http://emacsist.com/10128][Introducing ivy-mode - Emacs & Emacsist]].
++ *Devel/SysAdmin/Security*:
+  + [[https://www.masteringperl.org/2017/01/perl-v5-26-removes-from-inc-but-dont-think-youre-safe/][Perl v5.26 removes . from @INC, but don't think you're safe! | Mastering Perl]].
+  + [[http://irreal.org/blog/?p=5854][Elisp Text Processing Idioms | Irreal]].
+  + [[https://opensource.com/article/17/1/exercism-learning-programming][Try Exercism to improve your programming skills | Opensource.com]].
+  + [[http://fossforce.com/2017/01/mongodb-ransomware-attacks-grow-number/][MongoDB Ransomware Attacks Grow in Number | FOSS Force]].
+  + [[http://www.dicas-l.com.br/arquivo/monitorando_a_temperatura_da_cpu.php][{{{BO}}}Dicas-L{{{BC}}} Monitorando a temperatura da CPU]].
+  + [[http://imasters.com.br/infra/acelere-seu-site-com-http2/?trace=1519021197&source][Acelere seu site com HTTP/2 -]].
+  + [[https://opensource.com/article/17/1/linux-plays-sound][Learn how audio on Linux works with Pulse | Opensource.com]].
+  + [[http://blogs.perl.org/users/morandimus/2017/01/symbolic-xor.html][Symbolic xor | morandimus {blogs.perl.org}]].
+  + [[http://imasters.com.br/desenvolvimento/tdd-para-codigo-de-infraestrutura-acho-que-nao-parte-01/?trace=1519021197&source][TDD para c\oacute{}digo de infraestrutura? Acho que n\atilde{}o... - Parte 01 -]].
+  + [[http://www.vivendoentresimbolos.com/2014/10/curso-calculo-diferencial-integral-aula-1-definicao-limite.html][Aula 1 - O que \eacute{} Limite? - Vivendo entre S\iacute{}mbolos]].
++ *Eventos*:
+  + [[https://catracalivre.com.br/sp/agenda/gratis/ano-novo-chines-celebra-ano-do-galo-com-atracoes-gratuitas/][Ano Novo Chin\ecirc{}s celebra ano do galo com atra\ccedil{}\otilde{}es gratuitas]].
++ *Entretenimento*:
+  + [[https://pt.wikipedia.org/wiki/Re:Zero_Kara_Hajimeru_Isekai_Seikatsu][Re: Zero Kara Hajimeru Isekai Seikatsu]] (anime)
+  + [[http://slackermedia.ml/][Slackermedia]]
++ *Neg\oacute{}cios/Carreira*:
+  + [[https://www.profissionaisti.com.br/2017/01/que-tal-trabalhar-com-ti-na-alemanha-saiba-como/][Que tal trabalhar com TI na Alemanha? Saiba como! - Profissionais TI]].
+  + [[https://opensource.com/open-organization/17/1/proof-openness-scales][How to scale an open organizational culture | Opensource.com]].
+  + [[https://www.profissionaisti.com.br/2017/01/como-conseguir-os-primeiros-clientes-trabalhando-como-autonomo/][Como conseguir os primeiros clientes trabalhando como aut\ocirc{}nomo - Profissionais TI]].
