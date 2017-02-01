@@ -1,0 +1,59 @@
+#+BLOG: perspicaz
+#+POSTID: 347
+#+DATE: [2017-02-01 Tue 7:42]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Uncategorized
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Escrevendo em Japones com o Emacs
+#+PERMALINK: escrevendo_em_japones_com_o_emacs
+
+De uns tr\ecirc{}s ou quatros anos para c\aacute{}, iniciei minhas aventuras no universo do "entretenimento" assistindo animes e jogando mais /games/ (al\eacute{}m de ouvir mais m\uacute{}sica tamb\eacute{}m). Logo ap\oacute{}s iniciar. depaire-me com uma quest\atilde{}o inc\ocirc{}moda: chegar\aacute{} o dia em que n\atilde{}o terei o que assistir nem o que jogar porque j\aacute{} terei consumido quase todo o conte\uacute{}do (infelizmente eu seleciono muito...) j\aacute{} legendado/traduzido para ingl\ecirc{}s/portugu\ecirc{}s, logo, minha \uacute{}nica solu\ccedil{}\atilde{}o seria come\ccedil{}ar a aprender japon\ecirc{}s. Tenho at\eacute{} o caso do jogo /Samuray\nbsp{}Showdown\nbsp{}RPG/ que desconfio n\atilde{}o ter sido capaz de "fechar" justamente por saber nada de */Kanji/*! Este exemplo \eacute{} um dos que est\atilde{}o incomodando-me a alguns anos e, recentemente, resolvi baixar do /YouTube/ e estudar a fundo o curso b\aacute{}sico de japon\ecirc{}s da /Sonia\nbsp{}Ninomiya-Sensei/.
+#+HTML: <!--more Continue lendo...-->
+No Jap\atilde{}o, existem tr\ecirc{}s sistemas de escrita: */Kanji/*, */Hiragana/* e */Katakana/*. O curso da /Sonia\nbsp{}Ninomiya-Sensei/ cobre principalmente o */Hiragana/* ainda que os outros dois sejam mencionados na terceira aula. O treino da escrita \eacute{} importante porque tamb\eacute{}m aprimora a capacidade de reconhecimento desses caracteres. Contudo, como um analfabeto como eu poderia escrever japon\ecirc{}s de uma forma mais f\aacute{}cil? Papel e /enpitsu/ (l\aacute{}pis) nunca foram meus amigos...
+
+Entra, ent\atilde{}o, o /Emacs/ em cena... Usando o /Emacs/ eu j\aacute{} conhecia um m\eacute{}todo relativamente simples para escrever */Hiragana/* ou */Katakana/* usando /UTF-8/. Por exemplo, para escrever a letra "ro", faz-se o seguinte:
+
+: ,----
+: | C-x 8 RET HIRAGANA LETTER RO
+: `----
+
+E o resultado ser\aacute{}:
+[[./escrevendo_em_japones_com_o_emacs/hiragana_letter_ro.png]]
+
+\Eacute{} importante lembrar (eu j\aacute{} esqueci umas duas vezes...) que o arquivo deve ser salvo em codifica\ccedil{}\atilde{}o /UTF-8/ para que se possa misturar os nossos caracteres com os japoneses.
+
+A simplicidade est\aacute{} no fato de que basta saber o som da s\iacute{}laba e o autocompletar do /Emacs/ faz o resto. Cheguei a achar que este seria um m\eacute{}todo bom para aprender... At\eacute{} ter ido pesquisar como escrever em */Kanji/...* acabei aprendendo a forma "definitiva": /input\nbsp{}methods/!
+
+J\aacute{} havia "passado o olho" no cap\iacute{}tulo do manual do /Emacs/ que trata dos /input\nbsp{}methods/, por\eacute{}m n\atilde{}o havia me dado conta das facilidades, muito menos das relacionadas \agrave{} l\iacute{}ngua japonesa, coisas que acabei por aprender na p\aacute{}gina http://members.optusnet.com.au/~charles57/GTD/emacs_japanese.html, onde \eacute{} explicado que podemos definir o /input\nbsp{}method/ para /"japanese"/ e digitar os fonemas/s\iacute{}labas naturalmente com o nosso teclado padr\atilde{}o e os caracteres s\atilde{}o produzidos "automagicamente" com as palavras "traduz\iacute{}veis" para */Kanji/* sendo convertidas.
+
+Precisei do /input\nbsp{}method/ /"japanese"/ apenas na terceira aula do curso (nas demais pretendo usar apenas o "/japanese-hiragana/") onde foi ensinado a forma mais natural aos japoneses para escrever-se a frase "*Ike\nbsp{}ga\nbsp{}arimasu*.", onde a palavra *ike* \eacute{} grafada em */Kanji/* e o resto em */Hiragana/*. O procedimento \eacute{} o seguinte:
+
+1. Definir o /input\nbsp{}method/ para "/japanese/":
+  #+BEGIN_EXAMPLE
+    ,----
+    | M-x set-input-method RET japanese RET
+    `----
+  #+END_EXAMPLE
+2. Escrever literalmente os caracteres da frase:
+   [[./escrevendo_em_japones_com_o_emacs/ike_ga_arimasu.png]]
+   (o resto o /Emacs/ resolve sozinho!)
+
+Para retornar o /input\nbsp{}method/ padr\atilde{}o, pode-se usar o atalho ~C-\~. Idem para voltar ao "/japanese/".
+
+Mas e que diabos aquela frase significa?
+
+Literalmente, decompondo a frase, temos:
+
++ *ike* :: lago/lagoa.
++ *ga arimasu* :: existe/h\aacute{}/tem.
+
+ou seja, "H\aacute{} um lago.". A palavra /arimasu/ s\oacute{} \eacute{} usada para objetos inanimados. Para seres vivos, a palavra /imasu/ \eacute{} usada. Outro detalhe \eacute{} que n\atilde{}o h\aacute{} distin\ccedil{}\atilde{}o de n\uacute{}mero, ou seja, "lago" ou "lagos" teriam a mesma conota\ccedil{}\atilde{}o "*ga arimasu*". S\oacute{} n\atilde{}o entendi ainda muito bem sobre a part\iacute{}cula "*ga*" e sobre o porque da pron\uacute{}ncia do "*arimasu*" ser apenas "arimass" (na maioria dos casos), bem como de outras palavras terminadas em "su", h\aacute{} momentos em que ou\ccedil{}o o "su" do final principalmente quando a senten\ccedil{}a ainda n\atilde{}o terminou... Bem, o caminho ainda \eacute{} loooongo... Bons estudos para n\oacute{}s!
+
+#  LocalWords:  toc pri Uncategorized PERMALINK japones emacs YouTube Ninomiya
+#  LocalWords:  ro C-x RET automagicamente japanese-hiragana ga arimass su
+#  LocalWords:  loooongo Ninomiya-Sensei
+
+# ./escrevendo_em_japones_com_o_emacs/hiragana_letter_ro.png http://perspicazsite.files.wordpress.com/2017/02/hiragana_letter_ro.png
+# ./escrevendo_em_japones_com_o_emacs/ike_ga_arimasu.png http://perspicazsite.files.wordpress.com/2017/02/ike_ga_arimasu.png
