@@ -1,0 +1,57 @@
+#+BLOG: perspicaz
+#+POSTID: 351
+#+DATE: [2017-02-13 Mon 18:14]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Uncategorized
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Favoritos #004
+#+PERMALINK: favoritos_004
+
+* Favoritos
++ *Ci\ecirc{}ncias*:
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=atingida-temperatura-abaixo-limite-quantico&id=010170170118][Atingida temperatura abaixo do limite qu\acirc{}ntico]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=computacao-ternaria-memoria-tambem-processa-dados&id=010150170120][Computa\ccedil{}\atilde{}o tern\aacute{}ria: A mem\oacute{}ria que tamb\eacute{}m processa os dados]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=nanochamines-carbono-tiram-calor-processadores&id=010110170120][Nanochamin\eacute{}s de carbono tiram calor de processadores]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=faca-voce-mesmo-raio-trator-sonico&id=010170170124][Fa\ccedil{}a voc\ecirc{} mesmo: Raio Trator S\ocirc{}nico]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=robo-mole-faz-coracao-bater-ritmo&id=010180170124][Rob\ocirc{} mole faz cora\ccedil{}\atilde{}o bater no ritmo]].
+  + [[http://hypescience.com/novo-mapa-de-superaglomerado-galactico-mostra-casa-celestial-da-via-lactea/][Novo mapa de superaglomerado gal\aacute{}ctico mostra a casa celestial da Via L\aacute{}ctea | HypeScience]].
+  + [[http://hypescience.com/russia-cria-arma-magnetica-que-penetra-em-qualquer-tipo-de-barreira/][R\uacute{}ssia cria arma magn\eacute{}tica que penetra em qualquer tipo de barreira | HypeScience]].
+  + [[http://hypescience.com/fisicos-afirmam-ter-manipulado-o-vacuo-e-observado-as-consequencias/][F\iacute{}sicos afirmam ter manipulado o v\aacute{}cuo e observado as consequ\ecirc{}ncias | HypeScience]].
+  + [[http://hypescience.com/cientistas-usam-celulas-tronco-para-criar-embrioes-quimericos-meio-humanos-meio-porcos/][Cientistas usam c\eacute{}lulas-tronco para criar embri\otilde{}es quim\eacute{}ricos: meio humanos, meio porcos | HypeScience]].
+  + [[http://hypescience.com/nova-forma-de-materia-e-criada-cristais-de-tempo/][Nova forma de mat\eacute{}ria \eacute{} criada: cristais de tempo | HypeScience]].
+  + [[http://hypescience.com/estudo-revela-evidencia-substancial-para-o-universo-holografico/][Estudo revela evid\ecirc{}ncia substancial para o universo hologr\aacute{}fico | HypeScience]].
+  + [[http://hypescience.com/conservacao-energia-escura/][Viola\ccedil{}\otilde{}es da lei de conserva\ccedil{}\atilde{}o de energia podem explicar energia escura | HypeScience]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=lancado-projeto-construir-computador-quantico&id=010150170202][Lan\ccedil{}ado projeto para construir um computador qu\acirc{}ntico]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=meteoritos-fosseis-mostram-evolucao-sistema-solar&id=010130170201][Meteoritos f\oacute{}sseis mostram evolu\ccedil{}\atilde{}o do Sistema Solar]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=fisicos-medem-tempo-sem-usar-relogio&id=010165170210][F\iacute{}sicos medem o tempo sem usar um rel\oacute{}gio]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=planeta-terra-fabricar-sua-propria-agua&id=010125170209][Planeta Terra pode fabricar sua pr\oacute{}pria \aacute{}gua]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=processador-magnetico-nao-tera-transistores-tera-furos&id=010110170208][Processador magn\eacute{}tico n\atilde{}o ter\aacute{} transistores, ter\aacute{} furos]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=pulsar-ana-branca&id=010130170208][Pulsar de an\atilde{} branca: Descoberto novo tipo de corpo celeste]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=musculo-artificial-seda-aranha-acionado-agua&id=010180170207][M\uacute{}sculo artificial de seda de aranha acionado por \aacute{}gua]].
++ *Produtividade*:
+  + [[http://irreal.org/blog/?p=5885][The Right Dictionary | Irreal]].
+  + [[https://github.com/bbatsov/projectile/][GitHub - bbatsov/projectile: Project Interaction Library for Emacs]].
+  + [[http://members.optusnet.com.au/~charles57/GTD/emacs_japanese.html][Using Emacs and org-mode with Japanese Text]].
++ *Devel/SysAdmin/Security*:
+  + [[http://hypescience.com/novo-organismo-foi-formado-usando-o-primeiro-codigo-genetico-de-6-letras/][Novo organismo foi formado usando o primeiro c\oacute{}digo gen\eacute{}tico de 6 letras | HypeScience]].
+  + [[https://www.effectiveperlprogramming.com/2017/01/xx-means-more-meaningless-whitespace-and-thats-good/][/xx means more meaningless whitespace (and that s good) | The Effective Perler]].
+  + [[http://lifepluslinux.blogspot.com.br/2017/01/look-before-you-paste-from-website-to.html][Life plus Linux: Look before you paste from a website to terminal]].
+  + [[http://ledgersmbdev.blogspot.com.br/2017/01/plperl-and-large-postgresql-databases.html][Perspectives on LedgerSMB: PL/Perl and Large PostgreSQL Databases]].
+  + [[http://nullprogram.com/blog/2017/01/30/][How to Write Fast(er) Emacs Lisp << null program]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=cientistas-criam-fita-dna-totalmente-sintetica&id=010160170202][Cientistas criam fita de DNA totalmente sint\eacute{}tica]].
++ *Eventos*:
++ *Entretenimento*:
+  + [[http://9gag.com/gag/any61wo]['Bought this beauty for my coding' - 9GAG]]
+  + [[https://incenp.org/notes/2012/video-cropping.html][Cropping a video with MPlayer/FFmpeg]]
+  + Tales of Zestiria The X                                           :anime:
+  + [[https://www.google.com.br/maps/place/Creepy+Kazakhstan+Pentagram/@52.4796505,62.1839361,443m/data=!3m1!1e3!4m13!1m7!3m6!1s0x0:0x0!2zNTLCsDI4JzQ3LjUiTiA2MsKwMTEnMTEuMSJF!3b1!8m2!3d52.479866!4d62.186404!3m4!1s0x0:0xfa3d4db75ac7f17f!8m2!3d52.4798272!4d62.1857379?hl=pt-BR][Creepy Kazakhstan Pentagram - Google Maps]]
+  + [[http://9gag.com/gag/ayD0E6p][18 Wikipedia Pages You May Find Interesting - 9GAG]]
++ *Neg\oacute{}cios/Carreira*:
+  + [[https://en.wikipedia.org/wiki/QR_code][QR code - Wikipedia]].
+  + [[http://hypescience.com/47-dos-empregos-vao-desaparecer-nos-proximos-20-anos/][47% dos empregos v\atilde{}o desaparecer nos pr\oacute{}ximos 20 anos | HypeScience]].
+  + [[https://opensource.com/article/17/1/brotli-compression-algorithm][A new open source compression algorithm | Opensource.com]].
+  + [[http://www.datascienceacademy.com.br/pages/curso-introducao-a-ciencia-de-dados][Curso Introdu\ccedil{}\atilde{}o \agrave{} Ci\ecirc{}ncia de Dados]].
+  + [[http://imasters.com.br/desenvolvimento/as-dificuldades-da-integracao-entre-solucoes/][As dificuldades da integra\ccedil{}\atilde{}o entre solu\ccedil{}\otilde{}es -]].
+
