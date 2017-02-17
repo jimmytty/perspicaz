@@ -1,0 +1,34 @@
+#+BLOG: perspicaz
+#+POSTID: 353
+#+DATE: [2017-02-17 Fri 10:45]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Uncategorized
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Feriados moveis no Remind
+#+PERMALINK: feriados_moveis_no_remind
+
+[[https://pt.wikipedia.org/wiki/Feriado_m%C3%B3vel][Feriados m\oacute{}veis]] s\atilde{}o aqueles que n\atilde{}o possuem data fixa no nosso (impreciso) calend\aacute{}rio crist\atilde{}o. Os feriados m\oacute{}veis mais comuns s\atilde{}o [[https://pt.wikipedia.org/wiki/Carnaval][Carnaval]], [[https://pt.wikipedia.org/wiki/Sexta-feira_Santa][Sexta Feira Santa]], [[https://pt.wikipedia.org/wiki/P%C3%A1scoa][P\aacute{}scoa]] e [[https://pt.wikipedia.org/wiki/Corpus_Christi][Corpus Christi]]. Saber qual dia cai o feriado \eacute{} importante n\atilde{}o s\oacute{} para organiza\ccedil{}\atilde{}o pessoal mas tamb\eacute{}m para criar rotinas automatizadas para sistemas e afins.
+#+HTML: <!--more Continue lendo...-->
+Por v\aacute{}rios anos, eu limitei-me a copiar para o [[http://www.roaringpenguin.com][Remind]] as datas dos feriados e, claro, havia necessidade de manuten\ccedil{}\atilde{}o/atualiza\ccedil{}\atilde{}o anual que sempre foi prejudicas minha pouca mem\oacute{}ria. Isto sempre fez sentir necessidade de buscar uma solu\ccedil{}\atilde{}o ainda mais automatizada.
+
+Finalmente hoje, fui rever o assunto para criar escalas de trabalhos para rob\ocirc{}s de /software/ em infraestruturas distribu\iacute{}das e n\atilde{}o estava nada interessado em ficar criando rotinas de atualiza\ccedil{}\atilde{}o de feriados para coisas que pudesse programar. Fiz algumas buscas na /internet/ e eis que uma antiga p\aacute{}gina j\aacute{} conhecida minha ergue-se a minha fronte e minhas perguntas j\aacute{} estavam respondidas nela. A p\aacute{}gina em quest\atilde{}o \eacute{} a https://www.roaringpenguin.com/wiki/index.php/Defs.rem, tomando-a como base, pude resolver o problema dos 5 feriados m\oacute{}veis citados anteriormente da seguinte maneira:
+
+#+BEGIN_SRC remind-conf
+  SET easter easterdate(year(today()))
+  OMIT [trigger( easter - 47 )] MSG %"Carnaval%"
+  OMIT [trigger( easter -  2 )] MSG %"Sexta Feira Santa%"
+  OMIT [easter]                 MSG %"P\aacute{}scoa%"
+  OMIT [trigger( easter + 60 )] MSG %"Corpus Christi%"
+#+END_SRC
+
+Nada mais f\aacute{}cil n\atilde{}o \eacute{}?
+
+O comando ~SET~ \eacute{} usado para declarar/atribuir vari\aacute{}veis, no caso, estou atribuindo \agrave{} vari\aacute{}vel ~easter~ a data da p\aacute{}scoa do ano atual com a fun\ccedil{}\atilde{}o ~easterdate()~, que recebe da fun\ccedil{}\atilde{}o ~year()~ apenas o ano da data retornada pela fun\ccedil{}\atilde{}o ~today()~. O comando ~OMIT~ \eacute{} usado para declarar omiss\otilde{}es de datas de maneira global pela forma como foi usado, \oacute{}timo para declarar feriados.
+
+Faz v\aacute{}rios anos que uso o /Remind/ e at\eacute{} agora encontrei nada que tivesse alguma chance de substitu\iacute{}-lo.
+
+A pr\oacute{}xima etapa \eacute{} programar as escalar e fazer meus rob\ocirc{}s saberem quando devem trabalhar ou dormir!
+
+#  LocalWords:  toc pri Uncategorized PERMALINK easter easterdate
