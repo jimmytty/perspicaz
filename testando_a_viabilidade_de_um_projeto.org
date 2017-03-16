@@ -1,0 +1,14 @@
+#+BLOG: perspicaz
+#+POSTID: 355
+#+DATE: [2017-03-16 Thu 14:10]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Uncategorized
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Testando a viabilidade de um projeto
+#+PERMALINK: testando_a_viabilidade_de_um_projeto
+
+#+HTML: [youtube https://www.youtube.com/watch?v=0w8jttm6PgE]
+
+Exemplos em v\iacute{}deo do trabalho di\aacute{}rio...
