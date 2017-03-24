@@ -1,0 +1,59 @@
+#+BLOG: perspicaz
+#+POSTID: 357
+#+DATE: [2017-03-24 Fri 14:56]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Uncategorized
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Favoritos #005
+#+PERMALINK: favoritos_005
+
+
+* Favoritos
++ *Ci\ecirc{}ncias*:
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=computador-de-dna&id=010150170221][Computador de DNA consegue identificar doen\ccedil{}as]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=diodo-biologico-vivo-feito-celulas-cardiacas&id=010110170220][Diodo biol\oacute{}gico vivo \eacute{} feito com c\eacute{}lulas card\iacute{}acas]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=trianguleno&id=010165170220][Trianguleno: Mol\eacute{}cula inst\aacute{}vel \eacute{} criada \aacute{}tomo por \aacute{}tomo]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=como-construir-seu-proprio-biorrobo&id=010180170223][Como construir seu pr\oacute{}prio biorrob\ocirc{}]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=supertelescopio-pronto-tirar-primeira-foto-buraco-negro&id=010175170223][Supertelesc\oacute{}pio pronto para tirar primeira foto de um buraco negro]].
+  + [[http://9gag.com/gag/ad7KoD9][How big is the universe? - 9GAG]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=sinapse-artificial-organica-processadores-neuromorficos&id=010110170306][Sinapse artificial org\acirc{}nica para processadores neurom\oacute{}rficos]].
+  + [[http://oestatistico.com.br/2017/03/08/florence-nightingale-a-dama-da-lampada/][A Dama da L\acirc{}mpada | O Estat\iacute{}stico]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=ibm-lancara-computador-quantico-comercial&id=010150170308][IBM lan\ccedil{}ar\aacute{} computador qu\acirc{}ntico comercial]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=interruptor-eletrico-dna&id=010165170308][Interruptor el\eacute{}trico feito com mol\eacute{}cula de DNA]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=poeira-cosmica-desce-quedas-nao-se-queimar&id=010130170307][Poeira c\oacute{}smica desce de p\aacute{}ra-quedas para n\atilde{}o se queimar]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=comprovada-teoria-sistema-solar-caotico&id=010125170323][Comprovada teoria do "Sistema Solar Ca\oacute{}tico"]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=paradoxo-de-marte&id=010130170322][O Paradoxo de Marte: Sinais de \aacute{}gua onde \aacute{}gua parece imposs\iacute{}vel]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=bits-fotonicos-empacotados-dentro-chip&id=010110170322][Bits fot\ocirc{}nicos s\atilde{}o empacotados dentro de um chip]].
++ *Produtividade*:
+  + [[https://opensource.com/article/17/2/quick-introduction-tmux][A quick introduction to tmux | Opensource.com]].
+  + [[https://www.reddit.com/r/emacs/comments/5tqtog/what_are_the_pros_and_cons_of_emacs_everything_is/][What are the pros and cons of Emacs' everything is a buffer approach and how does Atom compare in this regard? : emacs]].
+  + [[https://vxlabs.com/2017/02/07/mu4e-0-9-18-e-mailing-with-emacs-now-even-better/][mu4e 0.9.18: E-Mailing with Emacs now even better. -- vxlabs]].
+  + [[https://blog.pronus.io/posts/por-que-o-facebook-escolheu-o-mercurial-e-nao-o-git/][Por que o Facebook escolheu o Mercurial e n\atilde{}o o Git? | Blog Pronus]].
+  + [[https://www.emacswiki.org/emacs/DesktopMultipleSaveFiles][EmacsWiki: Desktop Multiple Save Files]].
+  + [[http://cestlaz.github.io/posts/using-emacs-29%2520elfeed/#.WLWoz7MshJI][Using Emacs - 29 -elfeed part 1 | C'est la Z]].
+  + [[http://cestlaz.github.io/posts/using-emacs-30-elfeed-2/#.WLWqL7MshJI][Using Emacs - 30 - elfeed part 2 - Hydras | C'est la Z]].
+  + [[http://pragmaticemacs.com/emacs/tag-multiple-headlines-at-once-in-org-mode/][Tag multiple headlines at once in org-mode | Pragmatic Emacs]].
+  + [[http://mbork.pl/2017-03-04_Bookmarking_directories_in_Eshell][Marcin Borkowski: 2017-03-04 Bookmarking directories in Eshell]].
+  + [[https://opensource.com/article/17/3/document-conversion-tools-writers][Writing documentation with Markdown with Pandoc and Org-mode | Opensource.com]].
++ *Devel/SysAdmin/Security*:
+  + [[https://ericabrahamsen.net/tech/2016/feb/bbdb-eieio-object-oriented-elisp.html][BBDB on EIEIO -- An Introduction to Object-Oriented Emacs Lisp]].
+  + [[https://www.depesz.com/2017/02/20/getting-first-and-last-values-per-group/][select * from depesz; >> Blog Archive >> Getting first and last values per group]].
+  + [[https://opensource.com/article/17/2/command-line-tools-data-analysis-linux][10 command-line tools for data analysis in Linux | Opensource.com]].
+  + [[http://blogs.perl.org/users/sergey_kolychev/2017/02/machine-learning-in-perl.html][Machine learning in Perl | Sergey Kolychev {blogs.perl.org}]].
+  + [[https://www.slideshare.net/mongodb/mongodb-europe-2016-graph-operations-with-mongodb][MongoDB Europe 2016 - Graph Operations with MongoDB]].
+  + [[http://momjian.us/main/blogs/pgblog/2017.html#March_22_2017][Bruce Momjian: Postgres Blog - Characters Sets, Encodings, and Collations]].
++ *Entretenimento*:
+  + Tanaka-kun Wa Itsumo Kedaruge                                     :anime:
+  + [[http://9gag.com/gag/arbOB4X][Metal fans in a nutshell - 9GAG]]
+  + Shouwa Genroku Rakugo Shinjuu                                     :anime:
+  + Sakurako-san no Ashimoto ni wa Shitai ga Umatteiru                :anime:
++ *Neg\oacute{}cios/Carreira*:
+  + [[http://br-linux.org/2017/01/uma-discussao-sobre-o-estado-juridico-do-fedora.html][Uma discuss\atilde{}o sobre o estado jur\iacute{}dico do Fedora - BR-Linux.org]].
+  + [[https://opensource.com/open-organization/17/2/new-perspective-meritocracy][The Iron Rectangle of Meritocracies | Opensource.com]].
+  + [[https://opensource.com/article/17/2/what-do-we-do-when-everything-automated][What will we do when everything is automated? | Opensource.com]].
+  + [[https://br.okfn.org/2017/03/02/projeto-busca-tornar-diario-oficial-mais-acessivel/][Projeto busca tornar o Di\aacute{}rio Oficial mais acess\iacute{}vel -- Open Knowledge Brasil]].
+  + [[http://9gag.com/gag/awnMMNy][Daily dose of cringe - 9GAG]].
+  + [[http://oestatistico.com.br/2017/03/23/open-data-estatisticas-reais/][Open Data: Encontrando Solu\ccedil{}\otilde{}es Reais - O Estat\iacute{}stico]].
+  + [[http://oestatistico.com.br/2017/03/15/o-trabalho-do-estatistico-mudou/][O Trabalho do "Estat\iacute{}stico" mudou - O Estat\iacute{}stico]].
