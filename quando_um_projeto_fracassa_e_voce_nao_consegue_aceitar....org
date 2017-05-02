@@ -1,0 +1,14 @@
+#+BLOG: perspicaz
+#+POSTID: 359
+#+DATE: [2017-05-01 Mon 21:39]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Uncategorized
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Quando um projeto fracassa e voce nao consegue aceitar...
+#+PERMALINK: quando_um_projeto_fracassa_e_voce_nao_consegue_aceitar...
+
+#+HTML: [youtube https://www.youtube.com/watch?v=m-PtmhmY2RA]
+
+Exemplos em v\iacute{}deo do trabalho di\aacute{}rio...
