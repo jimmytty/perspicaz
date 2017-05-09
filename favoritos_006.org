@@ -1,0 +1,64 @@
+#+BLOG: perspicaz
+#+POSTID: 361
+#+DATE: [2017-05-08 Mon 21:55]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Uncategorized
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Favoritos #006
+#+PERMALINK: favoritos_006
+
+* Favoritos
++ *Ci\ecirc{}ncias*:
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=computacao-atomica-supera-logica-binaria&id=010150170327][Computa\ccedil{}\atilde{}o at\ocirc{}mica supera l\oacute{}gica bin\aacute{}ria]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=conheca-chip-vai-equipar-tricorders&id=010110170328][Conhe\ccedil{}a o chip que vai equipar os tricorders]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=processador-quimico-aprende-identificar-esferas&id=010150170329][Processador qu\iacute{}mico aprende a identificar esferas]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=rumo-cerebro-artificial-sinapses-eletronicas-ja-aprendem-sozinhas&id=010110170417][Rumo ao c\eacute{}rebro artificial, sinapses eletr\ocirc{}nicas j\aacute{} aprendem sozinhas]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=maior-sol-artificial-mundo-vai-produzir-hidrogenio&id=010115170419][Maior sol artificial do mundo vai produzir hidrog\ecirc{}nio]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=objeto-massa-negativa-desafia-leis-fisica&id=020130170420][Objeto com massa negativa desafia as leis da F\iacute{}sica]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=transistor-optoeletronico-imita-neuronio-tem-sua-propria-memoria&id=010110170424][Trans\iacute{}stor optoeletr\ocirc{}nico imita neur\ocirc{}nio e tem sua pr\oacute{}pria mem\oacute{}ria]].
++ *Produtividade*:
+  + [[http://aiyumi.warpstar.net/pt/blog/slack-14.2-srs-and-pulse/][Slackware 14.2, Leitores de Tela e PulseAudio \raquo{} Aiyumi.Warpstar.Net]].
+  + [[https://github.com/Kungsgeten/org-brain][GitHub - Kungsgeten/org-brain: Org-mode wiki + concept-mapping]].
+  + [[http://mbork.pl/2017-03-27_Moving_to_a_certain_line_on_the_screen][Marcin Borkowski: 2017-03-27 Moving to a certain line on the screen]].
+  + [[https://oremacs.com/2017/04/09/ivy-0.9.0/][Ivy 0.9.0 is out . (or emacs]].
++ *Devel/SysAdmin/Security*:
+  + [[https://www.nu42.com/2017/03/data-work-dirty-work.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+nu42%252FyYVb+%2528%25CE%25BD42%2529][Data work is dirty work]].
+  + [[https://opensource.com/article/17/4/introduction-functional-programming][What is functional programming? | Opensource.com]].
+  + [[https://www.depesz.com/2017/04/03/waiting-for-postgresql-10-support-if-elif-else-endif-in-psql-scripting/][select * from depesz; >> Blog Archive >> Waiting for PostgreSQL 10 - Support \if ... \elif ... \else ... \endif in psql scripting.]]
+  + [[http://mp.vv.si/blog/emacs/emacs-symbolism/][Emacs symbolism - Matthias bloggt]].
+  + [[http://blogs.perl.org/users/ovid/2017/04/better-sql-tracing-with-dbixclass.html][Better SQL tracing with DBIx::Class | Ovid {blogs.perl.org}]].
+  + [[http://blogs.perl.org/users/preaction/2017/04/timeouts-for-parallelforkmanager.html][Timeouts for Parallel::ForkManager | preaction {blogs.perl.org}]].
+  + [[https://imasters.com.br/tecnologia/entrevista-rodrigo-scotti-inteligencia-artificial-quando-o-futuro-ja-e-realidade/][Entrevista Rodrigo Scotti - Intelig\ecirc{}ncia artificial: quando o futuro j\aacute{} \eacute{} realidade -]].
+  + [[http://blogs.perl.org/users/diab_jerius/2017/04/how-fast-can-you-try.html][How fast can you try?]].
+  + [[http://blogs.perl.org/users/tnish/2017/04/a-very-simple-lru-cache-with-tieixhash.html][A very simple LRU cache with Tie::IxHash]].
+  + [[http://blogs.perl.org/users/ryan_voots/2017/04/trials-and-troubles-with-changing-inc.html][Trials and troubles with changing @INC]].
+  + [[http://blogs.perl.org/users/dana_jacobsen/2017/04/alternatives-to-rand.html][Alternatives to rand()]].
+  + [[https://www.effectiveperlprogramming.com/2017/04/you-must-escape-the-left-brace-in-a-regex/][You must escape the left brace in a regex | The Effective Perler]].
+  + [[https://imasters.com.br/gerencia-de-ti/tendencias/redes-neurais-artificiais-o-que-sao-onde-vivem-do-que-se-alimentam/?trace=1519021197&source][Redes neurais artificiais: o que s\atilde{}o? Onde vivem? Do que se alimentam? -]].
+  + [[https://blog.2ndquadrant.com/in-the-defense-of-sar/][In the defense of sar (and how to configure it) |]].
+  + [[http://blogs.perl.org/users/flavio_s_glock/2017/05/perl5-to-java-compiler---week-100---bootstrapping.html][Perl5 to Java compiler - week 100 - bootstrapping | Fl\aacute{}vio S. Glock {blogs.perl.org}]].
+  + [[http://www.craigkerstiens.com/2017/04/30/why-postgres-five-years-later/][Why use Postgres (Updated for last 5 years) - Craig Kerstiens]].
+  + [[http://blogs.perl.org/users/mikko_koivunalho/2017/05/perl-in-a-business-application.html][Perl in a Business Application | Mikko Koivunalho {blogs.perl.org}]].
+  + [[http://blogs.perl.org/users/toby_inkster/2017/05/typetiny-12-coming-soon.html][Type::Tiny 1.2 Coming Soon | Toby Inkster {blogs.perl.org}]].
+  + [[http://perltricks.com/article/getting-started-with-xs/][Getting started with XS]].
++ *Entretenimento*:
+  + Occultic;Nine                                                     :anime:
+  + [[http://9gag.com/gag/amYoEZo][Programmers uniteee - 9GAG]]
+  + [[http://irreal.org/blog/?p=6026][Emacser Defined | Irreal]]
+  + [[https://9gag.com/gag/a1bDqQR][Whats your favorite Port? - 9GAG]]
+  + Chain Chronicle - Haecceitas no Hikari                            :anime:
+  + [[https://9gag.com/gag/aebV24v][Fun fact: Banging your head against a wall burns 150 calories an hour. - 9GAG]]
+  + [[https://www.vivaolinux.com.br/script/Bash-RPG][Bash RPG {Shell Script}]]
+  + Sousei No Onmyouji                                                :anime:
+  + Kidou Senshi Gundam Unicorn                                       :anime:
++ *Diversos*:
+  + [[http://oestatistico.com.br/2017/04/10/como-mentir-com-estatistica/][Resenha #1 // Como Mentir com Estat\iacute{}stica - O Estat\iacute{}stico]].
+  + [[http://oestatistico.com.br/2017/04/24/5-licoes-de-estatistica-e-probabilidade-essenciais-parte-2/][5 Li\ccedil{}\otilde{}es de Estat\iacute{}stica e Probabilidade Essenciais (Parte 2) - O Estat\iacute{}stico]].
++ *Neg\oacute{}cios/Carreira*:
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=visao-artificial-desenvolvida-brasil-classificar-madeiras&id=010170170403][Vis\atilde{}o artificial desenvolvida no Brasil para classificar madeiras]].
+  + [[http://ogp.me/][The Open Graph protocol]].
+  + [[https://imasters.com.br/gerencia-de-ti/tendencias/transmissoes-de-video-na-web-com-taxas-de-bits-adaptaveis-adaptative-bitrate/][Transmiss\otilde{}es de v\iacute{}deo na Web com taxas de bits adapt\aacute{}veis (adaptative bitrate) -]].
+  + [[https://imasters.com.br/desenvolvimento/entendendo-activities-e-intentes-tutorial-para-android/][Entendendo Activities e Intentes - Tutorial para Android -]].
+  + [[http://thebuild.com/presentations/uber-perconalive-2017.pdf][A PostgreSQL Response to Uber]]
