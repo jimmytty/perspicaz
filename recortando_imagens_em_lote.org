@@ -1,0 +1,57 @@
+#+BLOG: perspicaz
+#+POSTID: 363
+#+DATE: [2017-06-06 Tue 22:54]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Technical
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Recortando imagens em lote
+#+PERMALINK: recortando_imagens_em_lote
+
+Este /post/ \eacute{} uma r\aacute{}pida dica sobre como recortar imagens em lote.
+#+HTML: <!--more Continue lendo...-->
+
+Indo direto ao ponto:
+
+Para determinar a "\aacute{}rea de corte" da imagem (/crop/):
+1. Abra a imagem em quest\atilde{}o com a ferramenta ~display~ do [[http://www.imagemagick.org][/ImageMagick/]].
+2. Abra o menu de comandos clicando com o bot\atilde{}o direto do /mouse/ em qualquer lugar da imagem.
+3. Clique em "/Transform/" e em "/Crop/".
+4. Defina a regi\atilde{}o a ser cortada.
+
+Ap\oacute{}s este procedimento (que \eacute{} absurdamente mais simples do que uma descri\ccedil{}\atilde{}o sugere), a geometria e recuos estar\atilde{}o dispon\iacute{}veis num /box/ no canto superior direito da imagem e assemelha-se a:
+
+: 203x153+100+234
+
+\Eacute{} este o exato argumento a ser passado para a op\ccedil{}\atilde{}o ~-crop~ do ~convert~ / ~mogrify~:
+
+#+BEGIN_SRC sh
+  convert imagem.png -crop 203x153+100+234 imagem_recortada.png
+#+END_SRC
+
+Para massificar, depende de como est\atilde{}o dispostos os arquivos. Estando todos num mesmo diret\oacute{}rio:
+
+#+BEGIN_SRC sh
+  xargs -a <(ls *.png) \
+        -i \
+        convert {} -crop 203x153+100+234 {}_cortada.png
+#+END_SRC
+
+No meu caso, ~mogrify~ foi suficiente:
+
+#+BEGIN_SRC sh
+  mogrify -crop 203x153+100+234 *.png
+#+END_SRC
+
+Mas como eu cheguei nisto?
+
+Agora um pouco de hist\oacute{}ria...
+
+Recentemente precisei criar uma galeria de imagens a partir de m\uacute{}ltiplas capturas de tela (/screenshots/) de uma aplica\ccedil{}\atilde{}o espec\iacute{}fica. As imagens estavam "boas" mas era necess\aacute{}rio manter apenas o conte\uacute{}do da janela da aplica\ccedil{}\atilde{}o (o "miolinho"), ou seja, remover a moldura e a \aacute{}rea de trabalho.
+
+De imediato assumi que as ferramentas de linha de comando do /ImageMagick/, ~convert~ ou ~mogrify~ seriam as mais adequadas para o trabalho em lote, contudo, determinar a "\aacute{}rea de corte" n\atilde{}o era algo que poderia ser adivinhado a partir da linha de comando. At\eacute{} iniciei o trabalho mensurando as margens pelo /Gimp/ com o objetivo de montar os argumentos para as ferramentas de linha de comando supracitadas, at\eacute{} porque recortar imagem por imagem no [[http://www.gimp.org/][/Gimp/]] seria tedioso, demorado e desgastante, em outras palavras, poucas chances de atingir um trabalho minimamente aceit\aacute{}vel em termos de qualidade.
+
+Fiquei "brigando" com o /Gimp/ para medir a "\aacute{}rea de corte" e ajustando manualmente na linha de comando at\eacute{} atingir a \aacute{}rea ideal ... at\eacute{} que lembrei do comando ~display~ tamb\eacute{}m /ImageMagick/, e o trampo tava pronto!
+
+#  LocalWords:  toc pri PERMALINK ImageMagick mogrify screenshots
