@@ -1,0 +1,20 @@
+#+BLOG: perspicaz
+#+POSTID: 366
+#+DATE: [2017-07-24 Mon 09:14]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Uncategorized
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Exit Fate - O melhor jogo de RPG que ja joguei!
+#+PERMALINK: exit_fate_-_o_melhor_jogo_de_rpg_que_ja_joguei
+
+Em todos esses anos jogando RPGs de v\aacute{}rias plataformas diferentes, de longe, o jogo [[http://site.scfworks.com/?page_id=10][Exit Fate]] da Empresa [[http://site.scfworks.com/?page_id=31][SCFWorks]], foi o melhor RPG que j\aacute{} joguei na vida. Para quem gosta de uma boa hist\oacute{}ria, n\atilde{}o jog\aacute{}-lo \eacute{} praticamente um "crime"!. Roda nativamente no Linux atrav\eacute{}s do /port/ n\atilde{}o oficial com /link/ dispon\iacute{}vel na p\aacute{}gina oficial.
+
+Eu gastei 112 horas pra fechar, mas \eacute{} porque agilizei pegando o "pacote" de trapa\ccedil{}a que o jogo oferece, isto ap\oacute{}s a cent\eacute{}sima hora, logo no in\iacute{}cio o jogo pergunta se deseja-se pegar esse "pacote" avisando que boa parte da divers\atilde{}o ser\aacute{} perdida, eu s\oacute{} o peguei bem tarde no jogo. N\atilde{}o consegui recrutar todo mundo e estou pensando em tentar novamente...
+
+[[./exit_fate_-_o_melhor_jogo_de_rpg_que_ja_joguei/exit_fate.png]]
+
+#  LocalWords:  toc pri Uncategorized RPG PERMALINK rpg ja RPGs SCFWorks
+
+# ./exit_fate_-_o_melhor_jogo_de_rpg_que_ja_joguei/exit_fate.png http://perspicazsite.files.wordpress.com/2017/07/exit_fate.png
