@@ -1,0 +1,32 @@
+#+BLOG: perspicaz
+#+POSTID: 369
+#+DATE: [2017-08-25 Fri 22:46]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Technical
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Trying WebKit on Emacs
+#+PERMALINK: trying_webkit_on_emacs
+
+Last week, I read an article about /WebKit/'s Emacs integration and I get interested in this kind of solution, surfing web inside Emacs looks like a good idea, like "What?! I don't need go out Emacs? Good!". I'm a "text-mode" guy, but, last years until now, I start to use more the /X11/ with the very handy /Emacs Server/ & ~emacsclient~.
+#+HTML: <!--more More...-->
+The current /Emacs WebKit/ implementation is in alpha stage and this is "sad". In my laptop, a Slackware 14.2 @ Dell Vostro 3560, I recompile my recompiled Emacs' version with two additional options:
+
+#+BEGIN_SRC sh
+  --with-x-toolkit=gtk3 \
+  --with-xwidgets
+#+END_SRC
+
+After restart my Emacs version I realize: nothing was broke! Great! I can run /WebKit/ now! ... I opened a graphical frame and ran the command ~xwidget-webkit-browse-url~ with my blog's url as argument and... nothing happened!
+
+Well, my Emacs opened in text-mode was flooded with /WebKit/'s messages, like when we run Firefox from a terminal. Too bad! I couldn't see my blog and I get debug messages on my Emacs environment -- It's ok, is alpha code, if stable, I will stay using it... -- I thought. But, when I closed /X11/, the older Emacs killer GTK bug was invoked! Solution: purge the above cited options and return to my old and safe options:
+
+#+BEGIN_SRC sh
+  --with-x-toolkit=lucid
+#+END_SRC
+
+Maybe, next time I will try /WebKit/ again. I was intent only an exercise and, for now, I can integrate Emacs with other applications using Org Protocol and ~emacsclient~.
+
+#  LocalWords:  toc pri WebKit PERMALINK webkit emacs text-mode emacsclient
+#  LocalWords:  Vostro xwidget-webkit-browse-url blog's
