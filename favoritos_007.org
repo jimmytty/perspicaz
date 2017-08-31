@@ -1,0 +1,59 @@
+#+BLOG: perspicaz
+#+POSTID: 371
+#+DATE: [2017-08-30 Wed 22:30]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Uncategorized
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE:  Favoritos #007
+#+PERMALINK: favoritos_007
+
+* Favoritos
++ *Ciências*:
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=ruido-optico-rastreia-objetos-escondidos-nao-visiveis&id=010110170509][Ruído óptico rastreia objetos escondidos e não visíveis]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=viagem-tempo-tardis-matematicamente-possivel&id=010130170519][TARDIS torna viagem no tempo matematicamente possível]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=singularidade-prevista-universo-tridimensional&id=010130170602][Singularidade é prevista em Universo tridimensional]].
++ *Produtividade*:
+  + [[https://emacs.cafe/emacs/javascript/setup/2017/04/23/emacs-setup-javascript.html][Setting up Emacs for JavaScript (part #1)]].
+  + [[https://emacs.cafe/emacs/javascript/setup/2017/05/09/emacs-setup-javascript-2.html][Setting up Emacs for JavaScript (part #2)]].
+  + [[http://sachachua.com/blog/2010/11/emacs-recording-ledger-entries-with-org-capture-templates/][Emacs: Recording ledger entries with org-capture-templates ?]].
+  + [[http://irreal.org/blog/?p=4763][How to Fix a Stuck Emacs | Irreal]].
+  + [[http://pragmaticemacs.com/emacs/save-window-layouts-with-ivy-view/][Pragmatic Emacs: Save window layouts with ivy-view]]
+  + [[http://irreal.org/blog/?p=6248][Irreal: How to Read the Commentary Section of Emacs Packages]]
+  + [[http://mbork.pl/2015-04-25_Some_Dired_goodies][Marcin Borkowski: 2015-04-25 Some Dired goodies]].
+  + [[http://mbork.pl/2017-06-05_More_Dired_goodies][Marcin Borkowski: 2017-06-05 More Dired goodies]].
+  + [[https://vxlabs.com/2017/06/03/querying-restful-webservices-into-emacs-orgmode-tables/][Querying RESTful webservices into Emacs orgmode tables – vxlabs]].
+  + [[http://irreal.org/blog/?p=6307][Org2blog/wp and Multibyte Characters | Irreal]].
++ *Devel/SysAdmin/Security*:
+  + [[https://www.mongodb.com/blog/post/deep-learning-and-the-artificial-intelligence-revolution-part-1][Deep Learning and the Artificial Intelligence Revolution: Part 1 | MongoDB]].
+  + [[https://www.mongodb.com//blog/post/deep-learning-and-the-artificial-intelligence-revolution-part-2][Deep Learning and the Artificial Intelligence Revolution: Part 2 | MongoDB]].
+  + [[https://www.openscg.com/2017/05/copy-records-in-batches-with-postgresql/][Copy Records in Batches with Postgresql | OpenSCG]].
+  + [[http://blogs.perl.org/users/flavio_s_glock/2017/05/perl5-to-java-compiler---first-release.html][Perl5 to Java compiler - first release | Flávio S. Glock {blogs.perl.org}]].
+  + [[https://www.youtube.com/watch?v=Bx8z5pmKfGE]["Perl to Java compiler" - Flávio - YouTube]].
+  + [[https://www.youtube.com/watch?v=XRJo9FWFNMY]["Writing (parts of) Android apps in Perl using Perlito" - Yati Sagade - YouTube]].
+  + [[http://blogs.perl.org/users/flavio_s_glock/2016/04/android-app-with-perl5-to-java-compiler.html][Android App with the Perl5 to Java compiler | Flávio S. Glock {blogs.perl.org}]].
+  + [[https://imasters.com.br/desenvolvimento/entendendo-interface-como-uma-forma-de-linguagem/][Entendendo a interface como uma forma de linguagem]]
+  + [[http://oestatistico.com.br/boxplot-a-caixa-magica/][BoxPlot: A Caixa Mágica]]
+  + [[http://blogs.perl.org/users/sawyer_x/2017/05/perl-5260-is-now-available.html][Perl 5.26.0 is now available!]]
+  + [[http://blogs.perl.org/users/flavio_s_glock/2017/08/trying-out-awk-in-java-with-perlito5.html][Trying out AWK in Java with Perlito5]]
+  + [[http://blogs.perl.org/users/lichtkind/2017/08/plan-for-perldoc-40.html][Plan for perldoc 4.0]]
+  + [[http://nullprogram.com/blog/2017/08/22/][Chris Wellons: Vim vs. Emacs: The Working Directory]].
++ *Entretenimento*:
+  + [[http://acca13-ku-kansatsuka.wikia.com/wiki/ACCA:_13-ku_Kansatsu-ka_Wikia][ACCA: 13-ku Kansatsu-ka]]  (anime)
+  + [[http://ascii-patrol.com/][Ascii Patrol]] (game)
+  + [[https://howlongtobeat.com/][How long does it take to beat your favorite games? - HowLongToBeat.com]]
+  + [[http://akagi.wikia.com/wiki/Akagi_Shigeru][Akagi Shigeru | Mahjong Legend Akagi Wiki | Fandom powered by Wikia]]  (anime)
+  + [[https://en.wikipedia.org/wiki/Ragnarok_Tactics][Ragnarok Tactics]]  (game)
+  + [[https://en.wikipedia.org/wiki/Amatsuki][Amatsuki]]  (anime)
+  + [[http://site.scfworks.com/?page_id=10][Exit Fate | SCFWorks]]  (game)
+  + [[https://en.wikipedia.org/wiki/Intrigue_in_the_Bakumatsu_%E2%80%93_Irohanihoheto][Bakumatsu Kikansetsu Irohanihoheto]]  (anime)
++ *Diversos*:
+  + [[http://oestatistico.com.br/2017/05/10/distribuicao-frequencia/][O Valor da Distribuição de Frequência - O Estatístico]].
+  + [[https://www.nhk.or.jp/lesson/portuguese/learn/list/][Curso de Japonês - Lista de Lições | NHK WORLD RÁDIO JAPÃO]]
++ *Negócios/Carreira*:
+  + [[https://imasters.com.br/gerencia-de-ti/carreira/as-5-disfuncoes-de-um-time/?trace=1519021197&source][As 5 disfunções de um time -]].
+  + [[https://imasters.com.br/banco-de-dados/visao-geral-do-redis/][Visão geral do Redis]]
+  + [[https://imasters.com.br/desenvolvimento/5-coisas-que-voce-precisa-saber-ao-criar-um-aplicativo-cognitivo/][5 coisas que você precisa saber ao criar um aplicativo cognitivo]]
+  + [[http://oestatistico.com.br/big-data-transformando-informacoes-em-inteligencia-de-negocios/][Big Data: Transformando Informações Perdidas em Inteligência de Negócios]]
+  + [[elfeed:imasters.com.br#https://imasters.com.br/?p=119232&trace=1519021197&source=admin][Colocando os pingos nos “is” da Inteligência Artificial]].
