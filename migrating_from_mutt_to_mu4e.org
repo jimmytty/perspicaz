@@ -1,0 +1,14 @@
+#+BLOG: perspicaz
+#+POSTID: 374
+#+DATE: [2017-09-09 Sat 19:35]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Technical
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Migrating from Mutt to Mu4e
+#+PERMALINK: migrating_from_mutt_to_mu4e
+
+After ~13 years, I changed my [[https://en.wikipedia.org/wiki/Mail_user_agent][/MUA]]/ from [[http://www.mutt.org/][/Mutt/]] / [[http://www.muttng.org][muttng]] to [[http://www.djcbsoftware.nl/code/mu][Mu4e]]. The main purpose was integration with /Emacs/. For now, I don't need all /Mutt/'s features any more because nearly all my /discussion-lists/ are dead more than 1 year and my /e-mail/ is little used now. /BBDB/ and /Org Mode/ are some new best features in this new workflow.
+
+#  LocalWords:  toc pri PERMALINK MUA muttng discussion-lists BBDB
