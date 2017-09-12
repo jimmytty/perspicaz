@@ -1,0 +1,25 @@
+#+BLOG: perspicaz
+#+POSTID: 376
+#+DATE: [2017-09-12 Tue 00:02]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Technical
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Accessing Android from Emacs
+#+PERMALINK: accessing_android_from_emacs
+
+Using /tramp-adb/ is easy to access /Android/'s filesystem and /shell/, but we still need the [[https://developer.android.com/studio/command-line/adb.html][Android Debug Bridge]] (and all the Java configuration pain included...).
+
+I didn't know this /Emacs/'s feature and started using it recently. For example, to access my old current phone, I plug it to /USB/ port and hit into /Emacs/:
+
+:,----
+:| C-x C-f /adb:
+:`----
+
+And the device is autocompleted.
+
+Move, rename and delete files are fine with /Dired/ and /eshell/ is good as /sh/, but, for now, I don't know how to inform /eshell/ to use the device's root instead the root of my laptop... I need to research more and make this a better workflow to tests and day tasks.
+
+#  LocalWords:  toc pri PERMALINK emacs tramp-adb filesystem C-x C-f adb Dired
+#  LocalWords:  eshell
