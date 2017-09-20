@@ -1,0 +1,39 @@
+#+BLOG: perspicaz
+#+POSTID: 379
+#+DATE: [2017-09-19 Tue 22:56]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Technical
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Nice "?vars" PDL feature
+#+PERMALINK: nice_vars_pdl_feature
+
+#+ATTR_HTML: :align left :width 100
+[[file:./nice_vars_pdl_feature/pdl.png]]
+
+I'm starting with [[http://pdl.perl.org/][PDL - Perl Data Language]] manual, more precisely, PDL::Indexing manual, and I found a nice feature to view variables declared in current session of pdl2 interpreter: ~?vars~. This command is a shortcut to ~help vars~ and/or ~PDL->vars~, it shows a report about all variables with name, data type, dimension, flow, state and memory used.
+
+See an example:
+
+: pdl> ?vars
+: PDL variables in package main::
+:
+: Name         Type   Dimension       Flow  State          Mem
+: ----------------------------------------------------------------
+: $a           Double D [8,4,3,2,1]          P            1.50KB
+: $area        Double D [2,3]                VC           0.00KB
+: $column      Double D [1,5]                VC           0.00KB
+: $cube        Double D [5,5,5]              P            0.98KB
+: $even        Double D [5,2]                VC           0.00KB
+: $im          Double D [5,5]                P            0.20KB
+: $line        Double D [5]                  VC           0.00KB
+: $rgb         Double D [255,255,255]        P          126.51MB
+: $row         Double D [5,1]                VC           0.00KB
+: pdl> _
+
+Variables with "VC" (Virtual Child) in the "State" column and "0.00KB" in "Mem" column are children of variables with "P" (Parent) in the "State" column. They share space and modifications will reflect on the parent variables and other children, if applicable.
+
+#  LocalWords:  toc pri Mem
+
+# ./nice_vars_pdl_feature/pdl.png http://perspicazsite.files.wordpress.com/2017/09/pdl.png
