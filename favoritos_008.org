@@ -1,0 +1,78 @@
+#+BLOG: perspicaz
+#+POSTID: 388
+#+DATE: [2017-10-12 Thu 21:55]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Uncategorized
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Favoritos #008
+#+PERMALINK: favoritos_008
+
+* Favoritos
++ *Ciências*:
+  + [[https://imasters.com.br/desenvolvimento/falando-em-voz-alta-uma-introducao-ao-processamento-de-linguagem-natural/][Falando em voz alta - Uma introdução ao processamento de linguagem natural -]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=hipotese-expansao-aceleracao-universo&id=010130170929][Hipótese da expansão da aceleração do Universo sofre novo revés]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=neuroprocessador-fotonico-faz-sinapses-luz&id=010110171003][Neuroprocessador fotônico faz sinapses com luz]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=microscopio-codigo-aberto&id=010165171004][Microscópio de código aberto acompanha atividade neural ao vivo]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=novo-tipo-computacao-usa-poeira-magica-luz-materia&id=010150171005][Novo tipo de computação usa "poeira mágica" de luz e matéria]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=quebrando-lei-coulomb-opostos-se-repelem&id=010165171006][Quebrando a Lei de Coulomb: Cargas opostas se repelem e iguais se atraem]].
++ *Produtividade*:
+  + [[https://lwn.net/Articles/727550/][Emacs and Magit {LWN.net}]].
+  + [[http://www.howardism.org/Technical/Emacs/eshell-fun.html][Eschewing Zshell for Emacs Shell]].
+  + [[http://manuel-uberti.github.io/programming/2017/08/06/eyebrowse/][A better workflow with workspaces – Manuel Uberti]].
+  + [[https://www.wisdomandwonder.com/article/10649/org2blog-access-post-metadata-after-publishing][Org2Blog: Access Post Metadata After Publishing | Wisdom and Wonder]].
+  + [[http://www.wilfred.me.uk/blog/2017/08/30/helpful-adding-contextual-help-to-emacs/][Helpful: Adding Contextual Help to Emacs – Wilfred Hughes::Blog]].
+  + [[http://okbob.blogspot.com.br/2017/07/i-hope-so-every-who-uses-psql-uses-less.html][Pavel Stehule's blog: Postgres Pager (pager designed for psql)]].
+  + [[https://florian.adamsky.it/2016/03/31/emacs-calc-for-programmers-and-cs.html][Emacs Calc for Programmers and Computer Scientists | Dr. Florian Adamsky]].
+  + [[http://nullprogram.com/blog/2009/06/23/][The Emacs Calculator << null program]].
+  + [[http://endlessparentheses.com/it-s-magit-and-you-re-the-magician.html][Endless Parentheses: It’s Magit! And you’re the magician!]].
+  + [[https://github.com/theodorewiles/org-mind-map][GitHub - theodorewiles/org-mind-map: This is an emacs package that creates graphviz directed graphs.]]
+  + [[https://github.com/kiwanami/emacs-calfw][GitHub - kiwanami/emacs-calfw: A calendar framework for Emacs]].
+  + [[http://karl-voit.at/2017/09/23/orgmode-as-markup-only/][Org-Mode Is One of the Most Reasonable Markup Language to Use for Text]].
+  + [[http://irreal.org/blog/?p=6623][Org Entities | Irreal]].
+  + [[https://oremacs.com/2017/10/04/completion-at-point/][Extending completion-at-point for Org-mode . (or emacs]].
+  + [[https://writequit.org/denver-emacs/presentations/2016-03-01-helm.html][Helm, an incremental framework]].
+  + [[https://writequit.org/articles/working-with-logs-in-emacs.html][Working with log files in Emacs]].
+  + [[https://www.masteringemacs.org/article/complete-guide-mastering-eshell][Mastering Eshell - Mastering Emacs]].
+  + [[https://www.reddit.com/r/emacs/comments/74hetz/emacs_everywhere/][Emacs Everywhere : emacs]].
+  + [[http://manuel-uberti.github.io/emacs/2017/10/07/m-x-shell/][To shell or not to shell – Manuel Uberti]].
++ *Devel/SysAdmin/Security*:
+  + [[http://www.craigkerstiens.com/2017/09/03/postgres-backups-physical-vs-logical/][Postgres backups: Logical vs. Physical an overview - Craig Kerstiens]].
+  + [[https://www.w3.org/International/questions/qa-personal-names][Personal names around the world]].
+  + [[https://www.effectiveperlprogramming.com/2017/08/deprecation-warnings-now-tell-you-when-it-will-disappear/][Deprecation warnings now tell you when the features will disappear | The Effective Perler]].
+  + [[http://blogs.perl.org/users/ben_bullock/2017/08/c-comments-and-regular-expressions.html][C comments and regular expressions | The Incredible Journey {blogs.perl.org}]].
+  + [[http://tech-blog.cv-library.co.uk/2017/08/31/perl-as-pid-1-under-docker/][Perl as PID 1 under Docker]].
+  + [[https://www.reddit.com/r/emacs/comments/6y3q4k/yes_eshell_is_my_main_shell/][Yes, Eshell is my main shell : emacs]].
+  + [[http://blog.cleverelephant.ca/2017/09/postgis-operators.html][PostGIS Operators in 2.4 . Paul Ramsey]].
+  + [[http://blogs.perl.org/users/adriano_ferreira/2017/09/importerzim.html][Importer::Zim | Adriano Ferreira {blogs.perl.org}]].
+  + [[https://punchagan.muse-amuse.in/blog/emacs-frame-as-a-pop-up-input/][Noetic Nought - Emacs frame as a pop-up input]].
+  + [[https://momjian.us/main/blogs/pgblog/2017.html#September_15_2017][Performance Index Everything | Bruce Momjian: Postgres Blog]].
+  + [[http://www.craigkerstiens.com/2017/09/18/postgres-connection-management/][Tracking and managing your Postgres connections - Craig Kerstiens]].
+  + [[https://opensource.com/article/17/8/imagemagick][How to get started with the ImageMagick image editor | Opensource.com]].
+  + [[https://opensource.com/article/17/9/imagemagick-viewing-images][Advanced image viewing tricks with ImageMagick | Opensource.com]].
+  + [[http://modern-sql.com/feature/extract][Modern SQL: EXTRACT components from a date or time in MySQL, Oracle, PostgreSQL, etc.]].
+  + [[http://blogs.perl.org/users/flavio_s_glock/2017/09/perl5-to-java-compiler---symbol-tables-typeglobs-and-call-stack.html][Perl5 to Java compiler - symbol tables, typeglobs, and call stack | Flávio S. Glock {blogs.perl.org}]].
+  + [[http://adpgtech.blogspot.com.br/2014/09/importing-json-data.html][Andrew Dunstan's PostgreSQL and Technical blog: Importing JSON data]].
+  + [[http://tapoueh.org/blog/2017/09/on-json-and-sql/][on Json and SQL]].
+  + [[https://stackoverflow.com/questions/46204472/where-is-perls-default-object-to-string-conversion-defined][operator overloading - Where is Perl's default object-to-string conversion defined? - Stack Overflow]].
+  + [[http://joy.pm/post/2017-09-17-a_graphviz_primer/][A Graphviz primer - The joy of programming]].
+  + [[http://www.cienciaedados.com/7-casos-de-uso-de-deep-learning/][7 Casos de Uso de Deep Learning – Ciência e Dados]].
+  + [[https://opensource.com/open-organization/17/10/readme-maturity-model][A maturity model for READMEs | Opensource.com]].
+  + [[https://www.worthe-it.co.za/programming/2017/09/19/quick-introduction-to-graphviz.html][A Quick Introduction to Graphviz]].
+  + [[http://www.modernemacs.com/post/major-mode-part-1/][Deep diving into a major mode - Part 1 | Modern Emacs]].
+  + [[https://stackoverflow.com/questions/46215052/what-is-single-underscore-in-perl-without-or][What is _ (single underscore) in Perl without $ or @? - Stack Overflow]]
+  + [[https://which-dwarf-are-you.blogspot.com.br/2017/09/adventures-in-autovivification.html][Adventures in Autovivification]].
+  + [[https://opensource.com/article/17/10/perl-turns-30][Perl turns 30 | Opensource.com]].
+  + [[http://blogs.perl.org/users/sergey_kolychev/2017/10/machine-learning-in-perl-part3-deep-convolutional-generative-adversarial-network.html][Machine learning in Perl, Part3: Deep Convolutional Generative Adversarial network | Sergey Kolychev {blogs.perl.org}]].
+  + [[https://which-dwarf-are-you.blogspot.com.br/2017/10/perl5-moxie-and-enumurated-data-types.html][Perl5, Moxie and Enumurated Data Types]].
++ *Entretenimento*:
+  + [[https://www.xkcd.com/224/][xkcd: Lisp]]
++ *Diversos*:
+  + [[https://opensource.com/article/17/9/packet-radio][Packet radio lives on through open source software | Opensource.com]].
++ *Negócios/Carreira*:
+  + [[https://opensource.com/article/17/9/tensorflow][Tensorflow in the wild: From selling cars to cucumbers | Opensource.com]].
+  + [[https://opensource.com/article/17/9/apache-kafka][3 industries relying on Apache Kafka | Opensource.com]].
+  + [[http://cio.com.br/tecnologia/2017/09/23/guia-pratico-para-a-aplicacao-de-machine-learning-nos-negocios/][Guia prático para a aplicação de Machine Learning nos negócios - CIO]].
+  + [[https://opensource.com/open-organization/resources/open-org-maturity-model][The Open Organization Maturity Model | Opensource.com]].
+  + [[https://www.concrete.com.br/2017/09/22/estrategia-para-produtos-e-servicos-digitais-parte-1/][Concrete | Estratégia para produtos e serviços digitais – Parte 1]].
