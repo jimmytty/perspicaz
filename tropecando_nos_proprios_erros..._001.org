@@ -1,0 +1,85 @@
+#+BLOG: perspicaz
+#+POSTID: 393
+#+DATE: [2017-11-13 Mon 21:39]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Funny
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Tropeçando nos próprios erros... #001
+#+PERMALINK: tropecando_nos_proprios_erros..._001
+
+Bem não é normal alguém falar sobre os próprios erros. Um erro não é algo socialmente bem visto e tando no ambiente familiar quanto no escolar eles costumam ser rechaçados e, junto doutros fatores, criam uma cultura anti-erros onde até erros críticos dentro de empresas são escondidos até as últimas consequências... Bem, comigo nada disso aí funciona...
+#+HTML: <!--more Continue lendo...-->
+Era uma vez, mais uma semana normal na empresa (de arrancar os cabelos que já me faltam...). Estou eu desenvolvendo e testando um "sistema feito em casa" (ou seja, eu que fiz) e precisando de mais máquinas para expandir a abrangência das operações de modo a ficar o mais barato possível e imaginável etc e tals. Já tinha 3 notebooks instalados e funcionando, e comprei mais 5 máquinas DELL antigas, as Optiplex 320 (e pensando em criar uma estação de captação de energia eólica mas isto não é de forma alguma pra já, para reduzir a maldita conta de luz!).
+
+Chegando no laboratório com as máquinas, parti pra cima delas para a instalação do sistema! A primeira instalação "foi de boa" mas, a partir da segunda, o inferno começou. "Subia" de forma alguma! Daí comecei a procurar os culpados. Seria pouca memória? Seriam problemas no disco? Seria alguma combinação específica de hardware? Seria a versão do BIOS? Foi eu que errou no processo de instalação?
+
+Não sei como os outros fazem mas eu vou no "mais barato" primeiro quase sempre. Neste caso, o mais barato seria eu ter errado nos parâmetros de instalação! Revisei tudo e não era isto; esta revisão custou-me um dia... Tentei fazer dual boot com um Linux que serviria apenas de dummy, mas nem essa e mais nenhuma forma que conheço conseguiu fazer o sistema subir sozinho. Talvez instalar na máquina "boa" e trocar o HD com as outras fosse uma opção se eu não quisesse perder a garantia.
+
+Partindo para o segundo item "mais barato": o BIOS! Ei, mas porque você não foi direto nele? Havia esquecido completamente de ver isto de início... E, como estava cansado da maratona de trabalho no meu laboratório, erros humanos são muito prováveis... Calculei errado e perdi um dia de trabalho... Mas enfim, identifiquei que justamente a máquina que instalou "de primeira" possuía um BIOS mais recente que as demais. Bóra atualizar o BIOS que todos os problemas seriam resolvidos! Ledo engano. Não há prisão maior que a ilusão! O DELL Optiplex 320 é um antigo conhecido da comunidade porque é encrenqueiro com Linux e seu BIOS só pode ser atualizado por meio de sistemas Microsoft ou compatíveis! Putz! Que m****, nem Windows tenho no meu escritório, mas tudo bem, vamos avaliar que opções eu tenho agora:
+
++ Wine.
++ FreeDOS.
++ Windows Piratão.
+
+E os desagradáveis resultados foram:
+
++ O Wine deu erro por não conhecer algumas instruções do executável windows com a atualização do BIOS.
++ O FreeDOS não instalava de forma alguma.
++ O Windows não instalava de forma alguma.
+
+De imediato aceitei como normal os erros na instalação uma vez que não conheço a procedência dos programas de instalação... mas rodaram nos testes com o QEMU ("pulga atrás da orelha"). Contudo, pensando em métodos alternativos, e agora realmente levando em consideração trocar o HD das máquinas, resolvi instalar um Linux para reparticionar um HD antes de começar e eis que fenômenos estranhos começaram a acorrer...
+
+O último sistema que usei para testar a instalação nas máquinas não "saia" mais do pendrive. Não importava quantas vezes eu mandasse copiar outros sistemas, a última falha estava, talvez para me assombrar.
+
+Mas onde diabos está o erro aqui?
+
++ No pendrive? Será que deu alguma falha de hardware porque estou usando apenas 1 e o estressei copiando dezenas de sistemas?
++ No comando? ~dd if=iso.iso of=/dev/sdb~? (Difícil hein!?)
++ Nas máquinas? Mas são quatro máquinas, avaliá-las ou não como suspeitas?
+
+Para piorar minha situação, os testes no QEMU funcionavam perfeitamente: ~qemu-system-x86_64 -boot d -m 512 -cdrom /dev/sdb~.
+
+E agora José? Já estava esgotado de dias, com uma quantidade realmente muito grande de problemas e frustrado por ter estimado trabalho para 1 ou 2 dias e já estava no quinto dias sofrendo...
+
+Vamos equacionar as coisas...
+
+Qual seria o ponto em comum entre:
++ Dual Boot que não funciona.
++ Pendrive que parou de funcionar.
++ Sistemas que funcionar apenas no QEMU.
+
+Tudo começa na minha máquina. Então existia grande probabilidade de ser algum erro nela. Talvez erro de BIOS (neste caso "Bicho Ignorante Operando o Sistema" (eu)) ou falha de hardware.
+
+As simplórias linhas de comando não podiam estar erradas, mas a esta altura da encrenca, você já não confia mais nos seus próprios julgamentos...
+
+As mensagens de log da minha máquina tinham nada relacionado a falhas de hardware...
+
+Porque o QEMU rodava de boa os sistemas?
+
+E a encrenca continua...
+
+Peguei mais um pendrive para continuar os testes, e, para ganhar algum tempo, espetei os dois pendrives para copiar um sistema diferente em cada um... Concluído a cópia, removi o "sdb" e ia subir o QEMU no outro, mas errei o comando, não atualizei o argumento na linha de comando... mas, num passe de magia negra, o sistema subiu no QEMU! E das trevas veio a luz.
+
+Durante o trabalho com apenas 1 pendrive, em algum momento ou eu o removi antes da cópia terminar, ou não o espetei corretamente e iniciei a cópia com o =dd=, isto criou um arquivo regular em ~/dev/sdb~ e, a partir daí, todas as cópias de sistemas eram enviadas para esse arquivo e NUNCA para o pendrive! Sendo um arquivo íntegro, reto, correto e bootável, o QEMU "subia" ele tranquilamente.
+
+Este singelo ERRO, custou-me 2 dias inteiros de trabalho!
+
+Superado essa fase, a atualização do BIOS foi possível com o FreeDOS, sem dor de cabeça.
+
+Com o BIOS atualizado, vamos voltar para a instalação do meu sistema, que, miseravelmente, falhou novamente...
+
+Comparando mais uma vez a máquina "boa" com as demais, percebi que a versão do BIOS da máquina "boa" não correspondia a versão que havia atualizado nas demais máquinas, mas era certeza absoluta que eu havia baixado a versão mais recente do site da DELL.
+
+Pesquisando sobre o BIOS "alienígena", descobri que ela pertencia ao DELL Optiplex 360! Aaaaa....
+
+Quando a instalação do sistema falhou lá no início, eu assumi que o problema era o BIOS porque "havia assumido previamente" que todas as máquinas eram 320 e a resolução seria primeiro atualizar o BIOS para depois tentar reinstalar o meu sistema. Pelejando com dificuldades adversas e contra o meu próprio cansaço, criei um cenário de aflição e martírio e tornei-me vítima dele... Lá no início, o Dual Boot não funcionou porque o pendrive já estava bugado e não copiou a versão correta do Grub para fazer as coisas funcionarem...
+
+Bem. Depois de tudo instalado e funcionando (pelo menos antes dos testes), percebi que a placa de vídeo OnBoard estava "bichada", de todos os 320. Fui trocar as máquinas e comprei Optiplex 720 e nelas, tive problema nenhum.
+
+Um lembrete para mim mesmo: evitar a exaustão.
+
+#  LocalWords:  toc pri Uncategorized PERMALINK anti-erros tals Optiplex HD
+#  LocalWords:  Bóra FreeDOS Piratão QEMU qemu-system-x cdrom sdb bootável
+#  LocalWords:  Aaaaa bugado OnBoard
