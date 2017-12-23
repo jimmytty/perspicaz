@@ -1,0 +1,72 @@
+#+BLOG: perspicaz
+#+POSTID: 395
+#+DATE: [2017-12-22 Fri 22:37]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Uncategorized
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Favoritos #009
+#+PERMALINK: favoritos_009
+
+* Favoritos
++ *Ciências*:
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=armazenamento-dados-imas-moleculares-esta-ficando-quente&id=010110171016][Armazenamento de dados em ímãs moleculares está ficando quente]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=primeira-escrita-leitura-digital-moleculas-sinteticas&id=010110171019][Primeira escrita e leitura digital em moléculas sintéticas]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=supercomputador-eletronico-contra-ataca&id=010150171024][Supercomputador eletrônico contra-ataca e empurra computador quântico]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=ibm-faz-inteligencia-artificial-computacao-sem-processador&id=010150171025][IBM faz inteligência artificial com computação sem processador]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=circuitos-dna-fazem-computacao-biologica&id=010110171030][Circuitos de DNA fazem computação biológica]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=raios-gama-irao-alem-limites-luz&id=010115171030][Raios gama irão além dos limites da luz]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=rede-neural-inspirada-cerebro-detona-captchas&id=010150171101][Rede neural inspirada no cérebro detona CAPTCHAs]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=computacao-sem-consumo-energia-possivel&id=010150171117][Computação sem consumo de energia pode ser possível]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=qudits-melhores-que-qubits&id=010150171127][Por que qudits são melhores que qubits]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=confirmado-relampagos-produzem-antimateria&id=010125171128][Confirmado: Relâmpagos produzem antimatéria]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=a-incrivel-eficiencia-energetica-vida&id=010150171130][A incrível eficiência energética da vida]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=tecido-reversivel-mantem-voce-quente-inverno-frio-verao&id=010160171204][Tecido reversível mantém você quente no inverno e frio no verão]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=protecao-definitiva-contra-hackers-tem-poucos-atomos-espessura&id=010150171207][Proteção definitiva contra hackers tem poucos átomos de espessura]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=gerador-biocompativel-enguia&id=010180171219][Gerador biocompatível inspirado na enguia produz mais de 100V]].
++ *Produtividade*:
+  + [[https://vimeo.com/14742598][Emacs-Calc: The Poor Man's Mathematica on Vimeo]].
+  + [[https://www.reddit.com/r/emacs/comments/76s9dl/orgmode_for_contacts/][Org-mode for contacts : emacs]].
+  + [[https://blog.mojotech.com/why-you-should-use-magit-git-porcelain-inside-emacs/][Magit: A Git Porcelain inside Emacs]].
+  + [[https://www.youtube.com/watch?v=M3-aMh1ccJk][GNU Hyperbole - HyControl, the fast frame and window manager for GNU Emacs - YouTube]].
+  + [[http://pragmaticemacs.com/emacs/view-and-annotate-pdfs-in-emacs-with-pdf-tools/][View and annotate PDFs in Emacs with PDF-tools | Pragmatic Emacs]].
+  + [[https://www.reddit.com/r/emacs/comments/7b6erv/weird_uses_of_emacs/][Weird uses of Emacs : emacs]].
+  + [[https://www.youtube.com/watch?v=RhYNu6i_uY4][Introduction to EShell - YouTube]]
+  + [[https://oremacs.com/2017/11/18/dired-occur/][Save Ivy file completions to Dired . (or emacs]].
+  + [[http://irreal.org/blog/?p=6754][Magit Log for a File | Irreal]].
+  + [[https://github.com/Wilfred/helpful][GitHub - Wilfred/helpful: A better Emacs *help* buffer]].
+  + [[https://github.com/jojojames/dired-sidebar][GitHub - jojojames/dired-sidebar: Sidebar for Emacs leveraging Dired]].
+  + sql-mode + sqlind-minor-mode + sqlup-mode
++ *Devel/SysAdmin/Security*:
+  + [[https://www.citusdata.com/blog/2017/10/17/tour-of-postgres-index-types/][A tour of Postgres Index Types]].
+  + [[https://github.com/chrisdone/elisp-guide][GitHub - chrisdone/elisp-guide: A quick guide to Emacs Lisp programming]].
+  + [[http://blogs.perl.org/users/tom_ryder/2017/10/dont-use-until-unless.html][Don't use until, unless... | Tom Ryder {blogs.perl.org}]].
+  + [[https://www.youtube.com/watch?v=ob6YHpcXmTg][Keynote by Damian Conway - "Three Little Words" - YouTube]]
+  + [[http://blog.postgresql-consulting.com/2017/10/deep-dive-into-postgres-stats_31.html][Data Egret: Deep dive into Postgres stats: pg_stat_progress_vacuum]].
+  + [[http://irreal.org/blog/?p=6699][Tables and Org Mode Code Blocks | Irreal]].
+  + [[http://www.modernemacs.com/post/major-mode-part-2/][Deep diving into a major mode - Part 2 (IDE Features) | Modern Emacs]].
+  + [[https://imasters.com.br/banco-de-dados/mongodb-para-iniciantes-em-nosql-parte-04/?trace=1519021197&source][MongoDB para iniciantes em NoSQL – Parte 04 -]].
+  + [[http://blogs.perl.org/users/flavio_s_glock/2017/11/perl5-as-a-first-class-script-engine-in-java.html][Perl5 as a first-class script engine in Java | Flávio S. Glock {blogs.perl.org}]].
+  + [[http://blogs.perl.org/users/flavio_s_glock/2017/11/perl5-as-a-first-class-script-engine-in-java---part-2.html][Perl5 as a first-class script engine in Java - part 2 | Flávio S. Glock {blogs.perl.org}]].
+  + [[https://imasters.com.br/tecnologia/machine-learning-sistemas-baseados-em-regras/][Machine Learning: sistemas baseados em regras -]].
+  + [[http://modern-sql.com/concept/null][Modern SQL: NULL — purpose, comparisons, NULL in expressions, mapping to/from NULL]].
+  + [[http://blogs.perl.org/users/aristotle/2017/11/perl5-refs-flattening.html][Perl 5’s list-flattening and reference-taking design choices | Aristotle {blogs.perl.org}]].
+  + [[https://metacpan.org/pod/Path::Tiny][Path::Tiny - File path utility - metacpan.org]].
+  + [[http://modern-sql.com/concept/three-valued-logic][Modern SQL: Three-Valued Logic (3VL) — Purpose, Benefits and Special Cases]].
+  + [[http://paquier.xyz/postgresql-2/partition-information/][Getting more Information about Partitions]].
+  + [[https://leejo.github.io/2017/12/17/tpc_and_the_end_of_language_dominance/][TPC and The End of Language Dominance]].
+  + [[https://opensource.com/article/17/12/image-manipulation-image-magick-perl][How to use the PerlMagick module | Opensource.com]].
++ *Entretenimento*:
+  + Ghost In The Shell    (anime)
+  + Youjo Senki (Saga of Tanya the Evil)    (anime)
+  + Hunter x Hunter    (anime)
+  + xxxHoLiC    (anime)
++ *Diversos*:
+  + [[http://technomancy.us/184][in which a path is charted through the coming apocalypse - Technomancy]].
+  + [[https://imasters.com.br/gerencia-de-ti/mercado/sesame-credit-gamificacao-da-obediencia-civil/][Sesame Credit: a gamificação da obediência civil -]].
++ *Negócios/Carreira*:
+  + [[https://opensource.com/article/17/10/6-reasons-choose-open-source-software][6 reasons open source is good for business | Opensource.com]].
+  + [[http://blogs.perl.org/users/byterock/2017/11/and-here-we-go.html][And here we go! | byterock {blogs.perl.org}]].
+  + [[http://blogs.perl.org/users/byterock/2017/11/and-still-going.html][And Still going! | byterock {blogs.perl.org}]].
+  + [[http://blogs.perl.org/users/byterock/2017/11/oh-one-more-thing.html][Oh one more thing | byterock {blogs.perl.org}]].
