@@ -1,0 +1,17 @@
+#+BLOG: perspicaz
+#+POSTID: 398
+#+DATE: [2018-01-06 Sat 20:41]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Uncategorized
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: "Comecei numa garagem..."
+#+PERMALINK: comecei_numa_garagem...
+
+* "Comecei numa garagem..." :ATTACH:
+  :PROPERTIES:
+  :Attachments: garagens.jpeg
+  :ID:       5cad672d-a11e-4b47-ad03-4cd242b836b3
+  :END:
+[[./data/5c/ad672d-a11e-4b47-ad03-4cd242b836b3/garagens.jpeg]]
