@@ -1,0 +1,31 @@
+#+BLOG: perspicaz
+#+POSTID: 400
+#+DATE: [2018-01-19 Fri 22:28]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Uncategorized
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Configuracoes exoticas de rede
+#+PERMALINK: configuracoes_exoticas_de_rede
+
+J\aacute{} parou para pensar na quantidade de gambiarras poss\iacute{}veis para se montar uma rede dom\eacute{}stica ou empresarial? Bom, eu nunca tentei imaginar mas j\aacute{} esbarrei em algumas bastante medonhas.
+#+HTML: <!--more Continue lendo...-->
+Por exemplo, uma certa vez, num passado remoto, trabalhei numa empresa onde a sala dos servidores era um quarto escuro e sem ventila\ccedil{}\atilde{}o com m\aacute{}quina pendurada e cabo atravessado para todos os lados, bastante sujeira, teias de aranha fazendo o "lacre" das m\aacute{}quinas (pois se algu\eacute{}m tivesse mexido o "lacre" estaria rompido), o detalhe mais interessante l\aacute{} era o poster do Dalai Lama na porta pelo lado de fora que acho ter sido colocado o pr\oacute{}prio chefe, que era budista...
+
+Mas ent\atilde{}o, j\aacute{} imaginou numa configura\ccedil{}\atilde{}o de rede como a seguir:
++ Conex\atilde{}o Wifi emprestada do vizinho, aparentemente um modenzinho lixo da TIM e internet de "4Megas".
++ Roteador: m\aacute{}quina Dell (colocada na cozinha) com Ubuntu Desktop fazendo a conex\atilde{}o wifi com o vizinho e distribuindo essa conex\atilde{}o para rede interna da casa por meio de um cabo de rede que atravessa praticamente tudo.
++ Um switch recebendo a conex\atilde{}o e roteando para um computador antigo que n\atilde{}o tem wifi.
+
+Voc\ecirc{} acreditaria ainda se eu dissesse que isto \eacute{} algo bem recente? Pois eu acredito! At\eacute{} porque foi eu quem fez...
+
+"P\eacute{}ra l\aacute{}! Mas como?" Eu explico:
+
+O dono da configura\ccedil{}\atilde{}o est\aacute{} numa mar\eacute{} de azar, roubaram carro, celular, rel\oacute{}gio e carteira num dia e no outro cortaram a Net dele (que a prop\oacute{}sito est\aacute{} um lixo recentemente com uns modens Humax lixo), ent\atilde{}o ele ficou sem TV a Cabo, sem Internet e sem telefone tamb\eacute{}m... Da\iacute{} perguntou-me se eu conseguiria fazer um "gato" at\eacute{} ele conseguir resolver com a Net ou pegar outra Internet. Como \eacute{} colega... fui tentar ajudar. Ele n\atilde{}o tinha nenhum equipamento adequado para o trabalho, ent\atilde{}o, sa\iacute{} ca\ccedil{}ando uma m\aacute{}quina com antena wifi e entrada para cabo ethernet para tentar fazer a gambiarra (que a prop\oacute{}sito eu nunca havia nem pensado). Acabei encontrando apenas a m\aacute{}quina Ubuntu Desktop que a fam\iacute{}lia usa para tudo, da\iacute{} fui pesquisar um forma de configurar a m\aacute{}quina sem destruir as funcionalidade que ela j\aacute{} tinha.
+
+Durante a pesquisa, encontrei tutoriais de indianos (tem muitos na internet) com receitas de bolo bem explicadas e que n\atilde{}o funcionam e acabei ficando com a explica\ccedil{}\atilde{}o do wifi Ubuntu mesmo, no link: https://help.ubuntu.com/community/Router (longe de perfeito). Segui a parte da configura\ccedil{}\atilde{}o para rede interna apenas (mas testei para ambas as interfaces de rede e vi que n\atilde{}o funciona para o meu caso) e o script de configura\ccedil{}\atilde{}o do firewall funciona f\aacute{}cil mas n\atilde{}o consegui fazer subir no boot... como j\aacute{} faziam 3 horas que estava pelejando com esta gambiarra ent\atilde{}o criei um \iacute{}cone do desktop e pedi ao meu colega para inici\aacute{}-lo manualmente.
+
+Bem, est\aacute{} funcionando. H\aacute{} previs\atilde{}o de normalizar a situa\ccedil{}\atilde{}o da Internet do meu colega na semana pr\oacute{}xima.
+
+Por isto \eacute{} importante manter o orgulho de lado e nunca praguejar "Esta configura\ccedil{}\atilde{}o jamais farei!" pois seu dia pode estar pr\oacute{}ximo irm\atilde{}o! Nunca se sabe quando se precisar\aacute{} incorporar o MacGyver para salvar o dia!
