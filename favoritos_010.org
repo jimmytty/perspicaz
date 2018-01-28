@@ -1,0 +1,67 @@
+#+BLOG: perspicaz
+#+POSTID: 402
+#+DATE: [2018-01-28 Sun 18:34]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Uncategorized
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Favoritos #010
+#+PERMALINK: favoritos_010
+
+* Favoritos
++ *Ciências*:
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=processador-quimico-mostra-capacidade-controlar-maquinas-moleculares&id=010165180105][Processador químico mostra capacidade de controlar máquinas moleculares]].
+  + [[https://futurism.com/machines-beat-humans-stanford-reading-comprehension-test/][Machines Just Beat Humans on a Stanford Reading Comprehension Test]].
+  + [[https://futurism.com/brain-chip-devices-changing-how-study-brain/][“Brain-on-a-Chip” Devices Are Changing How We Study the Brain]].
+  + [[https://futurism.com/urban-farming-future-agriculture/][Urban Farming Will Bring Food to City-Dwellers Who Need it Most]].
+  + [[https://futurism.com/molten-salt-make-24-hour-solar-energy-possible/][Molten Salt Could Power the Next Clean Energy Revolution]].
+  + [[https://futurism.com/scientists-creating-gmo-species-cant-survive/][Scientists Are Creating GMO Species That Can't Survive]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=vento-terrestre-transporta-oxigenio-lua&id=010130180112][Vento terrestre transporta oxigênio para a Lua]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=massa-negativa-traz-nova-forma-gerar-laser&id=010115180119][Massa negativa traz nova forma de gerar laser]].
+  + [[https://futurism.com/pentagon-imagery-analysts-concerned-machines-are-coming-jobs/][Pentagon Imagery Analysts Are Concerned That Machines Are Coming for Their Jobs]].
+  + [[https://futurism.com/ai-bias-black-box/][We Need to Open Algorithms' Black Box Before It's Too Late]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=computacao-neuromorfica-vai-deixar-computacao-quantica-tras&id=010150180125][Computação neuromórfica vai deixar computação quântica para trás?]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=melhor-holograma-imagem-3d-flutua-ar-livre&id=010150180126][Melhor que holograma: Imagem 3D flutua ao ar livre]].
++ *Produtividade*:
+  + [[http://sachachua.com/blog/2017/12/sorting-org-mode-lists-using-a-sequence-of-regular-expressions/][Sorting Org Mode lists using a sequence of regular expressions –]].
+  + [[https://www.youtube.com/playlist?list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE][OrgMode tutorial - YouTube]].
+  + [[http://www.nongnu.org/org-edna-el/][Org Edna]].
+  + [[https://github.com/akicho8/string-inflection][GitHub - akicho8/string-inflection: underscore -> UPCASE -> CamelCase conversion of names]].
+  + [[http://irreal.org/blog/?p=6866][Imenu | Irreal]].
+  + [[https://brainlessdeveloper.com/2017/12/27/making-emacs-work-like-my-vim-setup/][Making Emacs work like my Neovim setup]].
+  + [[http://irreal.org/blog/?p=6870][A Handy Calc Tip | Irreal]].
+  + [[https://www.linuxjournal.com/content/emacs-science][Emacs for Science | Linux Journal]].
+  + [[http://ehneilsen.net/notebook/orgExamples/org-examples.html][Emacs org-mode examples and cookbook]].
+  + [[https://github.com/akirak/emacs-playground][GitHub - akirak/emacs-playground: Emacs on sandboxed $HOME]].
+  + [[https://github.com/akirak/emacs-playground][GitHub - akirak/emacs-playground: Emacs on sandboxed $HOME]].
+  + [[https://www.reddit.com/r/emacs/comments/7pwy1x/emacs_for_small_businessfreelancers/][emacs for small business/freelancers? : emacs]].
++ *Devel/SysAdmin/Security*:
+  + [[https://www.youtube.com/watch?v=I7OMJKguseo][Carey Witkov - "Higgs meets Perl" - YouTube]].
+  + [[http://blogs.perl.org/users/leon_timmermans/2017/12/smartmatch-in-5277.html][Smartmatch in 5.27.7 | Leon Timmermans {blogs.perl.org}]].
+  + [[https://www.effectiveperlprogramming.com/2017/12/beware-of-the-removal-of-when-in-perl-v5-28/][Beware of the removal of when in Perl v5.28 | The Effective Perler]].
+  + [[http://blogs.perl.org/users/leon_timmermans/2017/12/smartmatch-in-5277.html][Smartmatch in 5.27.7 | Leon Timmermans {blogs.perl.org}]].
+  + [[http://blogs.perl.org/users/jakeoff/2017/12/decoding-gzinflatebase64-decode-with-perl.html][Decoding gzinflate(base64_decode()) with Perl | Jakeoff {blogs.perl.org}]].
+  + [[https://www.effectiveperlprogramming.com/2017/12/in-place-editing-gets-safer-in-v5-28/][In-place editing gets safer in v5.28 | The Effective Perler]].
+  + [[http://blogs.perl.org/users/tinita/2018/01/introduction-to-yaml-schemas-and-tags.html][Introduction to YAML Schemas and Tags | tinita {blogs.perl.org}]].
+  + [[https://jacoby.github.io//svg/2018/01/02/drawing-grids-with-perl-and-svg.html][Drawing Grids with Perl and SVG]].
+  + [[http://niceperl.blogspot.com.br/2018/01/10-best-perl-distributions-created-at.html][# where we turn Perl inside out: 10 best perl distributions created at 2017 (metacpan rating)]].
+  + [[http://niceperl.blogspot.com.br/2018/01/metacpan-most-voted-distributions-in.html][# where we turn Perl inside out: metacpan most voted distributions in 2017]].
+  + [[https://stackoverflow.com/questions/47964727/in-testmore-is-it-possible-to-test-a-subroutine-that-exits-at-the-end][perl - In Test::More, is it possible to test a subroutine that exit()'s at the end? - Stack Overflow]].
+  + [[https://opensource.com/article/18/1/securing-linux-filesystem-tripwire][Securing the Linux filesystem with Tripwire | Opensource.com]].
+  + [[https://www.cybertec-postgresql.com/en/preparing-data-for-machine-learning/][Preparing data for machine learning in PostgreSQL]].
+  + [[https://www.cybertec-postgresql.com/en/stale-statistics-cause-table-bloat/][How a bad network configuration can cause table bloat - Cybertec]].
+  + [[http://nullprogram.com/blog/2018/01/17/][Debugging Emacs or: How I Learned to Stop Worrying and Love DTrace << null program]].
+  + [[http://blog.polettix.it/a-simple-telegram-bot/][A Simple Telegram Bot – PolettiX!]].
+  + [[http://blogs.perl.org/users/zoffix_znet/2018/01/long-live-perl-5.html][Long Live Perl 5! | Zoffix Znet {blogs.perl.org}]].
+  + [[http://perltricks.com/article/57/2014/1/1/Shazam--Use-Image--Magick-with-Perlbrew-in-minutes/][Shazam! Use Image::Magick with Perlbrew in minutes]].
+  + [[https://opensource.com/article/18/1/my-delorean-runs-perl][My Delorean runs Perl | Opensource.com]].
+  + [[https://opensource.com/article/18/1/why-i-love-perl-5][An overview of the Perl 5 engine | Opensource.com]].
+  + [[https://opensource.com/article/18/1/introduction-websimple-perl-module-minimalist-web-framework][An introduction to the Web::Simple Perl module, a minimalist web framework | Opensource.com]].
++ *Entretenimento*:
+  + Psycho Pass (anime)
++ *Diversos*:
+  + [[https://futurism.com/extreme-weather-biggest-risk-humanity-2018-world-leaders/][Extreme Weather Is the Biggest Risk for Humanity in 2018, Say World Leaders]].
++ *Negócios/Carreira*:
+  + [[http://www.cienciaedados.com/big-data-e-as-oportunidades-com-blockchain/][Big Data e as Oportunidades com Blockchain — Ciência e Dados]].
+  + [[https://opensource.com/article/18/1/top-4-open-source-analytics-tools][Top 4 open source alternatives to Google Analytics | Opensource.com]].
