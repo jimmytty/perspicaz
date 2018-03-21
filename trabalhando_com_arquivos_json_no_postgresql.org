@@ -1,0 +1,99 @@
+#+BLOG: perspicaz
+#+POSTID: 409
+#+DATE: [2018-03-20 Tue 19:44]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Uncategorized
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Trabalhando com arquivos JSON no PostgreSQL
+#+PERMALINK: trabalhando_com_arquivos_json_no_postgresql
+
+[[./img/json_logo.png]] & [[./img/postgres.jpg]]
+
+Recentemente, um amigo meu encontrou problemas para trabalhar com arquivos [[https://pt.wikipedia.org/wiki/JSON][json]] por estar habituado apenas à arquivos [[https://pt.wikipedia.org/wiki/Comma-separated_values][csv]]. Embora existem várias formas automatizadas para converter arquivos /json/ para /csv/ (mas não existem garantias de que a saída seria aceitável) o foco era o de carregar os dados no [[https://pt.wikipedia.org/wiki/PostgreSQL][PostgreSQL]] para sumarizações e outros tipos de tratamentos e cruzamentos, e este também é o foco deste /post/.
+
+#+HTML: <!--more Continue lendo...-->
+
+#+ATTR_HTML: :width 100 :align left
+[[./img/bolsa_familia.png]]
+O [[http://aplicacoes.mds.gov.br/sagi/servicos/misocial?q=*&fq=sigla_uf:SP&fq=tipo_s:mes_mu&wt=json&fl=ibge:codigo_ibge,anomes:anomes_s,qtd_familias_beneficiarias_bolsa_familia,valor_repassado_bolsa_familia&rows=10000000&sort=anomes_s%2520asc,%2520codigo_ibge%2520asc][arquivo em questão]] refere-se a um conjunto de dados relacionados as famílias beneficiadas pelo programa do governo [[https://pt.wikipedia.org/wiki/Bolsa_Fam%C3%ADlia][Bolsa Família]] e foco deste /post/ é o de apenas criar uma tabela no banco de dados, derivada do arquivo /json/, contendo uma  observação por linha. O trabalho se concentrará em carregar o arquivo e analisar os dados.
+
+#+HTML: <br>
+
+Vamos criar uma tabela no banco de dados para acomodar o arquivo:
+
+#+BEGIN_SRC sql
+  CREATE TABLE bolsa_familia_arquivo ( conteudo JSONB );
+#+END_SRC
+
+Para carregar os dados, faremos uso do ~psql~ (você precisará adaptar os dados de conexão de acordo o seu ambiente):
+
+#+BEGIN_SRC sh
+  psql -c 'COPY bolsa_familia_arquivo (conteudo) FROM STDIN;' < bolsa_familia.json
+#+END_SRC
+
+Eu não recomendo rodar ~SELECT * FROM bolsa_familia_arquivo~  porque o resultado será apenas um /string/ gigante e ilegível. Ao invés, podemos usar o comando ~jsonb_pretty~ e iremos limitar a saída para os primeiros 500 caracteres pois é suficiente para entendermos a hierarquia dos dados:
+
+#+BEGIN_SRC sql
+  SELECT SUBSTRING(JSONB_PRETTY(conteudo),1,500)
+    FROM bolsa_familia_arquivo;
+#+END_SRC
+
+A saída será semelhante a seguinte:
+
+:                             substring
+: -----------------------------------------------------------------
+:  {                                                              +
+:      "response": {                                              +
+:          "docs": [                                              +
+:              {                                                  +
+:                  "ibge": "350010",                              +
+:                  "anomes": "200401",                            +
+:                  "valor_repassado_bolsa_familia": 23430.0,      +
+:                  "qtd_familias_beneficiarias_bolsa_familia": 381+
+:              },                                                 +
+:              {                                                  +
+:                  "ibge": "350020",                              +
+:                  "anomes": "200401",                            +
+:                  "valor_repassado_bolsa_familia": 2205.0,       +
+:                  "qtd_familias_beneficiarias_bolsa_familia": 42 +
+:              },                                                 +
+:              {                                                  +
+:
+: (1 row)
+
+Nessa saída, podemos verificar que o arquivo possui uma chave chamada "response" e dentro dela uma outra chave chamada "docs", sendo este último um /array/ de objetos; são justamente esses objetos que compões as observações que desejamos transformar em registros em uma tabela, cada chave dos objetos (no caso, "ibge", "anomes", "valor_repassado_bolsa_familia" e "qtd_familias_beneficiarias_bolsa_familia") devem ser transformadas em colunas na tabela destino.
+
+Vamos criar agora a tabela destino assumindo que os tipos dos dados são exatamente os que estamos visualizando na, humilde, amostra anterior[fn::Normalmente, é uma presunção irresponsável.]:
+
+#+BEGIN_SRC sql
+  CREATE TABLE bolsa_familia (
+      ibge                                     INTEGER       NOT NULL ,
+      anomes                                   INTEGER       NOT NULL ,
+      valor_repassado_bolsa_familia            NUMERIC(99,0) NOT NULL ,
+      qtd_familias_beneficiarias_bolsa_familia INTEGER       NOT NULL
+  );
+#+END_SRC
+
+E agora vamos popular essa tabela (com uma instrução já não tão simplista):
+
+#+BEGIN_SRC sql
+  INSERT INTO bolsa_familia
+  SELECT (e->>'ibge')::INTEGER,
+         (e->>'anomes')::INTEGER,
+         (e->>'valor_repassado_bolsa_familia')::NUMERIC(99,2),
+         (e->>'qtd_familias_beneficiarias_bolsa_familia')::INTEGER
+    FROM (SELECT jsonb_array_elements(conteudo->'response'->'docs') AS e
+          FROM bolsa_familia_arquivo ) AS t;
+#+END_SRC
+
+Cuja saída:
+: INSERT 0 109005
+Nos mostra quantas observações existiam no arquivo /json/.
+
+A partir deste ponto, já é possível realizar qualquer tipo de trabalho como se a carga de dados tivesse sido feita com um arquivo /csv/.
+
+# ./img/json_logo.png http://perspicazsite.files.wordpress.com/2018/03/json_logo.png
+# ./img/postgres.jpg http://perspicazsite.files.wordpress.com/2018/03/postgres.jpg
+# ./img/bolsa_familia.png http://perspicazsite.files.wordpress.com/2018/03/bolsa_familia.png
