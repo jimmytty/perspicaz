@@ -28,18 +28,14 @@ seguidas pelas colunas dos preços de cada localidade. A localidade "Home" é o 
 #+ATTR_HTML: :width 30px :align left
 [[file:img/Org-mode-unicorn.png]] Para citar um exemplo com 5 produtos aleatórios e preços aleatórios (deliberadamente decidi forjar os preços para que você não os copie de mim 😝) para o exemplo:
 
-# #+HTML: <p style="clear: both;">
-
-#+BEGIN_SRC org
-  | idx | product      |  Home | Grayridge | profit |
-  |-----+--------------+-------+-----------+--------|
-  |   1 | Rock Salt    |    18 |       186 |    168 |
-  |   2 | Copper Ore   |   350 |       200 |   -150 |
-  |   3 | Laggart Pelt |    34 |       188 |    154 |
-  |   4 | Wool Yarn    |   190 |       160 |    -30 |
-  |   5 | Black Onyx   | 20000 |       nan |    nan |
-  ,#+TBLFM: $1=@#-1::$5=$4-$3
-#+END_SRC
+: | idx | product      |  Home | Grayridge | profit |
+: |-----+--------------+-------+-----------+--------|
+: |   1 | Rock Salt    |    18 |       186 |    168 |
+: |   2 | Copper Ore   |   350 |       200 |   -150 |
+: |   3 | Laggart Pelt |    34 |       188 |    154 |
+: |   4 | Wool Yarn    |   190 |       160 |    -30 |
+: |   5 | Black Onyx   | 20000 |       nan |    nan |
+: #+TBLFM: $1=@#-1::$5=$4-$3
 
 Semelhante a uma planilha comum de /softwares/ básico de automação de escritório não é mesmo? Mas o que é aquele troço no final da tabela? ~#+TBLFM: $1=@#-1::$5=$4-$3~?
 
@@ -47,17 +43,15 @@ Trata-se da notação para fórmulas, no caos, são duas. A primeira fórmula, ~
 
 Pois bem, a solução até aqui parece razoável, mas não existem apenas duas localidades no jogo... Tão logo se adicione uma localidade a mais na tabela, o caos está declarado, veja:
 
-#+BEGIN_SRC org
-  ,#+NAME: prices_report
-  | idx | product      |  Home | Grayridge | Cragbark |
-  |-----+--------------+-------+-----------+----------|
-  |   1 | Rock Salt    |    18 |       186 |       20 |
-  |   2 | Copper Ore   |   350 |       200 |      400 |
-  |   3 | Laggart Pelt |    34 |       188 |        5 |
-  |   4 | Wool Yarn    |   190 |       160 |        5 |
-  |   5 | Black Onyx   | 20000 |       nan |     2000 |
-  ,#+TBLFM: $1=@#-1
-#+END_SRC
+: #+NAME: prices_report
+: | idx | product      |  Home | Grayridge | Cragbark |
+: |-----+--------------+-------+-----------+----------|
+: |   1 | Rock Salt    |    18 |       186 |       20 |
+: |   2 | Copper Ore   |   350 |       200 |      400 |
+: |   3 | Laggart Pelt |    34 |       188 |        5 |
+: |   4 | Wool Yarn    |   190 |       160 |        5 |
+: |   5 | Black Onyx   | 20000 |       nan |     2000 |
+: #+TBLFM: $1=@#-1
 
 Vamos tentar imaginar alguns problemas/consequências:
 
@@ -71,7 +65,7 @@ Vamos tentar imaginar alguns problemas/consequências:
 
 Conseguiu imaginar alguma solução aí?
 
-Bem, eu sou um "engenheiro" de soluções, mas estou nada disposto a desenvolver um /software/ apenas para jogar... então eu resolvi permanecer no /Emacs/ mesmo.
+Bem, eu sou um engenheiro de soluções, mas estou nada disposto a desenvolver um /software/ apenas para jogar... então eu resolvi permanecer no /Emacs/ mesmo.
 
 #+ATTR_HTML: :align left
 [[file:./img/SQLite.png]] Para gerar os relatórios, eu fiz uso do [[https://pt.wikipedia.org/wiki/SQLite][SQLite]] (muito usado no /Android/) para permitir a fácil utilização de comandos [[https://pt.wikipedia.org/wiki/SQL][SQL]]! É possível utilizar quase qualquer uma das linguagens disponíveis, mas meu foco é "quanto mais simples, melhor" para este caso.
@@ -79,49 +73,43 @@ Bem, eu sou um "engenheiro" de soluções, mas estou nada disposto a desenvolver
 #+ATTR_HTML: :align left
 [[file:img/perl_logo_32x104.png]] Para simplificar as consultas via /SQL/, é importante desmembrar o relatório. Fiz isto com o uso da linguagem [[https://pt.wikipedia.org/wiki/Perl][Perl]] (e até poderia tê-la usado para todo o resto da solução). O código foi o seguinte:
 
-#+BEGIN_SRC org
-  ,#+NAME: csv
-  ,#+BEGIN_SRC perl :var table=prices_report :colnames no :results value
-    @header = @{ shift @{$table} };
-    for $line (@$table) {
-        for ( $i = 2; $i <= $#$line; $i++ ) {
-            push @row, [ @{$line}[ 0, 1 ], $header[$i], $line->[$i] ];
-        }
-    }
-    $file = 'prices.csv';
-    open FH, '>' . $file;
-    $" = ",";
-    print FH join "\n", map {"@$_"}@row;
-    print FH "\n";
-    $file
-  ,#+END_SRC
-#+END_SRC
+: #+NAME: csv
+: #+BEGIN_SRC perl :var table=prices_report :colnames no :results value
+:  @header = @{ shift @{$table} };
+:  for $line (@$table) {
+:      for ( $i = 2; $i <= $#$line; $i++ ) {
+:          push @row, [ @{$line}[ 0, 1 ], $header[$i], $line->[$i] ];
+:      }
+:  }
+:  $file = 'prices.csv';
+:  open FH, '>' . $file;
+:  $" = ",";
+:  print FH join "\n", map {"@$_"}@row;
+:  print FH "\n";
+:  $file
+: #+END_SRC
 
 Usando um dialeto muito útil apenas para [[https://en.wikipedia.org/wiki/One-liner_program][oneliners]] e programas descartáveis, desmembrei a tabela principal e criei um arquivo /CSV/, de nome "prices.csv", para fazer a carga no banco de dados.
 
 Com os dados preparados, vamos criar o banco de dados "business.sqlite" e a tabela "prices" para acomodar o conteúdo do arquivo /CSV/:
 
-#+BEGIN_SRC org
-  ,#+BEGIN_SRC sqlite :db business.sqlite :var file=csv :colnames no :results none :export none
-    DROP TABLE IF EXISTS prices;
-    CREATE TABLE prices (
-        idx      INTEGER ,
-        product  VARCHAR ,
-        location VARCHAR ,
-        price    NUMERIC
-    );
-    .import "$file" prices
-  ,#+END_SRC
-#+END_SRC
+: #+BEGIN_SRC sqlite :db business.sqlite :var file=csv :colnames no :results none :export none
+:  DROP TABLE IF EXISTS prices;
+:  CREATE TABLE prices (
+:      idx      INTEGER ,
+:      product  VARCHAR ,
+:      location VARCHAR ,
+:      price    NUMERIC
+:  );
+:  .import "$file" prices
+: #+END_SRC
 
 Antes de partir para as consultas, alguns pequenos ajustes (até dispensáveis):
 
-#+BEGIN_SRC org
-  ,#+BEGIN_SRC elisp :var file=csv :results none :exports none
-    (delete-file file)
-    (setq org-babel-sqlite3-command "sqlite3 -init /dev/null")
-  ,#+END_SRC
-#+END_SRC
+: #+BEGIN_SRC elisp :var file=csv :results none :exports none
+:  (delete-file file)
+:  (setq org-babel-sqlite3-command "sqlite3 -init /dev/null")
+: #+END_SRC
 
 Trata-se de código em [[https://pt.wikipedia.org/wiki/Emacs_Lisp][ELisp]], a primeira linha remove o arquivo /CSV/ e a segunda ajusta o comando para o /SQLite/ para que ele não leia meu arquivo de configuração padrão.
 
@@ -129,78 +117,70 @@ Neste ponto, já estou em condições de responder aos questionamentos anteriore
 
 Para responder a [[q1][primeira questão]], "Supondo que eu esteja em '/Home/' e vá passar em '/CragBark/', quais produtos devo levar?", desenvolvi o seguinte:
 
-#+BEGIN_SRC org
-  ,#+NAME: src_dst
-  ,#+HEADER: :var src="Home"
-  ,#+HEADER: :var dst="Cragbark"
-  ,#+BEGIN_SRC sqlite :db business.sqlite :colnames yes :results table
-    SELECT a.idx, a.product,
-           b.price - a.price AS profit
-      FROM prices AS a
-      JOIN prices AS b
-        ON ( a.product = b.product )
-     WHERE a.location  = "$src"
-       AND b.location  = "$dst"
-       AND ( b.price - a.price ) > 0
-     ORDER BY a.idx
-    ;
-  ,#+END_SRC
-#+END_SRC
+: #+NAME: src_dst
+: #+HEADER: :var src="Home"
+: #+HEADER: :var dst="Cragbark"
+: #+BEGIN_SRC sqlite :db business.sqlite :colnames yes :results table
+:  SELECT a.idx, a.product,
+:         b.price - a.price AS profit
+:    FROM prices AS a
+:    JOIN prices AS b
+:      ON ( a.product = b.product )
+:   WHERE a.location  = "$src"
+:     AND b.location  = "$dst"
+:     AND ( b.price - a.price ) > 0
+:   ORDER BY a.idx
+:  ;
+: #+END_SRC
 
 Este bloco, quando executado (faço isto teclando ~C-c C-c~), produz uma nova planilha nova em folha com a resposta:
 
-#+BEGIN_SRC org
-  ,#+RESULTS: src_dst
-  | idx | product    | profit |
-  |-----+------------+--------|
-  |   1 | Rock Salt  |      2 |
-  |   2 | Copper Ore |     50 |
-#+END_SRC
+: #+RESULTS: src_dst
+: | idx | product    | profit |
+: |-----+------------+--------|
+: |   1 | Rock Salt  |      2 |
+: |   2 | Copper Ore |     50 |
 
 E se eu precisar mudar as localidades, basta modificar os parâmetros ~#+HEADER: :var src="Home"~ e ~#+HEADER: :var dst="Cragbark"~.
 
 Já a [[q2][segunda questão]], "Supondo que eu esteja em '/CragBark/' e vá passar em '/Grayridge/' antes de retornar a '/Home/', quais produtos terei mais lucro vendendo em cada localidade?", exige muito mais código, veja:
 
-#+BEGIN_SRC org
-  ,#+NAME: max_profit
-  ,#+HEADER: :var src="Home"
-  ,#+HEADER: :var dsts="Grayridge,Cragbark"
-  ,#+BEGIN_SRC sqlite :db business.sqlite :colnames yes :results table
-    WITH profitable AS (
-        SELECT a.idx,a.product,b.location,b.price - a.price AS profit
-          FROM prices AS a
-          JOIN prices AS b
-            ON ( a.product = b.product )
-         WHERE a.location  = "$src"
-           AND INSTR("$dsts", b.location ) != 0
-    )
-    SELECT profitable.idx      AS idx      ,
-           profitable.product  AS product  ,
-           profitable.location AS location ,
-           profitable.profit   AS profict
-      FROM profitable
-      JOIN (SELECT idx, MAX(profit) AS max_profit
-              FROM profitable
-             WHERE profit > 0
-             GROUP BY idx
-           ) AS tbl
-        ON profitable.idx    = tbl.idx
-       AND profitable.profit = tbl.max_profit
-     ORDER BY profitable.idx
-    ;
-  ,#+END_SRC
-#+END_SRC
+: #+NAME: max_profit
+: #+HEADER: :var src="Home"
+: #+HEADER: :var dsts="Grayridge,Cragbark"
+: #+BEGIN_SRC sqlite :db business.sqlite :colnames yes :results table
+:  WITH profitable AS (
+:      SELECT a.idx,a.product,b.location,b.price - a.price AS profit
+:        FROM prices AS a
+:        JOIN prices AS b
+:          ON ( a.product = b.product )
+:       WHERE a.location  = "$src"
+:         AND INSTR("$dsts", b.location ) != 0
+:  )
+:  SELECT profitable.idx      AS idx      ,
+:         profitable.product  AS product  ,
+:         profitable.location AS location ,
+:         profitable.profit   AS profict
+:    FROM profitable
+:    JOIN (SELECT idx, MAX(profit) AS max_profit
+:            FROM profitable
+:           WHERE profit > 0
+:           GROUP BY idx
+:         ) AS tbl
+:      ON profitable.idx    = tbl.idx
+:     AND profitable.profit = tbl.max_profit
+:   ORDER BY profitable.idx
+:  ;
+: #+END_SRC
 
 Este bloco, quando executado, responde com uma nova planilha:
 
-#+BEGIN_SRC org
-  ,#+RESULTS: max_profit
-  | idx | product      | location  | profict |
-  |-----+--------------+-----------+---------|
-  |   1 | Rock Salt    | Grayridge |     168 |
-  |   2 | Copper Ore   | Cragbark  |      50 |
-  |   3 | Laggart Pelt | Grayridge |     154 |
-#+END_SRC
+: #+RESULTS: max_profit
+: | idx | product      | location  | profict |
+: |-----+--------------+-----------+---------|
+: |   1 | Rock Salt    | Grayridge |     168 |
+: |   2 | Copper Ore   | Cragbark  |      50 |
+: |   3 | Laggart Pelt | Grayridge |     154 |
 
 Essa saída é mais que suficiente para que eu possa tomar minhas decisões sobre o que comprar e onde vender. Se eu, por exemplo, estiver noutra localidade que não "/Home/", basta modificar o parâmetro ~#+HEADER: :var src="Home"~ nome da nova localidade e reexecutando o bloco (~C-c C-c~), a resposta é instantânea.
 
