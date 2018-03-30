@@ -182,7 +182,7 @@ Este bloco, quando executado, responde com uma nova planilha:
 : |   2 | Copper Ore   | Cragbark  |      50 |
 : |   3 | Laggart Pelt | Grayridge |     154 |
 
-Essa saída é mais que suficiente para que eu possa tomar minhas decisões sobre o que comprar e onde vender. Se eu, por exemplo, estiver noutra localidade que não "/Home/", basta modificar o parâmetro ~#+HEADER: :var src="Home"~ nome da nova localidade e reexecutando o bloco (~C-c C-c~), a resposta é instantânea.
+Essa saída é mais que suficiente para que eu possa tomar minhas decisões sobre o que comprar e onde vender. Se eu, por exemplo, estiver noutra localidade que não "/Home/", basta ajusta os parâmetros ~#+HEADER: :var src="Home"~ e ~#+HEADER: :var dsts="Grayridge,Cragbark"~ para as novas localidades e reexecutar o bloco (~C-c C-c~), a resposta é instantânea.
 
 Essa abordagem também responde automaticamente as [[q3][terceira]] e [[q4][quarta]] questões perfeitamente, respectivamente: "Como visualizar as respostas sem duplicar manualmente os dados?" e "Como criar um modelo que seja maleável o suficiente para suporta o aumento no número de produtos, as modificações dos preços e aumento de localidades?". E ainda tenho o recurso de contrair todos esses blocos de código, ou seja, no arquivo onde está minha planilha, abaixo dela eu apenas vejo algo do tipo:
 
