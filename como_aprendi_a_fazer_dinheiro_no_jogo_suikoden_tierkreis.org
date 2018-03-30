@@ -1,0 +1,249 @@
+#+BLOG: perspicaz
+#+POSTID: 416
+#+DATE: [2018-03-28 Wed 20:52]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Uncategorized
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Como Aprendi a Fazer Dinheiro no Jogo Suikoden Tierkreis
+#+PERMALINK: como_aprendi_a_fazer_dinheiro_no_jogo_suikoden_tierkreis
+
+Demorei a entender alguns macetes desse jogo e estava enfrentando sérias restrições orçamentárias, sofrendo muitas privações, passando por necessidades, matando cachorro a gritos, na pindaíba, amargando a realidade, arrastando uma cachorra, com o bucho apregado no espinhaço etc e "tals"... Como o acesso ao único deus deste mundo é feito dentro do jogo 😁.
+
+#+html: <!--more continue lendo...-->
+
+#+ATTR_HTML: :align left
+[[file:img/220px-Suikoden_Tierkreis.jpg]] [[https://en.wikipedia.org/wiki/Suikoden_Tierkreis][Suikoden Tierkreis]] é um jogo de [[https://pt.wikipedia.org/wiki/RPG_eletr%25C3%25B4nico][RPG]] para [[https://pt.wikipedia.org/wiki/Nintendo_DS][Nintendo DS]] que apenas recentemente comecei a jogar por meio do emulador [[http://sourceforge.net/projects/desmume][DeSmuME]]. Minha primeira impressão foi a de que tratava-se de mais um jogo enfadonho e repetitivo, mas felizmente eu estava errado. A história é bastante envolvente (e eu faço questão de contar nada dela aqui) e uma coisa que chamou-me bastante a atenção foi a dificuldade que encontrei para aprender a fazer dinheiro. Diferente de praticamente todos os outros jogos de /RPG/ que já joguei na vida, em /Suikoden Tierkreis/ não se faz dinheiro matando monstros. Até existe um sistema de /quests/ (missões) remuneradas, mas elas acabam rápido, principalmente porque eu fiquei sabotando algumas para garantir a recompensa no final... No início do jogo não é problema se ter pouco dinheiro, pois são poucos os membros do grupo e existe quase nada interessante para se comprar, entretanto, a medida que o jogo avança, o seu exército vai crescendo e já não se é mais capaz de equipá-los apenas com o dinheiro das /quests/ e outros pequenas recompensas. Isto me causou vários inconvenientes, como por exemplo, a necessidade de desequipar o exército logo após terminar a missão com um grupo para ser capaz de equipar outro grupo, houve casos em que acabei sem equipamentos nenhum nalguns eventos pois neles não havia a opção de equipar os personagens com antecedência... O jogo até explica e dá dicas de como fazer dinheiro, todavia, foram todas em vão, pois, eu as ignorei até quase decretar falência! Existe grande ênfase na troca de mercadorias, algo que para mim é completamente novo, e a possibilidade de obter lucro comprando mercadorias numa localidade e vendendo em outra; existe oscilações de preços ao longo do jogo e a única preocupação (ou não) é o tempo que demora para se locomover de uma localidade para outra. O problema aqui é: Como saber qual mercadoria comprar para obter lucro? Quem tem boa memória (até já tive, mas isto foi muito antes até de vir a conhecer um computador...) pode usá-la para lembrar quais opções são as melhores, porém, esta opção não é para mim... Seria, então, possível criar uma solução simples que não destruísse o objetivo meio e fim: diversão?
+
+A solução mais simples para o problema é criar uma planilha com os produtos e as localidade e calcular o lucro/prejuízo, uma vez que a lista de produtos não chega a 60 itens, trata-se de um caso de uso onde planilhas eletrônicas são adequadas.
+
+#+ATTR_HTML: :style float: left
+[[file:img/Emacs-logo.svg.png]] Por ser usuário do [[https://pt.wikipedia.org/wiki/GNU_Emacs][Emacs]], nada mais natural que resolver o problema com ele. Fazendo uso do recurso de planilhas do [[https://en.wikipedia.org/wiki/Org-mode][Org-Mode]], comecei por criar uma planilha com as colunas:
++ idx :: índice do produto no menu, que servia para me orientar e agilizar a compra no mercado.
++ product :: o nome do produto, tem produto que não existe em todas as localidades e a lista de produtos vai crescendo ao longo do jogo.
+
+seguidas pelas colunas dos preços de cada localidade. A localidade "Home" é o nome que estou usando neste /post/ para me referir ao meu Quartel General no jogo, mas não foi este o nome real.
+
+#+ATTR_HTML: :width 30px :align left
+[[file:img/Org-mode-unicorn.png]] Para citar um exemplo com 5 produtos aleatórios e preços aleatórios (deliberadamente decidi forjar os preços para que você não os copie de mim 😝) para o exemplo:
+
+# #+HTML: <p style="clear: both;">
+
+#+BEGIN_SRC org
+  | idx | product      |  Home | Grayridge | profit |
+  |-----+--------------+-------+-----------+--------|
+  |   1 | Rock Salt    |    18 |       186 |    168 |
+  |   2 | Copper Ore   |   350 |       200 |   -150 |
+  |   3 | Laggart Pelt |    34 |       188 |    154 |
+  |   4 | Wool Yarn    |   190 |       160 |    -30 |
+  |   5 | Black Onyx   | 20000 |       nan |    nan |
+  ,#+TBLFM: $1=@#-1::$5=$4-$3
+#+END_SRC
+
+Semelhante a uma planilha comum de /softwares/ básico de automação de escritório não é mesmo? Mas o que é aquele troço no final da tabela? ~#+TBLFM: $1=@#-1::$5=$4-$3~?
+
+Trata-se da notação para fórmulas, no caos, são duas. A primeira fórmula, ~$1=@#-1~, diz para numerar as linhas automaticamente. A segunda fórmula, ~$5=$4-$3~, calcula o lucro que eu teria se comprasse na primeira localidade e vendesse na segunda. Em outras palavras, se eu comprar "/Rock Salt/" em "/Home/" e vender em "/Grayridge/", terei 168 moedas de lucro, mas se eu comprar "/Copper Ore/", terei prejuízo de 150 moedas, nesse caso, quando eu for vender lá, compro ele e o vendo quando retornar a "/Home/". Como a lista possui mais de 50 produtos, preciso ordená-la para ver os produtos a comprar em cada agrupamento de localidade. O valor [[https://pt.wikipedia.org/wiki/NaN][/nan/]] serve para preencher a célula das colunas que não possui o produto e/ou ainda não sei o preço de compra/venda, sem o /nan/, é assumido o valor 0 e isto é indesejado.
+
+Pois bem, a solução até aqui parece razoável, mas não existem apenas duas localidades no jogo... Tão logo se adicione uma localidade a mais na tabela, o caos está declarado, veja:
+
+#+BEGIN_SRC org
+  ,#+NAME: prices_report
+  | idx | product      |  Home | Grayridge | Cragbark |
+  |-----+--------------+-------+-----------+----------|
+  |   1 | Rock Salt    |    18 |       186 |       20 |
+  |   2 | Copper Ore   |   350 |       200 |      400 |
+  |   3 | Laggart Pelt |    34 |       188 |        5 |
+  |   4 | Wool Yarn    |   190 |       160 |        5 |
+  |   5 | Black Onyx   | 20000 |       nan |     2000 |
+  ,#+TBLFM: $1=@#-1
+#+END_SRC
+
+Vamos tentar imaginar alguns problemas/consequências:
+
+1. <<q1>> Supondo que eu esteja em "/Home/" e vá passar em "/CragBark/", quais produtos devo levar?
+
+2. <<q2>> Supondo que eu esteja em "/CragBark/" e vá passar em "/Grayridge/" antes de retornar a "/Home/", quais produtos terei mais lucro vendendo em cada localidade?
+
+3. <<q3>> Como visualizar as respostas sem duplicar manualmente os dados?
+
+4. <<q4>> Como criar um modelo que seja maleável o suficiente para suporta o aumento no número de produtos, as modificações dos preços e aumento de localidades?
+
+Conseguiu imaginar alguma solução aí?
+
+Bem, eu sou um "engenheiro" de soluções, mas estou nada disposto a desenvolver um /software/ apenas para jogar... então eu resolvi permanecer no /Emacs/ mesmo.
+
+#+ATTR_HTML: :align left
+[[file:./img/SQLite.png]] Para gerar os relatórios, eu fiz uso do [[https://pt.wikipedia.org/wiki/SQLite][SQLite]] (muito usado no /Android/) para permitir a fácil utilização de comandos [[https://pt.wikipedia.org/wiki/SQL][SQL]]! É possível utilizar quase qualquer uma das linguagens disponíveis, mas meu foco é "quanto mais simples, melhor" para este caso.
+
+#+ATTR_HTML: :align left
+[[file:img/perl_logo_32x104.png]] Para simplificar as consultas via /SQL/, é importante desmembrar o relatório. Fiz isto com o uso da linguagem [[https://pt.wikipedia.org/wiki/Perl][Perl]] (e até poderia tê-la usado para todo o resto da solução). O código foi o seguinte:
+
+#+BEGIN_SRC org
+  ,#+NAME: csv
+  ,#+BEGIN_SRC perl :var table=prices_report :colnames no :results value
+    @header = @{ shift @{$table} };
+    for $line (@$table) {
+        for ( $i = 2; $i <= $#$line; $i++ ) {
+            push @row, [ @{$line}[ 0, 1 ], $header[$i], $line->[$i] ];
+        }
+    }
+    $file = 'prices.csv';
+    open FH, '>' . $file;
+    $" = ",";
+    print FH join "\n", map {"@$_"}@row;
+    print FH "\n";
+    $file
+  ,#+END_SRC
+#+END_SRC
+
+Usando um dialeto muito útil apenas para [[https://en.wikipedia.org/wiki/One-liner_program][oneliners]] e programas descartáveis, desmembrei a tabela principal e criei um arquivo /CSV/, de nome "prices.csv", para fazer a carga no banco de dados.
+
+Com os dados preparados, vamos criar o banco de dados "business.sqlite" e a tabela "prices" para acomodar o conteúdo do arquivo /CSV/:
+
+#+BEGIN_SRC org
+  ,#+BEGIN_SRC sqlite :db business.sqlite :var file=csv :colnames no :results none :export none
+    DROP TABLE IF EXISTS prices;
+    CREATE TABLE prices (
+        idx      INTEGER ,
+        product  VARCHAR ,
+        location VARCHAR ,
+        price    NUMERIC
+    );
+    .import "$file" prices
+  ,#+END_SRC
+#+END_SRC
+
+Antes de partir para as consultas, alguns pequenos ajustes (até dispensáveis):
+
+#+BEGIN_SRC org
+  ,#+BEGIN_SRC elisp :var file=csv :results none :exports none
+    (delete-file file)
+    (setq org-babel-sqlite3-command "sqlite3 -init /dev/null")
+  ,#+END_SRC
+#+END_SRC
+
+Trata-se de código em [[https://pt.wikipedia.org/wiki/Emacs_Lisp][ELisp]], a primeira linha remove o arquivo /CSV/ e a segunda ajusta o comando para o /SQLite/ para que ele não leia meu arquivo de configuração padrão.
+
+Neste ponto, já estou em condições de responder aos questionamentos anteriores! \o/
+
+Para responder a [[q1][primeira questão]], "Supondo que eu esteja em '/Home/' e vá passar em '/CragBark/', quais produtos devo levar?", desenvolvi o seguinte:
+
+#+BEGIN_SRC org
+  ,#+NAME: src_dst
+  ,#+HEADER: :var src="Home"
+  ,#+HEADER: :var dst="Cragbark"
+  ,#+BEGIN_SRC sqlite :db business.sqlite :colnames yes :results table
+    SELECT a.idx, a.product,
+           b.price - a.price AS profit
+      FROM prices AS a
+      JOIN prices AS b
+        ON ( a.product = b.product )
+     WHERE a.location  = "$src"
+       AND b.location  = "$dst"
+       AND ( b.price - a.price ) > 0
+     ORDER BY a.idx
+    ;
+  ,#+END_SRC
+#+END_SRC
+
+Este bloco, quando executado (faço isto teclando ~C-c C-c~), produz uma nova planilha nova em folha com a resposta:
+
+#+BEGIN_SRC org
+  ,#+RESULTS: src_dst
+  | idx | product    | profit |
+  |-----+------------+--------|
+  |   1 | Rock Salt  |      2 |
+  |   2 | Copper Ore |     50 |
+#+END_SRC
+
+E se eu precisar mudar as localidades, basta modificar os parâmetros ~#+HEADER: :var src="Home"~ e ~#+HEADER: :var dst="Cragbark"~.
+
+Já a [[q2][segunda questão]], "Supondo que eu esteja em '/CragBark/' e vá passar em '/Grayridge/' antes de retornar a '/Home/', quais produtos terei mais lucro vendendo em cada localidade?", exige muito mais código, veja:
+
+#+BEGIN_SRC org
+  ,#+NAME: max_profit
+  ,#+HEADER: :var src="Home"
+  ,#+HEADER: :var dsts="Grayridge,Cragbark"
+  ,#+BEGIN_SRC sqlite :db business.sqlite :colnames yes :results table
+    WITH profitable AS (
+        SELECT a.idx,a.product,b.location,b.price - a.price AS profit
+          FROM prices AS a
+          JOIN prices AS b
+            ON ( a.product = b.product )
+         WHERE a.location  = "$src"
+           AND INSTR("$dsts", b.location ) != 0
+    )
+    SELECT profitable.idx      AS idx      ,
+           profitable.product  AS product  ,
+           profitable.location AS location ,
+           profitable.profit   AS profict
+      FROM profitable
+      JOIN (SELECT idx, MAX(profit) AS max_profit
+              FROM profitable
+             WHERE profit > 0
+             GROUP BY idx
+           ) AS tbl
+        ON profitable.idx    = tbl.idx
+       AND profitable.profit = tbl.max_profit
+     ORDER BY profitable.idx
+    ;
+  ,#+END_SRC
+#+END_SRC
+
+Este bloco, quando executado, responde com uma nova planilha:
+
+#+BEGIN_SRC org
+  ,#+RESULTS: max_profit
+  | idx | product      | location  | profict |
+  |-----+--------------+-----------+---------|
+  |   1 | Rock Salt    | Grayridge |     168 |
+  |   2 | Copper Ore   | Cragbark  |      50 |
+  |   3 | Laggart Pelt | Grayridge |     154 |
+#+END_SRC
+
+Essa saída é mais que suficiente para que eu possa tomar minhas decisões sobre o que comprar e onde vender. Se eu, por exemplo, estiver noutra localidade que não "/Home/", basta modificar o parâmetro ~#+HEADER: :var src="Home"~ nome da nova localidade e reexecutando o bloco (~C-c C-c~), a resposta é instantânea.
+
+Essa abordagem também responde automaticamente as [[q3][terceira]] e [[q4][quarta]] questões perfeitamente, respectivamente: "Como visualizar as respostas sem duplicar manualmente os dados?" e "Como criar um modelo que seja maleável o suficiente para suporta o aumento no número de produtos, as modificações dos preços e aumento de localidades?". E ainda tenho o recurso de contrair todos esses blocos de código, ou seja, no arquivo onde está minha planilha, abaixo dela eu apenas vejo algo do tipo:
+
+: #+NAME: csv
+: #+BEGIN_SRC perl :var table=prices_report :colnames no :results value...
+:
+: #+RESULTS: csv...
+:
+: #+BEGIN_SRC sqlite :db business.sqlite :var file=csv :colnames no :results none
+: export none...
+:
+: #+BEGIN_SRC elisp :var file=csv :results none :exports none...
+:
+: #+NAME: src_dst
+: #+HEADER: :var src="Home"
+: #+HEADER: :var dst="Cragbark"
+: #+BEGIN_SRC sqlite :db business.sqlite :colnames yes :results table...
+:
+: #+RESULTS: src_dst...
+:
+: #+NAME: max_profit
+: #+HEADER: :var src="Home"
+: #+HEADER: :var dsts="Grayridge,Cragbark"
+: #+BEGIN_SRC sqlite :db business.sqlite :colnames yes :results table...
+:
+: #+RESULTS: max_profit...
+
+E apenas preciso posicionar o cursor no local e mandar executar para ter a resposta prontinha na tela.
+
+Com as saídas sendo também planilhas, é possível facilmente modificar as ordenações das linhas, ordem das colunas, incluir novos cálculos, filtrar informações, transpor, plotar gráficos (luxo desnecessário aqui) etc.
+
+Depois desse exercício, a única coisa com a qual preciso me preocupar é manter a tabela principal atualizada, as respostas são atualizadas com um simples teclar de ~C-c C-c~ (embora seja possível fazer a atualização automaticamente...). E agora nunca mais vou perder dinheiro quando viajar de uma localidade a outra! \o/
+
+#  LocalWords:  toc pri Uncategorized Suikoden Tierkreis PERMALINK suikoden FH
+#  LocalWords:  tierkreis apregado tals Grayridge CragBark SRC oneliners CSV
+#  LocalWords:  ELisp SQLite dst idx C-c src dsts profict tbl html ATTR RPG DS
+#  LocalWords:  DeSmuME Org-Mode px fn SQL csv sqlite Cragbark colnames elisp
+#  LocalWords:  ordernações
+
+# img/220px-Suikoden_Tierkreis.jpg http://perspicazsite.files.wordpress.com/2018/03/220px-suikoden_tierkreis.jpg
+# img/Emacs-logo.svg.png http://perspicazsite.files.wordpress.com/2018/03/emacs-logo-svg_.png
+# img/Org-mode-unicorn.png http://perspicazsite.files.wordpress.com/2018/03/org-mode-unicorn.png
+# ./img/SQLite.png http://perspicazsite.files.wordpress.com/2018/03/sqlite.png
+# img/perl_logo_32x104.png http://perspicazsite.files.wordpress.com/2018/03/perl_logo_32x104.png
