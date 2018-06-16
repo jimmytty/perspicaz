@@ -1,0 +1,96 @@
+#+BLOG: perspicaz
+#+POSTID: 429
+#+DATE: [2018-06-15 Fri 21:52]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Uncategorized
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Favoritos #012
+#+PERMALINK: favoritos_012
+
+* Favoritos
++ *Entretenimento*:
+  + Vatican Kiseki Chousakan (Vatican Miracle Examiner)    (anime)
+  + Tenpou Ibun Ayakashi Ayashi    (anime)
+  + Radiant Historia    (game)
+  + Touhai Densetsu Akagi Yami Ni Maiorita Tensai    (anime)
++ *Produtividade*:
+  + [[https://coffeeandcode.neocities.org/why-i-still-use-emacs.html][Why I still use Emacs]].
+  + [[https://www.torstensenf.de/html/pages/spreadsheet-in-emacs-with-org-mode.html][Spreadsheet in emacs with org-mode]].
+  + [[http://archive.indianstatistics.org/tools/orgpapers.pdf][Using Emacs, Org-mode and R for Research Writing in Social Sciences]]    (pdf)
+  + [[http://acidwords.com/posts/2018-03-02-extending-org-mode-easy-templates.html][#:acid 'words: Extending org-mode Easy Templates]].
+  + [[https://github.com/rejeep/prodigy.el][GitHub - rejeep/prodigy.el: Manage external services from within Emacs]].
+  + [[http://acidwords.com/posts/2018-03-02-extending-org-mode-easy-templates.html][#:acid 'words: Extending org-mode Easy Templates]].
+  + [[https://orgmode.org/worg/org-tutorials/org-column-view-tutorial.html][Emacs Org's Column View]].
+  + [[https://github.com/dfeich/org-babel-examples][GitHub - dfeich/org-babel-examples: Examples using emacs org mode babel inline source code with different backend languages]].
+  + [[http://irreal.org/blog/?p=7011][Ten Tools for Academics | Irreal]].
+  + [[http://irreal.org/blog/?p=7017][Radio Buttons and Devops in Org Mode | Irreal]].
+  + [[https://www.youtube.com/watch?v=dljNabciEGg][Literate Devops with Emacs - YouTube]].
+  + [[http://www.howardism.org/Technical/Emacs/literate-devops.html][Literate DevOps]].
+  + [[http://www.spacjer.com/blog/2018/03/02/why-is-my-emacs-slow/][Why is my Emacs slow? – Rafal Spacjer blog]].
+  + [[https://florian.adamsky.it/2016/03/31/emacs-calc-for-programmers-and-cs.html][Emacs Calc for Programmers and Computer Scientists]].
+  + [[https://github.com/johanclaesson/picpocket][GitHub - johanclaesson/picpocket: Image viewer for Emacs]].
+  + [[https://www.reddit.com/r/emacs/comments/89j3kb/serve_files_over_http_directly_from_emacs/][Serve files over HTTP directly from Emacs : emacs]].
+  + [[http://mbork.pl/2018-04-09_counsel-yank-pop][Marcin Borkowski: 2018-04-09 counsel-yank-pop]].
+  + [[http://changelog.complete.org/archives/9900-emacs-5-documents-and-presentations-with-org-mode][Emacs #5: Documents and Presentations with org-mode | The Changelog]].
+  + [[https://stackoverflow.com/questions/815540/emacs-keep-region-selected-after-operation][Emacs: keep region selected after operation - Stack Overflow]].
+  + [[http://pragmaticemacs.com/emacs/write-code-comments-in-org-mode-with-poporg/][Write code comments in org-mode with poporg | Pragmatic Emacs]].
+  + [[https://github.com/QBobWatson/poporg][GitHub - QBobWatson/poporg: Emacs programming tool for editing strings or comments in Org mode or any other text mode]].
+  + [[https://jvns.ca/blog/2018/05/11/batch-editing-files-with-ed/][Batch editing files with ed - Julia Evans]].
+  + [[http://irreal.org/blog/?p=7203][Some Dired Tips | Irreal]].
++ *Devel/SysAdmin/Security*:
+  + [[https://blog.2ndquadrant.com/postgresql-maximum-table-size/][PostgreSQL Maximum Table Size |]].
+  + [[http://info.crunchydata.com/blog/range-types-recursion-how-to-search-availability-with-postgresql][Range Types & Recursion: How to Search Availability with PostgreSQL]].
+  + [[http://blogs.perl.org/users/grinnz/2018/02/encodesimple---encode-and-decode-text-simply.html][Encode::Simple - Encode and decode text, simply | Grinnz {blogs.perl.org}]].
+  + [[https://opensource.com/article/18/3/blockchain-not-just-cryptocurrency][Blockchain: Not just for cryptocurrency | Opensource.com]].
+  + [[https://hadoopavenue.wordpress.com/2014/10/02/hadoop-streaming-with-perl-script/][Hadoop Streaming with Perl Script | Tech-Blog]].
+  + [[https://opensource.com/article/18/3/easy-data-validation-regexpcommon][Easy data validation in Perl with Regexp::Common | Opensource.com]].
+  + [[https://www.citusdata.com/blog/2018/03/06/postgres-planner-and-its-usage-of-statistics/][The Postgres 10 feature you didn't know about: CREATE STATISTICS]].
+  + [[https://www.cybertec-postgresql.com/en/advanced-sql-why-first_value-and-last_value-are-no-bugs/][Advanced SQL: Why first_value and last_value are no bugs - Cybertec]].
+  + [[http://www.olafalders.com/2018/04/13/wwwmechanize-best-practices/][WWW::Mechanize Best Practices | i hack on things]].
+  + [[http://blogs.perl.org/users/ovid/2018/04/tau-station-is-now-live.html][Tau Station is now live! | Ovid {blogs.perl.org}]].
+  + [[https://perlancar.wordpress.com/2018/05/01/generating-random-passwords-according-to-patterns-with-genpw/][Generating random passwords according to patterns with genpw | perlancar's blog]].
+  + [[https://log.perl.org/2018/05/goodbye-search-dot-cpan-dot-org.html][The Perl NOC: The end of an era: Saying goodbye to search.cpan.org]].
+  + [[https://opensource.com/article/18/4/perl-module-debugging-code][A Perl module for better debugging | Opensource.com]].
+  + [[http://blogs.perl.org/users/ovid/2017/12/why-i-wrote-keyworddevelopment.html][Why I wrote Keyword::DEVELOPMENT | Ovid {blogs.perl.org}]].
+  + [[https://opensource.com/article/18/5/gnu-parallel][Get more done at the Linux command line with GNU Parallel | Opensource.com]].
+  + [[https://www.perl.com/article/the-2018-perl-developer-survey-results/][The 2018 Perl Developer Survey Results]].
+  + [[https://lwn.net/Articles/751763/][A look at terminal emulators, part 2 {LWN.net}]].
+  + [[http://ul.io/nb/2018/04/30/literate-analytics-with-org-babel/][A Brief Introduction to Literate Analytics With org-babel]].
+  + [[https://github.com/chrisdone/elisp-guide][GitHub - chrisdone/elisp-guide: A quick guide to Emacs Lisp programming]].
+  + [[https://github.com/jwiegley/use-package][GitHub - jwiegley/use-package: A use-package declaration for simplifying your .emacs]].
+  + [[http://kadekillary.work/post/cli-4-ds/][Command Line Tricks For Data Scientists • kade killary]].
+  + [[elfeed:planet.emacsen.org#http://irreal.org/blog/?p=7194][Irreal: Batch Editing with ed]].
+  + [[http://john.mercouris.online/emacs-database-interface.html][Emacs Database Interface (EDBI) - jmercouris]].
+  + [[https://www.reddit.com/r/emacs/comments/8n7w3z/edbi_emacs_database_interface_tutorial/][EDBI (Emacs Database Interface) Tutorial : emacs]].
+  + [[https://emacs.cafe/ledger/emacs/ynab/budgeting/2018/06/12/elbank-ynab.html][Using Ledger for YNAB-like envelope budgeting]].
+  + [[https://fluca1978.github.io/2018/05/03/PostgreSQL-plperl-versions.html][plperl: which version of Perl? – Luca Ferrari – Open Source advocate, human being]].
+  + [[https://www.cybertec-postgresql.com/en/get-rid-of-your-unused-indexes/][index maintenance - Get rid of your unused indexes! - Cybertec]].
+  + [[https://severalnines.com/blog/top-backup-tools-postgresql][Top Backup Tools for PostgreSQL | Severalnines]].
+  + [[https://fluca1978.github.io/2018/04/17/PostgreSQLALterTable.html][What happens when you add a column? – Luca Ferrari – Open Source advocate, human being]].
+  + [[https://seiler.us/2018-04-30-beware-sort-of-ambiguous-column-names/][Beware (Sort-Of) Ambiguous Column Names In Sub-Selects]].
+  + [[https://www.cybertec-postgresql.com/en/avoid-or-for-better-performance/][avoid OR for better PostgreSQL query performance - Cybertec]].
+  + [[https://blog.2ndquadrant.com/window-functions-time-series-iot-analytics-postgres-bdr/][Using Window Functions for Time Series IoT Analytics in Postgres-BDR |]].
+  + [[https://www.youtube.com/watch?v=MijmeoH9LT4][Characters, Symbols and the Unicode Miracle - Computerphile - YouTube]].
+  + [[http://blogs.perl.org/users/konstantin_uvarin/2018/06/assertrefute---a-unified-testing-and-assertion-tool.html][Assert::Refute - a unified testing and assertion tool | Konstantin Uvarin {blogs.perl.org}]].
+  + [[https://opensource.com/article/18/5/command-line-data-auditing][How to clean up your data in the command line | Opensource.com]].
++ *Ciências*:
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=velocidade-luz-cai-zero-pontos-excepcionais&id=010110180227][Velocidade da luz cai a zero em "pontos excepcionais"]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=gerador-transforma-oscilacoes-temperatura-eletricidade&id=010115180227][Gerador transforma oscilações de temperatura em eletricidade]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=memorias-preparam-se-saltar-faixa-terahertz&id=010110180301][Memórias preparam-se para saltar para a faixa dos terahertz]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=colocar-atomo-dentro-outro&id=010165180302][É mesmo possível colocar um átomo dentro do outro]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=memotransistor&id=010110180308][Memotransístor: Novo componente irá transformar processador em cérebro eletrônico]].
+  + [[http://www.cienciaedados.com/como-a-computacao-quantica-vai-revolucionar-a-inteligencia-artificial-machine-learning-e-big-data/][Como a Computação Quântica Vai Revolucionar a Inteligência Artificial, Machine Learning e Big Data — Ciência e Dados]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=efeito-gorila-cosmico-impedir-vejamos-sinais-ets&id=010130180508][Efeito Gorila Cósmico pode impedir que vejamos sinais de ETs]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=descoberta-forma-mais-rapida-mais-eficiente-processar-informacoes&id=010150180517][Descoberta forma mais rápida e mais eficiente de processar informações]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=proton-tem-pressao-maior-objeto-mais-denso-universo&id=010165180521][Próton tem pressão maior que objeto mais denso do Universo]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=nanofabrica-monta-menor-casa-mundo&id=010180180521][Nanofábrica monta menor casa do mundo]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=dias-terra-tem-24-horas-gracas-lua&id=010175180606][Dias da Terra têm 24 horas graças à Lua]].
+  + [[http://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=bateria-nuclear-nao-precisa-recarregada-dura-sempre&id=010115180608][Bateria nuclear: Não precisa ser recarregada e dura para sempre]].
++ *Negócios/Carreira*:
+  + [[https://imasters.com.br/banco-de-dados/governanca-de-dados-e-bancos-de-dados-nosql/][Governança de dados e bancos de dados NoSQL -]].
++ *Diversos*:
+  + [[http://aiyumi.warpstar.net/pt/blog/slint-linux-review/][Slint, uma Distribuição Linux Baseada no Slackware e Acessível para Deficientes Visuais » Aiyumi.Warpstar.Net]].
+  + [[http://aiyumi.warpstar.net/pt/blog/p5-coffee/][Como o Persona 5 Despertou Meu Interesse pelo Mundo do Café » Aiyumi.Warpstar.Net]].
+  + [[https://www.concrete.com.br/2018/05/16/o-porque-do-bitcoin-parte-1-la-casa-de-papel-a-roma-antiga-e-a-decada-perdida/][Concrete | O porquê do Bitcoin – Parte 1: La Casa de Papel, a Roma Antiga e a Década Perdida]].
