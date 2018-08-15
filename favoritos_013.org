@@ -1,0 +1,311 @@
+#+BLOG: perspicaz
+#+POSTID: 433
+#+DATE: [2018-08-15 Wed 01:30]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+PARENT:
+#+CATEGORY: Uncategorized
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Favoritos #013
+#+PERMALINK: favoritos_013
+
+* Favoritos
+** eww "pular para conteúdo"                               :webbrowser:emacs:
+  [2017-02-06 Mon]
+A new command 'R' ('eww-readable') will try do identify the main
+textual parts of a web page and display only that, leaving menus and
+the like off the page.
+** calc user-defined units                                            :emacs:
+   [2017-07-02 Sun]
+https://www.reddit.com/r/emacs/comments/31xezm/common_byte_units_in_calc/
+man 1 units
+calc.el
+#+BEGIN_SRC emacs-lisp
+  ;;; Custom units stored by Calc on Sat Sep 16 13:26:22 2017
+  (setq math-additional-units
+        '(
+          (bit    nil            "Bit")
+          (bps    "bit / s"     "Bit per second")
+          (byte   "8 * bit"      "Byte")
+          (kilobyte    "1024 * byte"      "KiloByte")
+          (megabyte    "1024 * kilobyte"  "MegaByte")
+          (gigabyte    "1024 * megabyte"  "GigaByte")
+          (terabyte    "1024 * gigabyte"  "MegaByte")
+          (petabyte    "1024 * terabyte"  "PetaByte")
+          (exabyte     "1024 * petabyte"  "ExaByte")
+          (zettabyte   "1024 * exabyte"   "Zettabyte")
+          (yottabyte   "1024 * zettabyte" "Yottabyte")
+          (brontobyte  "1024 * yottabyte" "BrontoByte")
+          )
+        math-units-table nil
+  )
+  ;;; End of custom units
+#+END_SRC
+
+** https://grep.metacpan.org/
+   [2017-08-23 Wed]
+ótima solução
+** C-x C-j => enable copy from term-mode                              :emacs:
+  [2017-09-04 Mon]
+‘C-c C-j’
+     Switch to line mode (‘term-line-mode’).  Do nothing if already in
+     line mode.
+
+[[info:emacs#Term%20Mode][info:emacs#Term Mode]]
+** Performance Index Everything                :postgresql:tips:database:sql:
+   [2017-09-25 Mon]
+[...]
+ A more generic solution is to place all data in a jsonb column and create a gin
+ index. The gin index indexes every json key and value, and only stores the keys and
+ values once in the index. This is a great "index everything" option for
+ administrators that aren't sure of their indexing needs.
+ [[https://momjian.us/main/blogs/pgblog/2017.html#September_15_2017][Bruce Momjian: Postgres Blog]]
+** [[http://www.craigkerstiens.com/2017/09/18/postgres-connection-management/][Tracking and managing your Postgres connections - Craig Kerstiens]] :postgresql:tips:database:sql:
+  [2017-09-25 Mon]
+1  SELECT count(*),
+2         state
+3  FROM pg_stat_activity
+4  GROUP BY 2;
+** [[https://github.com/ch11ng/exwm/wiki][EXWM Wiki · GitHub]]         :test:
+   [2017-09-03 Sun]
+howto create an X11 like CLI to automation?
+- wrappers
+- helpers
+- xdotool
+- [...]
+** undo-tree                                            :emacs:packages:test:
+ [2017-10-11 Wed]
+undo-tree Treat undo history as a tree
+** https://vimeo.com/14742598                                   :watch:emacs:
+- Note taken on [2017-10-23 Mon 08:43] \\
+  /home/jimmy/Downloads/movies/Emacs-Calc - The Poor Man's Mathematica-14742598.mp4
+** <f1> ? (help-for-help)                                        :emacs:tips:
+  [2017-12-07 Thu]
+Here's my Emacs cheat sheet:
+
+<f1> ? (help-for-help)
+
+[[https://www.reddit.com/r/emacs/comments/7h3esw/another_new_cheatsheet/][A(nother) new cheatsheet : emacs]]
+** [[https://stackoverflow.com/questions/38136854/how-to-use-multiple-with-statements-in-one-postgresql-query][sql - How to use multiple WITH statements in one PostgreSQL query? - Stack Overflow]] :tips:sql:
+[2018-01-31 Wed 15:26]
+         WITH cte1 AS (SELECT...)
+         , cte2 AS (SELECT...)
+         SELECT *
+         FROM
+             cte1.....
+** FILTER                                          :postgresql:tips:database:
+
+
+[[https://modern-sql.com/blog/2018-02/standard-sql-features-where-postgresql-beats-its-competitors][Standard SQL Features Where PostgreSQL Beats its Competitors]]
+
+FILTER  Since SQL::2003
+SQL::2003 allows FILTER (WHERE...) after aggregates:
+
+SELECT YEAR,
+       SUM(revenue) FILTER (WHERE MONTH = 1) JAN,
+       SUM(revenue) FILTER (WHERE MONTH = 2) FEB,
+       ...
+  FROM sales
+ GROUP BY YEAR;
+** DOMAIN                                          :postgresql:tips:database:
+
+
+[[https://modern-sql.com/blog/2018-02/standard-sql-features-where-postgresql-beats-its-competitors][Standard SQL Features Where PostgreSQL Beats its Competitors]]
+
+DOMAIN Since SQL::2003
+
+A SQL domain is a set of permissible values.
+
+OR: A way to manage CHECK constraints and DEFAULTs.
+
+CREATE DOMAIN positive_int AS INTEGER CHECK (VALUE > 0);
+
+CREATE TABLE order_lines (
+    ...,
+    quantity positive_int NOT NULL,
+    ...
+);
+
+PostgreSQL has a great extension: NOT VALID
+
+ALTER DOMAIN unsigned_int
+  ADD CONSTRAINT gt_zeo CHECK ( VALUE > 0 ) NOT VALID;
+
+Enforced on INSERT & UPDATE but not for existing values
+** [[https://github.com/rejeep/prodigy.el][GitHub - rejeep/prodigy.el: Manage external services from within Emacs]] :emacs:tips:packages:test:research:
+** (justify-current-line 'right)                                 :emacs:tips:
+[2018-02-19 Mon 23:48]
+[[https://emacs.stackexchange.com/questions/3540/how-to-right-align-region-and-or-line][text editing - How to right align region and/or line? - Emacs Stack Exchange]]
+** Perl: Data Vizualization (Graphics)                             :research:
+
+- Chart::Gnuplot - Plot graph using Gnuplot in Perl on the fly
+- Chart::Clicker - Powerful, extensible charting.
+- GD::Graph - Graph Plotting Module for Perl 5
+- Chart::Strip - Draw strip chart type graphs.
+- SVG::TT::Graph::Pie - Create presentation quality SVG pie graphs easily
+- Hypatia
+- [...]
+** shr - Simple HTML Renderer                                    :emacs:tips:
+[2018-03-30 Fri 21:10]
+shr is a built-in package.
+
+ Status: Built-In.
+Summary: Simple HTML Renderer
+
+
+This package takes a HTML parse tree (as provided by
+libxml-parse-html-region) and renders it in the current buffer.  It
+does not do CSS, JavaScript or anything advanced: It's geared
+towards rendering typical short snippets of HTML, like what you'd
+find in HTML email and the like.
+
+** fix tramp zsh connection issue                                :emacs:tips:
+
+: [[ $TERM == "dumb" ]] && unsetopt zle && PS1='$ ' && return
+[[https://github.com/syl20bnr/spacemacs/issues/1945][ssh connection struggling · Issue #1945 · syl20bnr/spacemacs · GitHub]]
+** helm-show-kill-ring                                           :emacs:tips:
+
+
+[[elfeed:planet.emacsen.org#http://mbork.pl/2018-04-09_counsel-yank-pop][Marcin Borkowski: counsel-yank-pop]]
+** [[https://www.youtube.com/playlist?list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE][Getting yourself organized with Orgmode]] :emacs:orgmode:
+** K (magit-file-untrack) does git rm --cached             :tips:emacs:magit:
+[2018-06-07 Thu 09:45]
+[[https://emacs.stackexchange.com/questions/24030/git-rm-from-magit][deletion - Git rm from magit - Emacs Stack Exchange]]
+** [[https://stackoverflow.com/questions/815540/emacs-keep-region-selected-after-operation][Emacs: keep region selected after operation - Stack Overflow]] :emacs:tips:
+** [[https://vimeo.com/channels/222837][Emacs on Vimeo]]  :download:playlist:
+** [[https://9gag.com/gag/aGe9MVK/heavy-metal-cats][Heavy metal cats - 9GAG]] :9gag:metal:video:cats:
+** [[https://9gag.com/gag/a5ojodE][When the metal is prime. - 9GAG]] :9gag:metal:video:cats:
+** [[https://9gag.com/gag/aKjmmOW][HeyHey - 9GAG]]         :9gag:video:memes:
+** swiper: isearch with an overview.                    :emacs:packages:tips:
+** yasnippet - Yet another snippet extension for Emacs. :emacs:packages:tips:
+** numbering a list                                       :emacs:macros:tips:
+** ~C-x~ - Repeat most recently executed command.                :emacs:tips:
+** =find-file-literally= - Visit file FILENAME with no conversion of any kind. :emacs:functions:tips:
+** A First Look
+#+BEGIN_SRC perl
+  use PDL;
+  use PDL::Graphics::Prima::Simple;
+  matrix_plot( sin( rvals( 200, 200 ) + 1 ) );
+#+END_SRC
+
+#+RESULTS: 
+: Prima::Plot=HASH(0x3117378)
+
+#+BEGIN_SRC perl
+  use PDL;
+  use PDL::Graphics::Prima::Simple;
+  matrix_plot( rvals( 200, 200 ) );
+#+END_SRC
+
+#+RESULTS: 
+: Prima::Plot=HASH(0x4931ba0)
+
+#+BEGIN_SRC perl
+  use PDL;
+  rvals(5,5)
+#+END_SRC
+
+#+RESULTS: 
+|                                                          |
+| [                                                        |
+| [ 2.8284271   2.236068          2   2.236068  2.8284271] |
+| [  2.236068  1.4142136          1  1.4142136   2.236068] |
+| [         2          1          0          1          2] |
+| [  2.236068  1.4142136          1  1.4142136   2.236068] |
+| [ 2.8284271   2.236068          2   2.236068  2.8284271] |
+| ]                                                        |
+
+#+BEGIN_SRC perl
+  use PDL;
+  sequence(5,5);
+#+END_SRC
+
+#+RESULTS: 
+|                  |
+| [                |
+| [ 0  1  2  3  4] |
+| [ 5  6  7  8  9] |
+| [10 11 12 13 14] |
+| [15 16 17 18 19] |
+| [20 21 22 23 24] |
+| ]                |
+** [[https://dba.stackexchange.com/questions/132851/database-frozen-on-alter-table][postgresql - Database "frozen" on ALTER TABLE - Database Administrators Stack Exchange]] :database:sysadmin:tips:
+[2018-08-02 Thu 09:38]
+David Spillett
+21.1k23065
+
+add a comment |
+up vote 18 down vote
+
+The command you wish to run does take an ACCESS EXCLUSIVE lock on the table,
+preventing all other access to that table. But the duration of this lock should be
+just a few milliseconds, as adding a column like the one you want to add does not
+require the table to be re-written, it just requires metadata to be updated.
+
+Where the problem can come in, and I bet you dollars to donuts that it is the
+problem you are seeing, is in lock priorities. Someone has a weak lock, like ACCESS
+SHARE lock, on that table, and they are camping on it indefinitely (maybe an
+idle-in-transaction connection which has been leaked? Someone who opened psql,
+started a query in a repeatable read mode, and then went on vacation?).
+
+The ADD COLUMN tries to take the ACCESS EXCLUSIVE it needs, and it queues up behind
+the first lock.
+
+Now all future lock requests queue up behind the waiting ACCESS EXCLUSIVE request.
+
+Conceptually, incoming lock requests which are compatible with the already-granted
+lock could jump over the waiting ACCESS EXCLUSIVE and be granted out of turn, but
+that is not how PostgreSQL does it.
+
+You need to find the process which is holding the long-lived weak lock.
+
+You can do this by querying the pg_locks table.
+
+select * from pg_locks where
+    granted and relation = 'cliente'::regclass \x\g\x
+
+If you do this while everything is locked up, you should get only one answer
+(unless there are multiple long-lived culprits). If you do this after you already
+killed the ADD COLUMN, then you might see lots of granted locks, but if you repeat
+it a few times there should one or a few which are staying around each time.
+
+You can then take the PID that you got from pg_lock, and query with that into
+pg_stat_activity to see what the offender is doing:
+
+select * from pg_stat_activity where pid=28731 \x\g\x
+
+...
+
+backend_start    | 2016-03-22 13:08:30.849405-07
+xact_start       | 2016-03-22 13:08:36.797703-07
+query_start      | 2016-03-22 13:08:36.799021-07
+state_change     | 2016-03-22 13:08:36.824369-07
+waiting          | f
+state            | idle in transaction
+backend_xid      |
+backend_xmin     |
+query            | select * from cliente limit 4;
+
+So, it ran a query, inside a transaction, and then went idle without ever closing
+the transaction. It is now 13:13, so they have been idle for 5 minutes.
+** [[https://stackoverflow.com/questions/51084217/is-there-a-way-to-use-the-operator-in-a-perl-if-statement][Is there a way to use the <=> operator in a perl if statement? - Stack Overflow]] :perl:tips:
+[2018-08-04 Sat 22:50]
+It's kind of obscure, but you can use the <=> operator to get an element of a dispatch table:
+
+(   sub { say 'they are the same' },
+    sub { say 'x is greater' },
+    sub { say 'x is lesser' }
+)[$x <=> $y]->();
+
+It's based on the fact that the index -1 returns the last element of a list.
+
+Using a hash might be more readable.
+
+{    0 => sub { say 'they are the same' },
+     1 => sub { say 'x is greater' },
+    -1 => sub { say 'x is lesser' }
+}->{ $x <=> $y }->();
+** [[https://textricator.mfj.io/][Textricator]] is a tool for extracting text from computer-generated PDFs and generating structured data (CSV or JSON) :learn:project:research:test:
+** [[https://github.com/abo-abo/swiper/issues/1079][Is there anything like `ivy-save-view' ? · Issue #1079 · abo-abo/swiper · GitHub]] :emacs:packages:tips:
+** [[http://cachestocaches.com/2018/6/org-literate-programming/][Literate Programming with Org-mode]] :learn:emacs:orgmode:
+** [[http://doc.rix.si/cce/cce-future.html][Complete Computing Environment]] :emacs:
