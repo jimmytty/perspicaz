@@ -1,7 +1,7 @@
 #+BLOG: perspicaz
 #+POSTID: 433
 #+DATE: [2018-08-15 Wed 01:30]
-#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:t ^:nil
 #+PARENT:
 #+CATEGORY: Uncategorized
 #+TAGS:
