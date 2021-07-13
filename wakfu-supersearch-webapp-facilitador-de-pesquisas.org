@@ -1,0 +1,37 @@
+#+BLOG: perspicaz
+#+POSTID: 611
+#+DATE: [2021-07-12 Mon 17:04]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil ^:{}
+#+PARENT:
+#+CATEGORY: Uncategorized
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Wakfu::SuperSearch - WebApp facilitador de pesquisas
+#+PERMALINK: wakfu-supersearch-webapp-facilitador-de-pesquisas
+
+#+ATTR_HTML: :style display:inline;margin:10px;float:left;width:100;
+file:./logos/wakfusupersearch-logo-600x600.png
+#+ATTR_HTML: :style display:inline;margin:10px;width:100;
+file:./logos/wakfu-logo.png
+
+[[http://wakfusupersearch.herokuapp.com][Wakfu::SuperSearch]] é um projeto pessoal com intenção de simplificar a pesquisa na enciclopédia do /game/ [[https://www.wakfu.com/pt/mmorpg/enciclopedia/][Wakfu]]. Inicialmente com foco exclusivo na busca por equipamentos e que, agora, aos poucos está evoluindo para abranger mais aspectos do /game/.
+#+HTML: <!--more Continue lendo...-->
+
+A motivação para o projeto foi a de criar uma ferramenta complementar para tornar possível encontrar equipamentos com atributos específicos e/ou que tivessem um ou mais atributos em destaque em relação aos demais, tornando mais fácil equipar um personagem para uma tarefa desejada como dano, defesa, alcance, aumentar a taxa de /drop/  e assim por diante. Eu desejava criar uma ferramenta que não fosse "reinvenção da roda" pois já existiam projetos com propósitos parecidos, alguns, infelizmente, foram descontinuados ao longo dos tempos. Mais sobre a motivação eu descrevo em http://wakfusupersearch.herokuapp.com/about?lang=pt.
+
+Publicado em Maio de 2020, a primeira versão do [[http://wakfusupersearch.herokuapp.com][Wakfu::SuperSearch]] parecia um /site/ da década de 90, isto porque não sou designer e não tinha experiência suficiente para fazer algo melhor apresentável. Segui estudando e desenvolvendo e o /site/ passou ficou mais agradável e com melhor usabilidade. Tenho muito a melhorar nos quesitos usabilidade e experiência de usuário, eu já esperava uma longa caminhada. Contudo, desde a primeira versão, a ferramenta já entregava o que prometia: simplificação nas pesquisas por equipamentos.
+
+Das coisas mais difíceis para escolher no início foi o servidor de hospedagem, não fazia sentido pagar hospedagem sem monetizar o /site/ e a maioria das hospedagens gratuitas oferecem apenas [[https://www.php.net/][PHP]] com [[https://www.mysql.com/][MySQL]] que, embora muito difundidos e utilizados, são muito limitados para o que eu pretendia fazer ou, em outras palavras, eu seria forçado a fazer muito mais hacks para ter o mesmo resultado pois eu não tinha um escopo fechado de um produto ou serviço pronto e imutável, as coisas poderiam evoluir e escalar muito. Foi então que lembrei do [[https://www.heroku.com][Heroku]] que, para minha alegria, conta com uma conta gratuita que atendia aos requisitos básicos do que eu pretendia fazer, bastando apenas aprender a trabalhar com ele. Pude usar [[https://www.perl.org/][Perl]] [[http://www.catalystframework.org/][Catalyst]], [[https://www.postgresql.org/][PostgreSQL]] e até [[https://git-scm.com/][Git]] para gerenciar os /deploys/, tornando o fluxo de trabalho realmente profissional. Além disso, faço uso do /CSS Framework/ [[https://bulma.io/][Bulma]], da biblioteca /JavaScript/ [[https://jquery.com/][jQuery]] e do /Icon Set/ [[https://fontawesome.com/][Font Awesome]].
+
+Atualmente o /site/ está em três línguas, inglês, português e espanhol e pelo menos todas as descrições dos itens estão 100% traduzidos nas três línguas. Criei algumas ferramentas específicas para /game/ com base em mensagens de fóruns e na documentação do próprio /game/ mas conto também com ferramentas e conteúdo exclusivos criados por mim também. Estou aprimorando uma área a composição de equipamentos que, no /game/, tem o jargão de "/Set"/; nesta área, torno possível visualizar os atributos somados dos itens bem como as receitas, sendo possível calcular recursos necessários até mesmo para múltiplos do mesmo item; em conceito, assemelha-se ao "carrinho" dos /sites/ de compras (mas o meu /site/ é totalmente gratuito).
+
+Para o futuro pretendo manter a evolução da ferramenta e continuar aprimorando usabilidade e experiência de usuário e ter uma interface cada vez mais útil e acessível à comunidade.
+
+# ./wakfu-supersearch-webapp-facilitador-de-pesquisas/logo-600x600.png http://perspicazsite.files.wordpress.com/2021/07/logo-600x600-1.png
+
+# ./logos/wakfusupersearch-logo-600x600.png http://perspicazsite.files.wordpress.com/2021/07/wakfusupersearch-logo-600x600-1.png
+# ./logos/wakfu-logo.png http://perspicazsite.files.wordpress.com/2021/07/wakfu-logo.png
+
+#  LocalWords:  POSTID toc pri Uncategorized WebApp PERMALINK ATTR inline px
+#  LocalWords:  wakfu-supersearch-webapp-facilitador-de-pesquisas Wakfu PHP
+#  LocalWords:  MySQL Heroku CSS Bulma
