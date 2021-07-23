@@ -4,4 +4,6 @@
 #+EMAIL:     jimmy.tty@gmail.com
 #+DATE:      <2004-01-01>
 
-https://www.linkedin.com/in/ronaldo-ferreira-de-lima-9013901b
+
++ [[https://www.apinfo.com/apinfo/][APinfo]]
+  + Código Currículo :: 282774
