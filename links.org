@@ -7,7 +7,7 @@
 
 + /Home Page/ de uma mocinha multiespecial:
 
-  [[http://aiyumi.warpstar.net/pt][http://aiyumi.warpstar.net/pt]]
+  https://aiyumi.github.io/pt/
 
   Ela toca piano, toca violino, joga videogame, programa computadores, é deficiente visual e você? Qual a sua desculpa?
 
@@ -15,4 +15,8 @@
 
   "Acessibilidade, áudio, jogos, Linux e outras coisas, do ponto de vista de uma deficiente visual."
 
-#  LocalWords:  PERMALINK multiespecial
++ [[https://wakfusupersearch.herokuapp.com/][Wakfu::SuperSearch]] - /projeto pessoal voltado para auxiliar pesquisas de items do /game/ [[https://www.wakfu.com/][Wakfu]]:
+
+  https://wakfusupersearch.herokuapp.com/
+
+#  LocalWords:  PERMALINK multiespecial POSTID Wakfu
