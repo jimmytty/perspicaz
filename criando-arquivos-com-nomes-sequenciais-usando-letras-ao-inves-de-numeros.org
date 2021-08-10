@@ -3,8 +3,8 @@
 #+DATE: [2021-08-09 Mon 15:50]
 #+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil ^:{}
 #+PARENT:
-#+CATEGORY: Uncategorized
-#+TAGS:
+#+CATEGORY: Technical
+#+TAGS: shell, awk, sed, perl, python
 #+DESCRIPTION:
 #+TITLE: Criando arquivos com nomes sequenciais usando letras ao invés de números
 #+PERMALINK: criando-arquivos-com-nomes-sequenciais-usando-letras-ao-inves-de-numeros
@@ -24,28 +24,26 @@ Para simplificar, vou considerar apenas o intervalo "a-z" e duas posições como
 Pretendo abordar duas formas distintas e incrementar letras:
 
 ** Abordagem 1
-Utilizando a tabela ascii como referência (=man 7 ascii=).
-   Onde você pode conferir que os intervalos numéricos são:
-     * Binário não consta na página de manual da tabela ascii mas seria o caso fazer uma conversão numérica.
-     | Notação     |  Início |     Fim |
-     |-------------+---------+---------|
-     | Octal       |     141 |     172 |
-     | Decimal     |      97 |     122 |
-     | Hexadecimal |      61 |      7A |
-     | Binário     | 1100001 | 1111010 |
+Utilizando a tabela ascii como referência (=man 7 ascii=). Onde você pode conferir que os intervalos numéricos são:
+(Binário não consta na página de manual da tabela ascii mas seria o caso fazer uma conversão numérica).
+| Notação     |  Início |     Fim |
+|-------------+---------+---------|
+| Octal       |     141 |     172 |
+| Decimal     |      97 |     122 |
+| Hexadecimal |      61 |      7A |
+| Binário     | 1100001 | 1111010 |
 
-   A implementação neste caso é basicamente escolher a notação mais conveniente na linguagem/ferramenta escolhida e utilizar o método para transformar número em letra.
+A implementação neste caso é basicamente escolher a notação mais conveniente na linguagem/ferramenta escolhida e utilizar o método para transformar número em letra.
 
 ** Abordagem 2
 Criando uma lista com intervalo de "/a"/ a "/z/" e usando a posição delas como referência.
-   Exemplo:
-   | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | ... | 26 |
-   |---+---+---+---+---+---+---+---+---+-----+----|
-   | a | b | c | d | e | f | g | h | i | ... |  z |
 
-   Ou seja, cada posição da lista corresponde a uma letra.
+Exemplo:
+| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | ... | 26 |
+|---+---+---+---+---+---+---+---+---+-----+----|
+| a | b | c | d | e | f | g | h | i | ... |  z |
 
-   Ou seja, criar uma lista e iterar pelo seu índice para obter a letra. Neste exemplo o /array/ é inicializado em 1 mas pode ser o 0 dependendo da linguagem/ferramenta utilizada.
+Ou seja, criar uma lista e iterar pelo seu índice para obter a letra. Neste exemplo o /array/ é inicializado em 1 mas pode ser o 0 dependendo da linguagem/ferramenta utilizada.
 
 Vamos para às soluções:
 
@@ -54,46 +52,49 @@ Vamos para às soluções:
 Obs.: Assumindo apenas soluções mais portáveis entre os vários /shells/ existentes. Testadas no ~ash~ (versão atual mais próxima do ~sh~ original).
 
 *** [[Abordagem 1]]
-a) Usando ~bc~ para transformar o intervalo decimal gerado pelo ~seq~ em notação octal e acertando a sintaxe para o ~prinft~ conseguir converter:
+
+a) Usando ~bc~ para transformar o intervalo decimal gerado pelo ~seq~ em notação octal e acertando a sintaxe para o ~printf~ conseguir converter:
+
   #+BEGIN_SRC sh
     seq=$(seq 97 122)
     for dec1 in $seq; do
         oct1=$(echo 'ibase=A;obase=8;'$dec1|bc)
         oct1="\\"$oct1
         for dec2 in $seq; do
-              oct2=$(echo 'ibase=A;obase=8;'$dec2|bc)
-              oct2="\\"$oct2
-              filename=$(printf 'arq-%b%b.txt\n' "$oct1" "$oct2")
-              touch $filename
+            oct2=$(echo 'ibase=A;obase=8;'$dec2|bc)
+            oct2="\\"$oct2
+            filename=$(printf 'arq-%b%b.txt\n' "$oct1" "$oct2")
+            touch $filename
         done
     done
   #+END_SRC
 
 b) Usando ~awk~ (que poderia ter sido no exemplo "a)" também) para criar os /filenames/. Como ~awk~ não cria arquivos, recorro ao ~shell~ para concluir o serviço:
-  #+BEGIN_SRC awk
-    awk 'BEGIN {
-        for ( i = 97; i <= 122; i++ ) {
-            for ( j = 97; j <= 122; j++ ) {
-                printf "arq-%c%c.txt\n", i, j;
-            }
-        }
-    }' | xargs touch
-  #+END_SRC
+   #+BEGIN_SRC awk
+     awk 'BEGIN {
+         for ( i = 97; i <= 122; i++ ) {
+             for ( j = 97; j <= 122; j++ ) {
+                 printf "arq-%c%c.txt\n", i, j;
+             }
+         }
+     }' | xargs touch
+   #+END_SRC
 
 c) Uma forma exótica usando a calculadora ~dc~ (pertence ao pacote padrão da ~bc~):
-    #+BEGIN_SRC sh
-    seq=$(seq 97 122)
-    for dec1 in $seq; do
-        l1=$(echo "${dec1}P"|dc)
-        for dec2 in $seq; do
-            l2=$(echo "${dec2}P"|dc)
-            filename="arq-$l1$l2.txt"
-            touch $filename
-        done
-    done
-    #+END_SRC
+   #+BEGIN_SRC sh
+     seq=$(seq 97 122)
+     for dec1 in $seq; do
+         l1=$(echo "${dec1}P"|dc)
+         for dec2 in $seq; do
+             l2=$(echo "${dec2}P"|dc)
+             filename="arq-$l1$l2.txt"
+             touch $filename
+         done
+     done
+   #+END_SRC
 
-    A mágica aqui é feita pelo parâmetro "~P~" que instrui à ~dc~ converter o número decimal para o seu corresponde ~ascii~ (a documentação não é muito clara sobre essa conversão).
+   A mágica aqui é feita pelo parâmetro "~P~" que instrui à ~dc~ converter o número decimal para o seu correspondente ~ascii~ (a documentação não é muito clara sobre essa conversão).
+
 *** [[Abordagem 2]]
 
 a) O ~sh~ padrão não possui estruturas de dados como /array/, então precisamos simular um com /string/:
@@ -126,15 +127,16 @@ b) Para usar /arrays/ num /shell/ padrão precisamos recorrer a, por exemplo, ~a
   #+END_SRC
 
 c) Usando o ~sed~ para criar uma lista de letras:
-   #+BEGIN_SRC sh
-     chars='abcdefghijklmnopqrstuvwxyz'
-     for c1 in $(echo $chars | sed 's/\B/ /g'); do
-         for c2 in $(echo $chars | sed 's/\B/ /g'); do
-             filename="arq-${c1}${c2}.txt"
-             echo touch $filename
-         done
-     done
-   #+END_SRC
+
+  #+BEGIN_SRC sh
+    chars='abcdefghijklmnopqrstuvwxyz'
+    for c1 in $(echo $chars | sed 's/\B/ /g'); do
+        for c2 in $(echo $chars | sed 's/\B/ /g'); do
+            filename="arq-${c1}${c2}.txt"
+            echo touch $filename
+        donel
+    done
+  #+END_SRC
 
 ** Perl
 
@@ -155,7 +157,7 @@ a) Criando os /loops/ e usando a função ~chr~ para converter número para letr
      }
    #+END_SRC
 
-b) Utilizando o comando ~pack~ e um estildo diferente de /loop/ em relação ao exercício "a)":
+b) Utilizando o comando ~pack~ e um estilo diferente de /loop/ em relação ao exercício "a)":
 
    #+BEGIN_SRC perl
      my @range = 97 .. 122;
@@ -183,6 +185,88 @@ c) Utilizando o comando ~sprintf~ e permutação com o ~glob~:
    #+END_SRC
 
 *** [[Abordagem 2]]
-a)
-   #+BEGIN_SRC
-    
+a) Usando a capacidade do ~Perl~ de criar intervalos de letras:
+
+   #+BEGIN_SRC perl
+     my @char = 'a'..'z';
+     foreach my $c1 ( @char ) {
+         foreach my $c2 ( @char ) {
+             my $filename = "arq-$c1$c2.txt";
+             open my $fh, '>', $filename; close $file;
+         }
+     }
+   #+END_SRC
+
+b) O intervalo pode ser maior, e abranger tudo o que precisamos sem necessitar 2 /loops/:
+
+   #+BEGIN_SRC perl
+     my @string = 'aa' .. 'zz';
+     foreach my $str (@string) {
+         my $filename = "arq-$str.txt";
+         say $filename;
+     }
+   #+END_SRC
+
+c) É possível ainda incrementar diretamente uma variável /string/:
+
+   #+BEGIN_SRC perl
+     my $incr = 'aa';
+     my @string = $incr;
+     push @string, $incr while $incr++ ne 'zz';
+     for ( my $i = 0 ; $i <= $#string; $i++ ) {
+         my $filename = "arq-$string[$i].txt";
+         IO::File->new( $filename, 'w' );
+     }
+   #+END_SRC
+
+** Python
+*** [[Abordagem 1]]
+a) Usando /loop/ ~while~ e a função ~chr~:
+   #+BEGIN_SRC python
+     i=97
+     while i <= 122:
+          char1 = chr(i)
+          j=97
+          while j <= 122:
+              char2 = chr(j)
+              filename = "arq-%s%s.txt" % (char1, char2)
+              open(filename, 'w').close()
+              j += 1
+          i += 1
+   #+END_SRC
+
+*** [[Abordagem 2]]
+
+a) Criando uma lista e iterando por ela:
+
+   #+BEGIN_SRC python
+     chars = [ 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i',
+               'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r',
+               's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
+              ]
+     for char1 in chars:
+         for char2 in chars:
+             filename = "arq-%s%s.txt" % (char1, char2)
+             open(filename, 'w').close();
+   #+END_SRC
+
+b) Iterando pelo índice da lista:
+
+   #+BEGIN_SRC python
+     chars = [ 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i',
+               'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r',
+               's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
+              ]
+     for i in range(0,len(chars)):
+         for j in range(0,len(chars)):
+             filename = "arq-%s%s.txt" % (chars[i], chars[j])
+             open(filename, 'w').close();
+   #+END_SRC
+
+** Conclusão
+
+Existe grande quantidade de soluções possíveis além das apresentadas e além das que eu conheço. Utilizei os exemplos que julguei mais simples ou divertidos. Contudo, em contexto profissional, deve-se analisar e escolher soluções que realmente façam sentido para o cliente.
+
+#  LocalWords:  POSTID toc pri Uncategorized PERMALINK arq a-z ascii bc printf
+#  LocalWords:  criando-arquivos-com-nomes-sequenciais-usando-letras-ao-inves-de-numeros
+#  LocalWords:  awk filenames sed chr
