@@ -23,9 +23,11 @@
 
 + [[http://search.cpan.org/~jimmy/][CPAN]]
 
-+ [[https://www.youtube.com/channel/UCkOSFfPqHSLgt_u2oeh2eUw][YouTube]]
-
 + [[https://stackoverflow.com/users/13456808/ronaldo-ferreira-de-lima][StackOverflow]]
 
++ [[https://www.youtube.com/channel/UCkOSFfPqHSLgt_u2oeh2eUw][YouTube]]
+  
++ [[https://myanimelist.net/animelist/jimmy-neutron?status=2][MyAnimeList]]
+
 #  LocalWords:  PERMALINK multiespecial POSTID Wakfu GitHub CPAN YouTube
-#  LocalWords:  StackOverflow
+#  LocalWords:  StackOverflow MyAnimeList
